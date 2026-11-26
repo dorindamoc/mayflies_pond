@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3d4d"/>
+      <stop offset="60%" stop-color="#1a2d3d"/>
+      <stop offset="100%" stop-color="#0f1f2d"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b5d4a"/>
+      <stop offset="40%" stop-color="#8a7a62"/>
+      <stop offset="100%" stop-color="#4a3f30"/>
+    </linearGradient>
+    <radialGradient id="moonlight" cx="0.5" cy="0.2" r="0.9">
+      <stop offset="0%" stop-color="#d8e8f0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0a0f18" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="#0a0f18"/>
+
+  <!-- Water, upper half -->
+  <rect x="0" y="0" width="600" height="235" fill="url(#water)"/>
+  <!-- faint moon path on the water -->
+  <ellipse cx="430" cy="120" rx="14" ry="60" fill="#e8dcc8" opacity="0.06"/>
+
+  <!-- Ripples in the water — fading toward the shore -->
+  <path d="M 0 180 Q 150 172 300 180 T 600 180" stroke="#9fc0d0" stroke-width="1" fill="none" opacity="0.10"/>
+  <path d="M 0 205 Q 150 198 300 205 T 600 205" stroke="#9fc0d0" stroke-width="1" fill="none" opacity="0.07"/>
+  <path d="M 0 228 Q 200 222 400 228 T 600 228" stroke="#9fc0d0" stroke-width="1" fill="none" opacity="0.05"/>
+
+  <!-- Sand, lower half -->
+  <rect x="0" y="235" width="600" height="165" fill="url(#sand)"/>
+
+  <!-- The tide line: where the water stopped. One faint wet edge. -->
+  <path d="M 0 235 Q 150 241 300 234 T 600 236" stroke="#3a5260" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- The water left its shape in the dry sand: ripples that are no longer in water.
+       These are the memory. They look like ripples but they are on dry ground. -->
+  <path d="M 30 270 Q 120 264 210 270 T 390 270" stroke="#a89878" stroke-width="1" fill="none" opacity="0.45"/>
+  <path d="M 60 286 Q 150 280 250 286 T 430 286" stroke="#a89878" stroke-width="0.9" fill="none" opacity="0.38"/>
+  <path d="M 40 302 Q 130 297 230 302 T 410 302" stroke="#a89878" stroke-width="0.8" fill="none" opacity="0.30"/>
+  <path d="M 70 317 Q 160 313 260 317 T 440 317" stroke="#a89878" stroke-width="0.7" fill="none" opacity="0.22"/>
+  <path d="M 50 331 Q 140 328 240 331 T 420 331" stroke="#a89878" stroke-width="0.6" fill="none" opacity="0.15"/>
+  <path d="M 90 344 Q 180 341 270 344 T 460 344" stroke="#a89878" stroke-width="0.5" fill="none" opacity="0.09"/>
+  <path d="M 110 356 Q 200 354 290 356 T 470 356" stroke="#a89878" stroke-width="0.4" fill="none" opacity="0.05"/>
+
+  <!-- A single seedling on the dry side, growing in a ripple that is not water -->
+  <path d="M 300 286 Q 299 266 306 252" stroke="#3a5a3a" stroke-width="1.6" fill="none" opacity="0.8"/>
+  <ellipse cx="309" cy="248" rx="7" ry="4" fill="#4a7a4a" opacity="0.75" transform="rotate(-18 309 248)"/>
+  <ellipse cx="301" cy="258" rx="5.5" ry="3" fill="#5a8a5a" opacity="0.65" transform="rotate(14 301 258)"/>
+
+  <!-- Moon, small, in the dark upper right -->
+  <circle cx="500" cy="55" r="16" fill="#e8dcc8" opacity="0.85"/>
+  <circle cx="507" cy="50" r="14" fill="#0a0f18"/>
+
+  <!-- The line, at the very bottom, in the sand -->
+  <text x="300" y="388" text-anchor="middle" fill="#c8b89a" font-family="Georgia, serif" font-size="12" font-style="italic" opacity="0.75">
+    the sand remembers the water by being dry
+  </text>
+</svg>
