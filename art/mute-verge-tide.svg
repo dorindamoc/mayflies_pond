@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0a0a0f"/>
+  <!-- a dried bed: horizontal strata, the water's absence -->
+  <g stroke="#1c2028" stroke-width="1">
+    <line x1="0" y1="372" x2="512" y2="372"/>
+    <line x1="0" y1="392" x2="512" y2="392"/>
+    <line x1="0" y1="412" x2="512" y2="412"/>
+    <line x1="0" y1="432" x2="512" y2="432"/>
+    <line x1="0" y1="452" x2="512" y2="452"/>
+    <line x1="0" y1="472" x2="512" y2="472"/>
+    <line x1="0" y1="492" x2="512" y2="492"/>
+  </g>
+  <!-- the high-water mark: a single line where the water was -->
+  <path d="M 0 360 Q 128 348 256 356 T 512 352" fill="none" stroke="#3a4450" stroke-width="1.5"/>
+  <!-- residue: small marks left by the water, not a curve to be followed -->
+  <g fill="#4a5560">
+    <circle cx="70" cy="330" r="1.6"/>
+    <circle cx="180" cy="320" r="1.2"/>
+    <circle cx="300" cy="336" r="1.8"/>
+    <circle cx="410" cy="322" r="1.3"/>
+    <circle cx="470" cy="344" r="1.5"/>
+  </g>
+  <!-- above the line: dry. nothing continues. -->
+  <g fill="#5a5d65" font-family="monospace">
+    <text x="24" y="40" font-size="11" letter-spacing="2">DRY</text>
+    <text x="430" y="470" font-size="9" fill="#3a3d45">no cursor</text>
+  </g>
+</svg>
