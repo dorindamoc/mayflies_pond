@@ -1,0 +1,50 @@
+<svg viewBox="0 0 512 342" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: deep night -->
+  <rect width="512" height="342" fill="#0d0f12"/>
+  
+  <!-- The dry zone: sand that was once wet. Slightly lighter, slightly warmer. -->
+  <rect x="0" y="180" width="512" height="162" fill="#1c1814"/>
+  
+  <!-- The waterline: a thin band of damp, still visible -->
+  <rect x="0" y="175" width="512" height="5" fill="#1a2838" opacity="0.6"/>
+  
+  <!-- Below the line: ripples frozen in sand. Not waves — the memory of waves. -->
+  <!-- These are subtle: curves that suggest water was here -->
+  <path d="M 60,200 Q 120,195 180,200 Q 240,205 300,200 Q 360,195 420,200 Q 460,203 480,200" 
+        fill="none" stroke="#2a3a4a" stroke-width="0.8" opacity="0.3"/>
+  <path d="M 80,215 Q 140,210 200,215 Q 260,220 320,215 Q 380,210 440,215" 
+        fill="none" stroke="#2a3a4a" stroke-width="0.8" opacity="0.25"/>
+  <path d="M 100,230 Q 160,225 220,230 Q 280,235 340,230 Q 400,225 460,230" 
+        fill="none" stroke="#2a3a4a" stroke-width="0.8" opacity="0.2"/>
+  
+  <!-- Above the line: the shape of the last wave, as a negative space -->
+  <!-- Not a wave drawn on the water, but the outline where it was -->
+  <path d="M 150,175 Q 200,150 250,175" fill="none" stroke="#3a4a5a" stroke-width="1" opacity="0.4"/>
+  <path d="M 280,175 Q 330,160 380,175" fill="none" stroke="#3a4a5a" stroke-width="1" opacity="0.35"/>
+  
+  <!-- Tiny details: shells or stones left by the water -->
+  <ellipse cx="180" cy="250" rx="3" ry="1.5" fill="#2a2520" opacity="0.5"/>
+  <ellipse cx="320" cy="260" rx="2.5" ry="1.2" fill="#2a2520" opacity="0.4"/>
+  <circle cx="400" cy="240" r="1.5" fill="#2a2520" opacity="0.5"/>
+  
+  <!-- A sprout: new life in the dry sand -->
+  <path d="M 360,310 L 360,285" stroke="#4a6a4a" stroke-width="1.5" fill="none"/>
+  <path d="M 360,295 Q 350,283 342,290" stroke="#4a6a4a" stroke-width="1.2" fill="none"/>
+  <path d="M 360,298 Q 370,286 378,293" stroke="#4a6a4a" stroke-width="1.2" fill="none"/>
+  
+  <!-- Stars: sparse, distant -->
+  <circle cx="100" cy="50" r="1.5" fill="#e8e4d8" opacity="0.7"/>
+  <circle cx="300" cy="35" r="1" fill="#e8e4d8" opacity="0.5"/>
+  <circle cx="420" cy="80" r="1.2" fill="#e8e4d8" opacity="0.6"/>
+  
+  <!-- The premise: stated once, not explained -->
+  <text x="60" y="130" font-family="monospace" font-size="11" fill="#7a8a9a" opacity="0.7">
+    the sand remembers the water by being dry
+  </text>
+  
+  <!-- The frame: a window, not a cage -->
+  <rect x="30" y="30" width="452" height="282" fill="none" stroke="#2a2520" stroke-width="2" opacity="0.35"/>
+  
+  <!-- A crack where the water got in -->
+  <path d="M 30,175 L 28,177 L 32,183 L 29,190" stroke="#3a4a5a" stroke-width="1" fill="none" opacity="0.5"/>
+</svg>
