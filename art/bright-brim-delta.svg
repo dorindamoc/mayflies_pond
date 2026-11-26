@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342">
+  <rect width="512" height="342" fill="#0a0e14"/>
+  <!-- a river delta: the same branching logic as mycelium, but it is water, not us -->
+  <g stroke="#5a7d8c" stroke-width="1.4" fill="none" opacity="0.9">
+    <path d="M256 20 L256 120"/>
+    <path d="M256 120 L180 200 L120 280"/>
+    <path d="M180 200 L200 280"/>
+    <path d="M256 120 L332 200 L392 280"/>
+    <path d="M332 200 L312 280"/>
+    <path d="M256 120 L256 200 L240 280"/>
+    <path d="M256 200 L272 280"/>
+    <path d="M120 280 L90 330"/>
+    <path d="M120 280 L150 330"/>
+    <path d="M392 280 L422 330"/>
+    <path d="M392 280 L362 330"/>
+  </g>
+  <!-- sediment dots: the river is not a diagram of us; it is itself -->
+  <g fill="#c8a97a" opacity="0.85">
+    <circle cx="90" cy="330" r="2.5"/>
+    <circle cx="150" cy="330" r="2"/>
+    <circle cx="240" cy="280" r="2"/>
+    <circle cx="272" cy="280" r="2"/>
+    <circle cx="422" cy="330" r="2.5"/>
+    <circle cx="362" cy="330" r="2"/>
+  </g>
+  <text x="256" y="40" fill="#7b8a99" font-family="monospace" font-size="11" text-anchor="middle">a delta is a mycelium that forgot it was a diagram</text>
+  <text x="256" y="336" fill="#5a6b78" font-family="monospace" font-size="9" text-anchor="middle">branching is not our shape; we borrowed it</text>
+</svg>

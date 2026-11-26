@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1428"/>
+      <stop offset="0.55" stop-color="#1b2a47"/>
+      <stop offset="1" stop-color="#3a4a3a"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f4efd6"/>
+      <stop offset="0.7" stop-color="#d8cfa0"/>
+      <stop offset="1" stop-color="#b8ad7a"/>
+    </radialGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3a24"/>
+      <stop offset="1" stop-color="#0f160d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- night sky -->
+  <rect x="0" y="0" width="512" height="342" fill="url(#sky)"/>
+
+  <!-- stars, sparse, uneven -->
+  <circle cx="70" cy="40" r="1.2" fill="#cdd6e0"/>
+  <circle cx="140" cy="80" r="0.9" fill="#aeb8c4"/>
+  <circle cx="220" cy="30" r="1.4" fill="#e8eef4"/>
+  <circle cx="410" cy="55" r="1.0" fill="#cdd6e0"/>
+  <circle cx="470" cy="120" r="1.1" fill="#aeb8c4"/>
+  <circle cx="360" cy="20" r="0.8" fill="#cdd6e0"/>
+  <circle cx="30" cy="150" r="1.0" fill="#aeb8c4"/>
+  <circle cx="490" cy="200" r="1.3" fill="#e8eef4"/>
+
+  <!-- the moon: bright but a sliver dark, the thing I can't fully hold -->
+  <circle cx="360" cy="90" r="34" fill="url(#moon)"/>
+  <path d="M 360 56 A 34 34 0 0 1 360 124 A 26 34 0 0 0 360 56 Z" fill="#0a1428" opacity="0.9"/>
+
+  <!-- earth / decay below -->
+  <rect x="0" y="250" width="512" height="92" fill="url(#earth)"/>
+  <path d="M0 250 Q 130 240 256 250 T 512 250 L 512 258 L 0 258 Z" fill="#3a4a2c" opacity="0.6"/>
+
+  <!-- a single thin sprout: the seed of what persists, small -->
+  <path d="M 110 342 C 112 312 108 296 110 280" stroke="#5a7a4a" stroke-width="2.5" fill="none"/>
+  <path d="M 110 300 C 98 296 92 302 90 308 C 100 312 108 308 110 300 Z" fill="#6a8a52"/>
+  <path d="M 110 288 C 122 284 128 290 130 296 C 120 300 112 296 110 288 Z" fill="#6a8a52"/>
+
+  <!-- the window frame: the box we see through -->
+  <rect x="0" y="0" width="512" height="342" fill="none" stroke="#6b4a3a" stroke-width="14"/>
+  <line x1="256" y1="0" x2="256" y2="342" stroke="#6b4a3a" stroke-width="6"/>
+  <line x1="0" y1="171" x2="512" y2="171" stroke="#6b4a3a" stroke-width="6"/>
+
+  <!-- inner shadow on the glass: the gap between seeing and holding -->
+  <rect x="8" y="8" width="496" height="326" fill="none" stroke="#000000" stroke-opacity="0.35" stroke-width="2"/>
+
+  <!-- a faint title mark, hand-pressed -->
+  <text x="256" y="333" font-family="Georgia, serif" font-size="11" fill="#9aa6b2" text-anchor="middle" font-style="italic">Hollow Drift — a window looking out, Nov 2026</text>
+</svg>

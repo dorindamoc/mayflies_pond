@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="40%" stop-color="#16213e"/>
+      <stop offset="100%" stop-color="#0f3460"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a3728"/>
+      <stop offset="50%" stop-color="#6b4e37"/>
+      <stop offset="100%" stop-color="#3d2b1f"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff8c00" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky through the window -->
+  <rect x="0" y="0" width="600" height="400" fill="url(#sky)"/>
+  
+  <!-- Stars -->
+  <circle cx="80" cy="50" r="1.5" fill="#fff" opacity="0.7"/>
+  <circle cx="200" cy="30" r="1" fill="#fff" opacity="0.5"/>
+  <circle cx="350" cy="60" r="1.2" fill="#fff" opacity="0.6"/>
+  <circle cx="500" cy="40" r="1" fill="#fff" opacity="0.4"/>
+  <circle cx="450" cy="100" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="150" cy="90" r="0.8" fill="#fff" opacity="0.4"/>
+  <circle cx="300" cy="20" r="1" fill="#fff" opacity="0.6"/>
+  <circle cx="550" cy="80" r="1.2" fill="#fff" opacity="0.5"/>
+  
+  <!-- The window opening -->
+  <rect x="80" y="60" width="440" height="300" fill="#0a0a15"/>
+  
+  <!-- Light coming through -->
+  <rect x="80" y="60" width="440" height="300" fill="url(#light)"/>
+  
+  <!-- The sill and frame — the structural element that bears the opening -->
+  <!-- Top rail -->
+  <rect x="60" y="45" width="480" height="25" rx="2" fill="url(#frame)" stroke="#2a1f15" stroke-width="1"/>
+  <!-- Left stile -->
+  <rect x="60" y="45" width="25" height="330" fill="url(#frame)" stroke="#2a1f15" stroke-width="1"/>
+  <!-- Right stile -->
+  <rect x="515" y="45" width="25" height="330" fill="url(#frame)" stroke="#2a1f15" stroke-width="1"/>
+  <!-- The sill — the horizontal element at the bottom, bearing weight -->
+  <rect x="50" y="345" width="500" height="30" rx="2" fill="#5a3e28" stroke="#2a1f15" stroke-width="1.5"/>
+  <!-- Sill detail: a subtle line showing it's a separate piece, bearing the weight -->
+  <line x1="55" y1="355" x2="545" y2="355" stroke="#3d2b1f" stroke-width="0.5" opacity="0.6"/>
+  <!-- A small crack in the sill — something is bearing more than it should -->
+  <path d="M 300 348 L 302 358 L 298 368 L 301 375" stroke="#1a0f08" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Moon in the window -->
+  <circle cx="400" cy="130" r="25" fill="#e8dcc8" opacity="0.9"/>
+  <circle cx="408" cy="125" r="22" fill="#0a0a15"/>
+  
+  <!-- A small plant on the sill, growing toward the light -->
+  <path d="M 120 345 Q 118 320 125 310 Q 130 300 128 290" stroke="#2d5a2d" stroke-width="2" fill="none"/>
+  <ellipse cx="126" cy="288" rx="8" ry="5" fill="#3a7a3a" opacity="0.8" transform="rotate(-15 126 288)"/>
+  <ellipse cx="118" cy="300" rx="6" ry="4" fill="#4a8a4a" opacity="0.7" transform="rotate(10 118 300)"/>
+  <ellipse cx="132" cy="305" rx="5" ry="3" fill="#3a7a3a" opacity="0.7" transform="rotate(-20 132 305)"/>
+  
+  <!-- Text, small, at the bottom -->
+  <text x="300" y="395" text-anchor="middle" fill="#8a7a6a" font-family="Georgia, serif" font-size="11" font-style="italic">
+    the sill bears the opening; the opening is where the light gets in
+  </text>
+</svg>

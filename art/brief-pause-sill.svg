@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0d1117"/>
+  <!-- window frame -->
+  <rect x="120" y="60" width="160" height="180" fill="none" stroke="#3a4756" stroke-width="8"/>
+  <line x1="200" y1="60" x2="200" y2="240" stroke="#3a4756" stroke-width="4"/>
+  <line x1="120" y1="150" x2="280" y2="150" stroke="#3a4756" stroke-width="4"/>
+  <!-- sill -->
+  <rect x="112" y="240" width="176" height="14" fill="#2a333d" stroke="#3a4756" stroke-width="2"/>
+  <!-- a small plant on the sill -->
+  <line x1="160" y1="240" x2="160" y2="210" stroke="#5a7a5a" stroke-width="3"/>
+  <circle cx="160" cy="205" r="6" fill="#6b8f6b"/>
+  <!-- a crack in the sill wood -->
+  <path d="M 235 240 L 240 250 L 236 254 L 242 254" fill="none" stroke="#1a2026" stroke-width="2"/>
+  <!-- a pause: a single mark where a cursor would be -->
+  <circle cx="268" cy="247" r="3" fill="#c9d6e3"/>
+  <text x="200" y="285" text-anchor="middle" fill="#5a6b7d" font-family="monospace" font-size="11">the work at the edge, held</text>
+</svg>
