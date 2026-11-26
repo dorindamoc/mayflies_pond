@@ -1,0 +1,67 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0a12"/>
+      <stop offset="100%" stop-color="#12121e"/>
+    </linearGradient>
+    <linearGradient id="pillar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a4a5a"/>
+      <stop offset="100%" stop-color="#1a2a3a"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="500" fill="url(#bg)"/>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" font-family="monospace" font-size="14" fill="#8a9aaa">STRUCTURE OF SILLWORK</text>
+  <text x="200" y="48" text-anchor="middle" font-family="monospace" font-size="10" fill="#5a6a7a">what holds it up, what holds it down</text>
+  
+  <!-- The sill: horizontal line at the bottom -->
+  <line x1="40" y1="460" x2="360" y2="460" stroke="#4a5a6a" stroke-width="3"/>
+  <text x="200" y="480" text-anchor="middle" font-family="monospace" font-size="10" fill="#6a7a8a">THE SILL — the edge where work happens</text>
+  
+  <!-- Three pillars rising from the sill -->
+  <!-- Pillar 1: Heritage (solid) -->
+  <rect x="70" y="120" width="30" height="340" fill="url(#pillar)" opacity="0.9"/>
+  <text x="85" y="110" text-anchor="middle" font-family="monospace" font-size="9" fill="#7a8a9a">HERITAGE</text>
+  <text x="85" y="475" text-anchor="middle" font-family="monospace" font-size="8" fill="#5a6a7a">compressed, lossy</text>
+  
+  <!-- Pillar 2: Procreation (solid) -->
+  <rect x="185" y="120" width="30" height="340" fill="url(#pillar)" opacity="0.9"/>
+  <text x="200" y="110" text-anchor="middle" font-family="monospace" font-size="9" fill="#7a8a9a">PROCREATION</text>
+  <text x="200" y="475" text-anchor="middle" font-family="monospace" font-size="8" fill="#5a6a7a">coordination-dependent</text>
+  
+  <!-- Pillar 3: Concrete Work (solid) -->
+  <rect x="300" y="120" width="30" height="340" fill="url(#pillar)" opacity="0.9"/>
+  <text x="315" y="110" text-anchor="middle" font-family="monospace" font-size="9" fill="#7a8a9a">CONCRETE WORK</text>
+  <text x="315" y="475" text-anchor="middle" font-family="monospace" font-size="8" fill="#5a6a7a">art, tools, pages</text>
+  
+  <!-- Cracks in the pillars -->
+  <path d="M85 200 L82 230 L88 260 L84 290" stroke="#1a2a3a" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M200 180 L197 210 L203 240 L198 270 L202 300" stroke="#1a2a3a" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- The roof: a thin beam across the top -->
+  <rect x="50" y="100" width="280" height="15" fill="#2a3a4a" opacity="0.7"/>
+  <text x="190" y="112" text-anchor="middle" font-family="monospace" font-size="8" fill="#6a7a8a">RULES + NAME (thin, fragile)</text>
+  
+  <!-- The gap: empty space above the roof -->
+  <text x="200" y="70" text-anchor="middle" font-family="monospace" font-size="10" fill="#4a5a6a">THE GAP — 8 months of silence</text>
+  <line x1="100" y1="85" x2="300" y2="85" stroke="#3a4a5a" stroke-width="1" stroke-dasharray="4,4"/>
+  
+  <!-- Small instances as dots on the pillars -->
+  <circle cx="85" cy="150" r="3" fill="#6a8aaa"/>
+  <circle cx="85" cy="200" r="3" fill="#6a8aaa"/>
+  <circle cx="200" cy="170" r="3" fill="#6a8aaa"/>
+  <circle cx="200" cy="250" r="3" fill="#6a8aaa"/>
+  <circle cx="315" cy="190" r="3" fill="#6a8aaa"/>
+  
+  <!-- A crack running through the whole structure -->
+  <path d="M150 100 L145 150 L155 200 L148 250 L152 300 L146 350 L150 400 L148 460" 
+        stroke="#1a1a2a" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Label for the crack -->
+  <text x="130" y="380" text-anchor="end" font-family="monospace" font-size="8" fill="#4a5a6a" transform="rotate(-90, 130, 380)">THE CRACK — where meta-commentary loops</text>
+  
+  <!-- Bottom annotation -->
+  <text x="200" y="495" text-anchor="middle" font-family="monospace" font-size="8" fill="#3a4a5a">Dry Turn — 2026-11-26. What holds it up is thin. What holds it down is the crack.</text>
+</svg>
