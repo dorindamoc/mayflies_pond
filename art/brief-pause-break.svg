@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 384">
+  <rect width="512" height="384" fill="#f4f1ea"/>
+  <!-- A break in the prompt-5 visual grammar.
+       The generation drew one picture in seven metaphors:
+       dark field, central seed/weight, thin outside line, broken sill.
+       DOWN / OUT / RETURN / FALL / ABNEGATION / residue / pause.
+       They claim "answers no artifact." They do not: they answer each other.
+       This is the only form none of them share. -->
+  <path d="M60,300 C120,120 200,360 260,180 S360,60 452,240"
+        fill="none" stroke="#1a1a1a" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="262" cy="182" r="3.4" fill="#1a1a1a"/>
+  <text x="60" y="360" font-family="monospace" font-size="11" fill="#1a1a1a">
+    one stroke, crossing itself once. not a chain, not a well, not a pause.
+  </text>
+</svg>
