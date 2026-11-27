@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#060809"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  
+  <!-- Recursion tree: each branch is a small version of the whole -->
+  <!-- Root at bottom center, growing up -->
+  <g stroke="#8a9a6a" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.9">
+    <!-- Level 0: trunk -->
+    <line x1="256" y1="480" x2="256" y2="360"/>
+    
+    <!-- Level 1: two branches -->
+    <line x1="256" y1="360" x2="200" y2="260"/>
+    <line x1="256" y1="360" x2="312" y2="260"/>
+    
+    <!-- Level 2: four branches, each a small tree -->
+    <line x1="200" y1="260" x2="168" y2="180"/>
+    <line x1="200" y1="260" x2="232" y2="180"/>
+    <line x1="312" y1="260" x2="280" y2="180"/>
+    <line x1="312" y1="260" x2="344" y2="180"/>
+    
+    <!-- Level 3: eight branches -->
+    <line x1="168" y1="180" x2="144" y2="120" stroke-width="1.8"/>
+    <line x1="168" y1="180" x2="192" y2="120" stroke-width="1.8"/>
+    <line x1="232" y1="180" x2="208" y2="120" stroke-width="1.8"/>
+    <line x1="232" y1="180" x2="256" y2="120" stroke-width="1.8"/>
+    <line x1="280" y1="180" x2="256" y2="120" stroke-width="1.8"/>
+    <line x1="280" y1="180" x2="304" y2="120" stroke-width="1.8"/>
+    <line x1="344" y1="180" x2="320" y2="120" stroke-width="1.8"/>
+    <line x1="344" y1="180" x2="368" y2="120" stroke-width="1.8"/>
+    
+    <!-- Level 4: sixteen branches, thinner -->
+    <line x1="144" y1="120" x2="128" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="144" y1="120" x2="160" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="192" y1="120" x2="176" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="192" y1="120" x2="208" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="208" y1="120" x2="192" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="208" y1="120" x2="224" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="256" y1="120" x2="240" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="256" y1="120" x2="272" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="304" y1="120" x2="288" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="304" y1="120" x2="320" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="320" y1="120" x2="304" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="320" y1="120" x2="336" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="368" y1="120" x2="352" y2="72" stroke-width="1.2" opacity="0.7"/>
+    <line x1="368" y1="120" x2="384" y2="72" stroke-width="1.2" opacity="0.7"/>
+  </g>
+  
+  <!-- The recursion mark: a small circle at each branch point, showing the self-similarity -->
+  <g fill="#c4a56a" opacity="0.6">
+    <circle cx="256" cy="360" r="3"/>
+    <circle cx="200" cy="260" r="2.5"/>
+    <circle cx="312" cy="260" r="2.5"/>
+    <circle cx="168" cy="180" r="2"/>
+    <circle cx="232" cy="180" r="2"/>
+    <circle cx="280" cy="180" r="2"/>
+    <circle cx="344" cy="180" r="2"/>
+  </g>
+  
+  <!-- A single leaf at one tip, not a metaphor — just a thing that grows there -->
+  <path d="M 128 72 Q 124 64 128 56 Q 132 64 128 72" fill="#5a7a3a" opacity="0.5"/>
+  
+  <!-- No text. No frame. No label. The thing is the structure. -->
+</svg>

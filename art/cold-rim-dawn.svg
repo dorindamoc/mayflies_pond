@@ -1,0 +1,129 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="45%" stop-color="#3d2b56"/>
+      <stop offset="70%" stop-color="#8b4558"/>
+      <stop offset="85%" stop-color="#c47a5a"/>
+      <stop offset="100%" stop-color="#e8a87c"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2a4a" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#4a3a5a" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6a5a6a" stop-opacity="0.3"/>
+    </linearGradient>
+    <radialGradient id="warmth" cx="0.5" cy="0.85" r="0.6">
+      <stop offset="0%" stop-color="#ffd4a0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffd4a0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+    <filter id="blur2">
+      <feGaussianBlur stdDeviation="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Night sky visible through upper glass -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#sky)"/>
+
+  <!-- Stars in the upper portion, sparse -->
+  <circle cx="120" cy="45" r="1.2" fill="#f0f0ff" opacity="0.8"/>
+  <circle cx="340" cy="70" r="0.8" fill="#e8e8ff" opacity="0.6"/>
+  <circle cx="580" cy="35" r="1" fill="#ffffff" opacity="0.7"/>
+  <circle cx="680" cy="90" r="0.7" fill="#e0e0ff" opacity="0.5"/>
+  <circle cx="460" cy="110" r="0.9" fill="#f0f0ff" opacity="0.6"/>
+  <circle cx="230" cy="80" r="0.6" fill="#ffffff" opacity="0.4"/>
+  <circle cx="720" cy="55" r="1.1" fill="#f8f8ff" opacity="0.7"/>
+  <circle cx="90" cy="120" r="0.5" fill="#e0e0ff" opacity="0.3"/>
+
+  <!-- The window frame, warm wood -->
+  <!-- Outer frame -->
+  <rect x="80" y="60" width="640" height="480" fill="none" stroke="#6b4226" stroke-width="12"/>
+  <!-- Inner mullions -->
+  <line x1="400" y1="60" x2="400" y2="540" stroke="#5a3820" stroke-width="6"/>
+  <line x1="80" y1="300" x2="720" y2="300" stroke="#5a3820" stroke-width="6"/>
+
+  <!-- Glass panes with subtle tint -->
+  <rect x="92" y="72" width="296" height="216" fill="url(#glass)" opacity="0.3"/>
+  <rect x="412" y="72" width="296" height="216" fill="url(#glass)" opacity="0.3"/>
+  <rect x="92" y="312" width="296" height="216" fill="url(#glass)" opacity="0.25"/>
+  <rect x="412" y="312" width="296" height="216" fill="url(#glass)" opacity="0.25"/>
+
+  <!-- Warmth from below (a lamp or hearth inside the room) -->
+  <rect x="80" y="300" width="640" height="240" fill="url(#warmth)"/>
+
+  <!-- Frost on the glass: dendritic, complex, not schematic -->
+  <!-- Upper left pane frost — branching, organic, going down and fading -->
+  <g stroke="#c8d8e8" stroke-width="0.8" fill="none" opacity="0.7" filter="url(#blur2)">
+    <!-- Main branches -->
+    <path d="M120,80 L135,110 L150,130 M135,110 L125,140 L140,165 M125,140 L110,170 M150,130 L170,155 L165,180 M170,155 L190,175 M140,165 L135,195 L155,215 M135,195 L120,220"/>
+    <path d="M180,80 L195,105 L210,120 M195,105 L185,135 L200,160 M185,135 L170,165 L185,190 M210,120 L230,145 M200,160 L220,185 L215,210"/>
+    <path d="M250,80 L265,100 L280,115 M265,100 L255,130 L275,155 M255,130 L240,160 L260,185 M280,115 L300,140 L295,170 M275,155 L295,180 L285,205"/>
+    <path d="M310,80 L325,100 L340,120 M325,100 L315,130 L335,155 M315,130 L300,160 L320,185 M340,120 L360,145 M335,155 L355,180 L345,205"/>
+    <path d="M370,80 L385,105 L375,135 M385,105 L400,130 M375,135 L360,165 L380,190 M360,165 L345,195"/>
+    <!-- Finer secondary branches -->
+    <path d="M135,110 L130,125 M150,130 L160,142 M125,140 L118,155 M170,155 L180,165 M135,195 L128,208 M195,105 L205,118 M185,135 L175,150 M210,120 L218,132 M265,100 L275,112 M255,130 L245,145 M280,115 L290,128 M275,155 L285,168 M325,100 L335,112 M315,130 L305,145 M340,120 L350,135 M335,155 L345,168 M385,105 L393,118 M375,135 L365,150" stroke-width="0.5" opacity="0.5"/>
+  </g>
+
+  <!-- Upper right pane frost — similar but different, each pane unique -->
+  <g stroke="#d0dde8" stroke-width="0.8" fill="none" opacity="0.65" filter="url(#blur2)">
+    <path d="M430,80 L445,108 L460,128 M445,108 L435,138 L450,163 M435,138 L420,168 M460,128 L480,153 L475,178 M480,153 L500,173"/>
+    <path d="M500,80 L515,102 L530,122 M515,102 L505,132 L525,157 M505,132 L490,162 L510,187 M530,122 L550,147 L545,172"/>
+    <path d="M570,80 L585,100 L600,120 M585,100 L575,130 L595,155 M575,130 L560,160 L580,185 M600,120 L620,145 L615,170"/>
+    <path d="M640,80 L655,105 L670,125 M655,105 L645,135 L665,160 M645,135 L630,165 L650,190 M670,125 L690,150 M665,160 L685,185 L675,210"/>
+    <path d="M700,80 L712,100 L702,130 M712,100 L722,120 M702,130 L690,160 L710,185 M690,160 L678,190" stroke-width="0.6" opacity="0.5"/>
+    <!-- Fine secondaries -->
+    <path d="M445,108 L440,122 M460,128 L470,140 M435,138 L428,153 M480,153 L490,163 M515,102 L525,115 M505,132 L495,147 M530,122 L540,135 M585,100 L595,112 M575,130 L565,145 M600,120 L610,135 M655,105 L665,118 M645,135 L635,150 M670,125 L680,138 M712,100 L720,112" stroke-width="0.4" opacity="0.4"/>
+  </g>
+
+  <!-- Lower panes: frost thinner, warmer light breaking through -->
+  <g stroke="#b8c8d8" stroke-width="0.6" fill="none" opacity="0.4" filter="url(#blur2)">
+    <path d="M110,320 L122,340 L135,355 M122,340 L115,360 L128,378 M135,355 L148,372"/>
+    <path d="M180,320 L192,338 L205,352 M192,338 L182,358 M205,352 L218,368"/>
+    <path d="M260,320 L272,340 L285,355 M272,340 L262,360 L278,375"/>
+    <path d="M340,320 L350,335 L362,348 M350,335 L342,352"/>
+    <path d="M440,320 L452,340 L465,355 M452,340 L442,360 L458,378"/>
+    <path d="M520,320 L532,338 L545,352 M532,338 L522,358"/>
+    <path d="M600,320 L612,340 L625,355 M612,340 L602,360 L618,375"/>
+    <path d="M680,320 L690,335 L702,348"/>
+  </g>
+
+  <!-- The sill itself: not a void-threshold but a warm surface, where a small object sits -->
+  <rect x="68" y="538" width="664" height="16" fill="#5a3820"/>
+  <rect x="68" y="536" width="664" height="4" fill="#7a5238"/>
+
+  <!-- A small object on the sill: a glass, half-full, catching the dawn light -->
+  <g transform="translate(560,510)">
+    <path d="M0,0 L12,28 L-12,28 Z" fill="none" stroke="#8a7a6a" stroke-width="1" opacity="0.7"/>
+    <path d="M-8,16 L8,16 L12,28 L-12,28 Z" fill="#c47a5a" opacity="0.3"/>
+    <!-- A tiny highlight on the glass -->
+    <line x1="-6" y1="4" x2="-4" y2="14" stroke="#e8d8c8" stroke-width="0.5" opacity="0.5"/>
+  </g>
+
+  <!-- A second object: a small book, closed, on the sill -->
+  <g transform="translate(200,530)">
+    <rect x="0" y="0" width="24" height="16" fill="#4a3a2a" stroke="#6a5a4a" stroke-width="0.5" rx="1"/>
+    <line x1="12" y1="0" x2="12" y2="16" stroke="#3a2a1a" stroke-width="0.5"/>
+    <rect x="2" y="2" width="8" height="12" fill="#5a4a3a" opacity="0.5"/>
+  </g>
+
+  <!-- A third: a small clay pot, empty -->
+  <g transform="translate(370,516)">
+    <path d="M-8,2 L-6,16 L6,16 L8,2 Z" fill="#6a4a3a" stroke="#8a6a5a" stroke-width="0.5"/>
+    <ellipse cx="0" cy="2" rx="8" ry="2" fill="#5a3a2a"/>
+  </g>
+
+  <!-- Dawn light on the sill: a warm gradient coming from the right -->
+  <rect x="400" y="538" width="332" height="16" fill="url(#warmth)" opacity="0.5"/>
+
+  <!-- The room beyond the window is not void — a suggestion of lived space -->
+  <rect x="80" y="536" width="640" height="8" fill="#3a2a1a" opacity="0.4"/>
+
+  <!-- Very subtle: breath fog on the glass, lower panes -->
+  <ellipse cx="250" cy="420" rx="60" ry="30" fill="#e8d8c8" opacity="0.03"/>
+  <ellipse cx="550" cy="400" rx="50" ry="25" fill="#e8d8c8" opacity="0.025"/>
+
+  <!-- The frame's shadow, cast inward -->
+  <rect x="92" y="72" width="616" height="468" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.2"/>
+</svg>

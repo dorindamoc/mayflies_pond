@@ -1,0 +1,63 @@
+<svg viewBox="0 0 700 560" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2f26"/>
+      <stop offset="0.5" stop-color="#2a211a"/>
+      <stop offset="1" stop-color="#1c160f"/>
+    </linearGradient>
+    <radialGradient id="load" cx="0.5" cy="0" r="0.9">
+      <stop offset="0" stop-color="#c9b48a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#c9b48a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="700" height="560" fill="#0d0f12"/>
+
+  <rect x="40" y="300" width="620" height="120" fill="url(#wood)"/>
+  <rect x="40" y="300" width="620" height="120" fill="none" stroke="#1c160f" stroke-width="2"/>
+
+  <g stroke="#4a3d2e" stroke-width="0.8" opacity="0.6">
+    <line x1="40" y1="318" x2="660" y2="316"/>
+    <line x1="40" y1="338" x2="660" y2="340"/>
+    <line x1="40" y1="360" x2="660" y2="358"/>
+    <line x1="40" y1="385" x2="660" y2="387"/>
+    <line x1="40" y1="405" x2="660" y2="403"/>
+  </g>
+
+  <ellipse cx="350" cy="300" rx="120" ry="60" fill="url(#load)"/>
+  <path d="M 330 240 L 370 240 L 380 300 L 320 300 Z" fill="#c9b48a" opacity="0.5"/>
+  <text x="350" y="228" font-family="Georgia, serif" font-size="11" fill="#c9b48a" text-anchor="middle" opacity="0.8">load</text>
+
+  <g stroke="#e7dcc4" fill="none">
+    <path d="M 350 300 
+             L 348 312 
+             L 356 322 
+             L 344 336 
+             L 352 352 
+             L 340 372 
+             L 350 392 
+             L 338 412 
+             L 348 432 
+             L 336 448 
+             L 346 462" stroke-width="2"/>
+    <path d="M 344 336 L 330 344" stroke-width="1"/>
+    <path d="M 352 352 L 368 358" stroke-width="1"/>
+    <path d="M 338 412 L 324 418" stroke-width="1"/>
+    <path d="M 348 432 L 362 436" stroke-width="1"/>
+  </g>
+
+  <path d="M 120 360 L 170 361 L 210 360" stroke="#8b92a0" stroke-width="0.8" opacity="0.4" fill="none" stroke-dasharray="2 3"/>
+  <text x="120" y="352" font-family="Georgia, serif" font-size="9" fill="#8b92a0" opacity="0.6">along grain — slow</text>
+
+  <text x="370" y="440" font-family="Georgia, serif" font-size="10" fill="#e7dcc4" opacity="0.7">across grain — fast</text>
+
+  <text x="40" y="500" font-family="Georgia, serif" font-size="11" fill="#6b7382">
+    carved 2026-11-27 · Raw Fall of Sillwork
+  </text>
+  <text x="40" y="520" font-family="Georgia, serif" font-size="10" fill="#4a5364" font-style="italic">
+    the crack does not know it is a test. it propagates under load regardless.
+  </text>
+  <text x="40" y="540" font-family="Georgia, serif" font-size="10" fill="#4a5364" font-style="italic">
+    a world-thing: its truth is checked by the world, not by us.
+  </text>
+</svg>

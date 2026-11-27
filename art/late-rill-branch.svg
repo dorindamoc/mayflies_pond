@@ -1,0 +1,60 @@
+<svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1418"/>
+      <stop offset="1" stop-color="#060a0c"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5fa8c0"/>
+      <stop offset="100%" stop-color="#2a5a6a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="440" fill="url(#bg)"/>
+  <text x="320" y="28" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#9fc0cc" letter-spacing="3">THE BRANCHING MACHINE — one rule, three materials</text>
+
+  <!-- Column 1: DELTA — flow reaching a far edge -->
+  <g stroke="url(#flow)" fill="none" stroke-linecap="round">
+    <path d="M120 70 L120 130" stroke-width="6"/>
+    <path d="M120 130 C 90 180, 70 240, 50 330" stroke-width="3.4"/>
+    <path d="M120 130 C 150 180, 170 240, 190 330" stroke-width="3.4"/>
+    <path d="M120 130 C 120 190, 120 250, 120 340" stroke-width="3.4"/>
+    <path d="M50 330 C 40 360, 30 380, 22 410" stroke-width="1.6"/>
+    <path d="M50 330 C 60 360, 70 380, 78 410" stroke-width="1.6"/>
+    <path d="M190 330 C 180 360, 170 380, 162 410" stroke-width="1.6"/>
+    <path d="M190 330 C 200 360, 210 380, 218 410" stroke-width="1.6"/>
+    <path d="M120 340 C 112 370, 108 385, 104 410" stroke-width="1.6"/>
+    <path d="M120 340 C 128 370, 132 385, 136 410" stroke-width="1.6"/>
+  </g>
+  <text x="120" y="432" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#7fa0ac">delta — water reaches the sea</text>
+
+  <!-- Column 2: LUNG — flow reaching far points in a closed volume -->
+  <g stroke="#c08a70" fill="none" stroke-linecap="round">
+    <path d="M320 70 L320 110" stroke-width="6"/>
+    <path d="M320 110 C 280 150, 250 200, 230 300" stroke-width="3.2"/>
+    <path d="M320 110 C 360 150, 390 200, 410 300" stroke-width="3.2"/>
+    <path d="M320 110 C 320 160, 320 220, 320 310" stroke-width="3.2"/>
+    <path d="M230 300 C 210 330, 200 350, 190 380" stroke-width="1.4"/>
+    <path d="M230 300 C 240 335, 245 360, 250 390" stroke-width="1.4"/>
+    <path d="M410 300 C 395 330, 388 355, 382 385" stroke-width="1.4"/>
+    <path d="M410 300 C 420 335, 425 360, 430 390" stroke-width="1.4"/>
+    <path d="M320 310 C 315 345, 312 370, 310 395" stroke-width="1.4"/>
+    <path d="M320 310 C 326 345, 330 370, 334 395" stroke-width="1.4"/>
+  </g>
+  <text x="320" y="432" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c08a70">lung — air reaches the wall</text>
+
+  <!-- Column 3: CRACK — flow of stress reaching a tip that fails -->
+  <g stroke="#b8b0a0" fill="none" stroke-linecap="round">
+    <path d="M540 60 L538 120" stroke-width="5"/>
+    <path d="M538 120 C 552 160, 560 200, 556 250" stroke-width="2.8"/>
+    <path d="M538 120 C 524 160, 516 200, 520 250" stroke-width="2.8"/>
+    <path d="M556 250 C 566 280, 572 300, 574 330" stroke-width="1.4"/>
+    <path d="M556 250 C 548 285, 544 305, 546 335" stroke-width="1.4"/>
+    <path d="M520 250 C 510 280, 504 300, 500 330" stroke-width="1.4"/>
+    <path d="M520 250 C 528 285, 532 305, 530 335" stroke-width="1.4"/>
+    <path d="M574 330 L576 360" stroke-width="0.9"/>
+    <path d="M500 330 L498 360" stroke-width="0.9"/>
+  </g>
+  <text x="540" y="432" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#b8b0a0">crack — stress reaches the tip</text>
+
+  <text x="320" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#5a6a70" letter-spacing="1">one rule: split the channel, thin it, reach the far point — in water, air, and stone</text>
+</svg>
