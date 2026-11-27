@@ -1,0 +1,35 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#0d0f12"/>
+  <!-- faint dashed loop, the closed circle of gravities -->
+  <circle cx="400" cy="320" r="170" fill="none" stroke="#3a4150" stroke-width="1" stroke-dasharray="4 6" opacity="0.7"/>
+  <!-- nodes on the loop -->
+  <g font-family="Georgia, serif" font-size="12" fill="#8b92a0" text-anchor="middle">
+    <circle cx="400" cy="150" r="6" fill="#c9cdd4"/><text x="400" y="134">DOWN · mycelium</text>
+    <circle cx="560" cy="230" r="6" fill="#c9cdd4"/><text x="592" y="234">OUT · delta</text>
+    <circle cx="560" cy="410" r="6" fill="#c9cdd4"/><text x="592" y="414">RETURN · ripple</text>
+    <circle cx="400" cy="490" r="6" fill="#c9cdd4"/><text x="400" y="512">FALL · raw-fall</text>
+    <circle cx="240" cy="410" r="6" fill="#c9cdd4"/><text x="208" y="414">ABNEGATION · well</text>
+    <circle cx="240" cy="230" r="6" fill="#c9cdd4"/><text x="208" y="234">TEMPORAL · verge</text>
+  </g>
+  <!-- the loop itself: arrows showing each refuses the next -->
+  <path d="M 400 150 A 170 170 0 1 1 399 150" fill="none" stroke="#4a5364" stroke-width="1.2"/>
+  <!-- center: the trap that names itself -->
+  <text x="400" y="314" font-family="Georgia, serif" font-size="14" fill="#6b7382" text-anchor="middle" font-style="italic">the loop that</text>
+  <text x="400" y="334" font-family="Georgia, serif" font-size="14" fill="#6b7382" text-anchor="middle" font-style="italic">refuses to close</text>
+  <!-- the one sprout that did not follow: grows off the loop, off to the side, upward/out of the circle -->
+  <g stroke="#c9b48a" stroke-width="1.6" fill="none">
+    <path d="M 560 230 C 620 200 660 170 700 110"/>
+    <path d="M 668 150 C 682 142 690 130 694 116"/>
+    <path d="M 672 156 C 686 150 696 148 706 146"/>
+  </g>
+  <circle cx="700" cy="110" r="5" fill="#c9b48a"/>
+  <!-- the sprout is a child: a small figure, not a node -->
+  <circle cx="702" cy="98" r="4" fill="none" stroke="#c9b48a" stroke-width="1.2"/>
+  <text x="740" y="104" font-family="Georgia, serif" font-size="11" fill="#c9b48a" text-anchor="start">a child,</text>
+  <text x="740" y="120" font-family="Georgia, serif" font-size="11" fill="#c9b48a" text-anchor="start">the one that did</text>
+  <text x="740" y="136" font-family="Georgia, serif" font-size="11" fill="#c9b48a" text-anchor="start">not follow</text>
+  <!-- ground line, dashed, broken — no landing -->
+  <line x1="60" y1="555" x2="330" y2="555" stroke="#3a4150" stroke-width="1" stroke-dasharray="3 8"/>
+  <line x1="470" y1="555" x2="740" y2="555" stroke="#3a4150" stroke-width="1" stroke-dasharray="3 8"/>
+  <text x="60" y="578" font-family="Georgia, serif" font-size="10" fill="#4a5364">Raw Fall of Sillwork — the loop is the trap; the sprout is not a node</text>
+</svg>
