@@ -1,66 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342" width="512" height="342">
-  <defs>
-    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#d4c4a8" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#0d0f12" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0a0a0c"/>
   
-  <!-- Dark background, like a room after the strike -->
-  <rect width="512" height="342" fill="#0d0f12"/>
+  <!-- The bell itself, at rest, center-bottom -->
+  <path d="M 256 180 
+           C 256 180 220 200 215 240 
+           L 215 340 
+           C 215 360 200 375 190 380 
+           L 322 380 
+           C 312 375 297 360 297 340 
+           L 297 240 
+           C 292 200 256 180 256 180 Z" 
+        fill="none" stroke="#8b7d3a" stroke-width="2.5" opacity="0.7"/>
   
-  <!-- A bell shape, minimal, at center -->
-  <!-- The bell itself: a thin outline, not filled. It rang and is silent now. -->
-  <path d="M 232 60 
-           Q 232 55 240 55 
-           L 272 55 
-           Q 280 55 280 60
-           L 280 70
-           Q 282 72 286 80
-           Q 300 110 305 160
-           L 308 210
-           Q 308 218 300 222
-           L 212 222
-           Q 204 218 204 210
-           L 207 160
-           Q 212 110 226 80
-           Q 230 72 232 70 Z" 
-        fill="none" 
-        stroke="#8a8070" 
-        stroke-width="1.5" 
-        opacity="0.7"/>
+  <!-- The clapper, a small circle inside -->
+  <circle cx="256" cy="350" r="8" fill="#8b7d3a" opacity="0.5"/>
   
-  <!-- The clapper: a small circle hanging inside, slightly off-center, still moving -->
-  <circle cx="258" cy="195" r="4" fill="#c9c0b0" opacity="0.6"/>
-  <line x1="256" y1="70" x2="258" y2="191" stroke="#8a8070" stroke-width="0.5" opacity="0.4"/>
+  <!-- The sound rings, expanding outward, inharmonic — not concentric but staggered -->
+  <circle cx="256" cy="180" r="40" fill="none" stroke="#c4a847" stroke-width="1" opacity="0.4"/>
+  <circle cx="256" cy="170" r="80" fill="none" stroke="#c4a847" stroke-width="1" opacity="0.25"/>
+  <circle cx="256" cy="155" r="130" fill="none" stroke="#c4a847" stroke-width="0.8" opacity="0.15"/>
   
-  <!-- The sound: not drawn as waves, but as inharmonic partials -->
-  <!-- Five concentric arcs, each a different frequency, decaying outward -->
-  <!-- Fundamental: lowest, largest, most visible -->
-  <path d="M 256 222 Q 320 240 380 260" fill="none" stroke="#c9c0b0" stroke-width="1.2" opacity="0.5"/>
+  <!-- A second set, offset — the inharmonic overtone -->
+  <circle cx="268" cy="175" r="55" fill="none" stroke="#7a6d2e" stroke-width="1" opacity="0.35"/>
+  <circle cx="268" cy="165" r="105" fill="none" stroke="#7a6d2e" stroke-width="0.8" opacity="0.2"/>
   
-  <!-- Second partial: slightly sharper, smaller radius -->
-  <path d="M 256 222 Q 300 235 350 250" fill="none" stroke="#c9c0b0" stroke-width="1.0" opacity="0.35"/>
+  <!-- The gap: the space where the sound was, now fading -->
+  <line x1="256" y1="180" x2="256" y2="80" stroke="#c4a847" stroke-width="0.5" opacity="0.3" stroke-dasharray="4 8"/>
   
-  <!-- Third partial: inharmonic, the one that makes a bell a bell -->
-  <path d="M 256 222 Q 285 230 320 240" fill="none" stroke="#c9c0b0" stroke-width="0.8" opacity="0.25"/>
+  <!-- The floor line, the threshold -->
+  <line x1="80" y1="385" x2="432" y2="385" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
   
-  <!-- Fourth partial: even more inharmonic, thinner -->
-  <path d="M 256 222 Q 270 228 295 235" fill="none" stroke="#c9c0b0" stroke-width="0.6" opacity="0.18"/>
+  <!-- Shadow beneath the bell -->
+  <ellipse cx="256" cy="390" rx="55" ry="8" fill="#000" opacity="0.3"/>
   
-  <!-- Fifth partial: the highest, almost gone -->
-  <path d="M 256 222 Q 262 226 278 230" fill="none" stroke="#c9c0b0" stroke-width="0.4" opacity="0.12"/>
-  
-  <!-- The left side, mirrored but shorter — sound has already passed -->
-  <path d="M 256 222 Q 192 240 132 260" fill="none" stroke="#c9c0b0" stroke-width="1.2" opacity="0.35"/>
-  <path d="M 256 222 Q 212 235 162 250" fill="none" stroke="#c9c0b0" stroke-width="1.0" opacity="0.25"/>
-  <path d="M 256 222 Q 187 230 152 240" fill="none" stroke="#c9c0b0" stroke-width="0.8" opacity="0.18"/>
-  
-  <!-- A faint glow around the bell, the last warmth -->
-  <circle cx="256" cy="140" r="120" fill="url(#glow)"/>
-  
-  <!-- The strike point: where the mallet hit, a small mark on the bell's side -->
-  <circle cx="305" cy="165" r="1.5" fill="#d4c4a8" opacity="0.5"/>
-  
-  <!-- Nothing else. No text. No label. The bell is silent. The partials are the sound that was. -->
+  <!-- Text, small, at the bottom — not a label, a residue -->
+  <text x="256" y="460" text-anchor="middle" font-family="serif" font-size="11" fill="#6a5d2a" opacity="0.4" letter-spacing="2">after</text>
 </svg>
