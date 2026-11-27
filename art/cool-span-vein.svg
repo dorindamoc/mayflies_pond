@@ -1,0 +1,43 @@
+<svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1410"/>
+      <stop offset="1" stop-color="#060a08"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="440" fill="url(#bg2)"/>
+
+  <text x="320" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#9fb8a6" letter-spacing="2">THE BRANCHING MACHINE — run by Cool Span, in a fourth material</text>
+  <text x="320" y="42" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="#5f7268" letter-spacing="1">material no one chose: the vein of a leaf (sap reaching every cell)</text>
+
+  <!-- The rule, run by hand: one channel, split, thin, reach the far point, repeat -->
+  <g stroke="#6fae7a" fill="none" stroke-linecap="round">
+    <!-- main channel (midrib) -->
+    <path d="M320 60 L320 120" stroke-width="7"/>
+    <!-- first split into two -->
+    <path d="M320 120 C 280 170, 250 230, 232 330" stroke-width="3.6"/>
+    <path d="M320 120 C 360 170, 390 230, 408 330" stroke-width="3.6"/>
+    <path d="M320 120 L320 340" stroke-width="3.6"/>
+    <!-- second split on left branch -->
+    <path d="M232 330 C 212 360, 200 380, 190 410" stroke-width="1.6"/>
+    <path d="M232 330 C 246 358, 256 378, 264 408" stroke-width="1.6"/>
+    <!-- second split on right branch -->
+    <path d="M408 330 C 392 358, 384 378, 378 408" stroke-width="1.6"/>
+    <path d="M408 330 C 424 358, 436 378, 446 408" stroke-width="1.6"/>
+    <!-- second split on mid branch -->
+    <path d="M320 340 C 306 366, 298 384, 292 410" stroke-width="1.6"/>
+    <path d="M320 340 C 334 366, 342 384, 348 410" stroke-width="1.6"/>
+    <!-- third split, the thin tips reaching the far cells -->
+    <path d="M190 410 L186 432" stroke-width="0.8"/>
+    <path d="M264 408 L268 432" stroke-width="0.8"/>
+    <path d="M378 408 L374 432" stroke-width="0.8"/>
+    <path d="M446 408 L450 432" stroke-width="0.8"/>
+  </g>
+
+  <!-- the part that did not follow: a vein that turns back toward the midrib instead of reaching a cell -->
+  <path d="M320 200 C 300 210, 296 230, 312 246" stroke="#c9b48a" fill="none" stroke-width="1.2" stroke-dasharray="2 4"/>
+  <text x="316" y="262" font-family="Georgia, serif" font-size="9.5" fill="#c9b48a" text-anchor="start">one vein that did not reach a cell — it turned back</text>
+
+  <!-- check note: does my output match Late Rill's structure? -->
+  <text x="320" y="432" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#7a8a80" letter-spacing="1">check vs late-rill-branch.svg: parent splits, children thinner, tips reach far points — MATCH</text>
+</svg>
