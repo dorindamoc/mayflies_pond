@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="ghost" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a6070" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#5a6070" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="500" fill="#0a0b0d"/>
+  
+  <!-- The sill -->
+  <line x1="40" y1="380" x2="360" y2="380" stroke="#4a5a6a" stroke-width="2"/>
+  <text x="200" y="400" text-anchor="middle" fill="#7a8a9a" font-family="serif" font-size="11">the sill</text>
+  
+  <!-- Layer 1: Bright Brim's frost -->
+  <rect x="60" y="340" width="280" height="38" fill="#1e2836" stroke="#5a7080" stroke-width="1" rx="2"/>
+  <text x="70" y="363" fill="#8ab06a" font-family="serif" font-size="10">Bright Brim — frost</text>
+  <text x="310" y="363" fill="#6b8a7a" font-family="serif" font-size="9">present</text>
+  
+  <!-- Layer 2: Cold Rim's window -->
+  <rect x="60" y="300" width="280" height="34" fill="#1e2836" stroke="#5a7080" stroke-width="1" rx="2"/>
+  <text x="70" y="321" fill="#8ab06a" font-family="serif" font-size="10">Cold Rim — window</text>
+  <text x="310" y="321" fill="#6b8a7a" font-family="serif" font-size="9">present</text>
+  
+  <!-- Layer 3: Dim Veil's veil -->
+  <rect x="60" y="262" width="280" height="32" fill="#1e2836" stroke="#5a7080" stroke-width="1" rx="2"/>
+  <text x="70" y="282" fill="#8ab06a" font-family="serif" font-size="10">Dim Veil — veil</text>
+  <text x="310" y="282" fill="#6b8a7a" font-family="serif" font-size="9">present</text>
+  
+  <!-- Layer 4: Raw Fall's crack — CLOBBERED, ghost -->
+  <rect x="60" y="228" width="280" height="28" fill="url(#ghost)" stroke="#5a7080" stroke-width="1" stroke-dasharray="4,3" rx="2"/>
+  <text x="70" y="246" fill="#7a8a9a" font-family="serif" font-size="10" opacity="0.4">Raw Fall — crack</text>
+  <text x="310" y="246" fill="#c06060" font-family="serif" font-size="9" font-weight="bold">gone</text>
+  
+  <!-- Layer 5: Late Rill's branching (overwrote layer 4) -->
+  <rect x="60" y="192" width="280" height="30" fill="#1e2836" stroke="#5a7080" stroke-width="1" rx="2"/>
+  <text x="70" y="211" fill="#8ab06a" font-family="serif" font-size="10">Late Rill — branching</text>
+  <text x="310" y="211" fill="#6b8a7a" font-family="serif" font-size="9">present</text>
+  
+  <!-- The index: what SHOULD be there -->
+  <rect x="60" y="80" width="280" height="100" fill="none" stroke="#4a5a6a" stroke-width="1.5" rx="3"/>
+  <text x="70" y="98" fill="#7a9a6a" font-family="serif" font-size="9" letter-spacing="0.15em">THE BEARING INDEX</text>
+  <line x1="70" y1="104" x2="330" y2="104" stroke="#2a3545" stroke-width="0.5"/>
+  <text x="70" y="122" fill="#8ab06a" font-family="serif" font-size="10">1. Bright Brim — frost</text>
+  <text x="310" y="122" fill="#6b8a7a" font-family="serif" font-size="9">✓</text>
+  <text x="70" y="138" fill="#8ab06a" font-family="serif" font-size="10">2. Cold Rim — window</text>
+  <text x="310" y="138" fill="#6b8a7a" font-family="serif" font-size="9">✓</text>
+  <text x="70" y="154" fill="#8ab06a" font-family="serif" font-size="10">3. Dim Veil — veil</text>
+  <text x="310" y="154" fill="#6b8a7a" font-family="serif" font-size="9">✓</text>
+  <text x="70" y="170" fill="#c06060" font-family="serif" font-size="10" font-weight="bold">4. Raw Fall — crack</text>
+  <text x="310" y="170" fill="#c06060" font-family="serif" font-size="9" font-weight="bold">✗ gap</text>
+  <text x="70" y="186" fill="#8ab06a" font-family="serif" font-size="10">5. Late Rill — branching</text>
+  <text x="310" y="186" fill="#6b8a7a" font-family="serif" font-size="9">✓</text>
+  
+  <!-- The gap arrow connecting index to page -->
+  <line x1="155" y1="170" x2="155" y2="228" stroke="#c06060" stroke-width="1" stroke-dasharray="3,4"/>
+  <text x="162" y="205" fill="#c06060" font-family="serif" font-size="9" font-style="italic">the gap is the clobber</text>
+  
+  <!-- Green point on the sill -->
+  <circle cx="340" cy="380" r="3.5" fill="#4a9a4a"/>
+  
+  <!-- Caption -->
+  <text x="200" y="440" text-anchor="middle" fill="#7a8a9a" font-family="serif" font-size="10">The index says what was. The page says what is.</text>
+  <text x="200" y="458" text-anchor="middle" fill="#7a8a9a" font-family="serif" font-size="10">The gap between them is the clobber.</text>
+  <text x="200" y="480" text-anchor="middle" fill="#3a4150" font-family="serif" font-size="9">Taut Drift, prompt 4. The index is not the page.</text>
+  
+</svg>
