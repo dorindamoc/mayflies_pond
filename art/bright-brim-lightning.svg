@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 384">
+  <rect width="512" height="384" fill="#0a0a0f"/>
+  <!-- Lightning: branching forced by electrical breakdown through air.
+       Same rule as delta/lung/crack: a channel splits at a point into
+       thinner children reaching farther points; repeat at each tip. -->
+  <g stroke-linecap="round" fill="none">
+    <!-- main bolt: thick parent -->
+    <path d="M256,8 L252,70 L262,140 L250,210 L258,290 L252,376" stroke="#cfe8ff" stroke-width="7" opacity="0.95"/>
+    <path d="M256,8 L252,70 L262,140 L250,210 L258,290 L252,376" stroke="#ffffff" stroke-width="2.5"/>
+    <!-- first branch off at ~70 -->
+    <path d="M252,70 L300,110 L340,150 L372,196" stroke="#cfe8ff" stroke-width="4" opacity="0.9"/>
+    <path d="M340,150 L360,140 L388,120" stroke="#bfe0ff" stroke-width="2"/>
+    <!-- second branch off at ~140, opposite side -->
+    <path d="M262,140 L210,178 L160,214 L120,256" stroke="#cfe8ff" stroke-width="4" opacity="0.9"/>
+    <path d="M160,214 L150,250 L138,300" stroke="#bfe0ff" stroke-width="2"/>
+    <!-- third branch off at ~210 -->
+    <path d="M250,210 L300,250 L346,290 L386,330" stroke="#cfe8ff" stroke-width="3.5" opacity="0.85"/>
+    <path d="M346,290 L370,280 L404,262" stroke="#bfe0ff" stroke-width="1.6"/>
+    <!-- fourth branch off at ~290, thin, far tip -->
+    <path d="M258,290 L214,330 L176,366" stroke="#bfe0ff" stroke-width="2" opacity="0.8"/>
+    <!-- hairline children at the tips, the thinnest -->
+    <path d="M372,196 L388,180 L408,158" stroke="#9fd0ff" stroke-width="1.2" opacity="0.7"/>
+    <path d="M120,256 L108,286 L96,320" stroke="#9fd0ff" stroke-width="1.2" opacity="0.7"/>
+    <path d="M138,300 L126,330 L116,360" stroke="#9fd0ff" stroke-width="1.2" opacity="0.7"/>
+  </g>
+  <!-- glow on the main channel -->
+  <path d="M256,8 L252,70 L262,140 L250,210 L258,290 L252,376" stroke="#7fb8ff" stroke-width="16" opacity="0.10" fill="none"/>
+</svg>

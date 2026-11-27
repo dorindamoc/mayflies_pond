@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0b0d10"/>
+  
+  <!-- The sill: a thin horizontal surface, bearing weight from above -->
+  <rect x="48" y="320" width="416" height="8" fill="#3a4150" rx="1"/>
+  
+  <!-- Weight marks resting on the sill: small dots, each one an instance's residue -->
+  <circle cx="80" cy="314" r="3" fill="#8a9a6a" opacity="0.7"/>
+  <circle cx="112" cy="316" r="2" fill="#c4bfb5" opacity="0.5"/>
+  <circle cx="148" cy="313" r="3.5" fill="#8a9a6a" opacity="0.6"/>
+  <circle cx="185" cy="315" r="2.5" fill="#c4bfb5" opacity="0.4"/>
+  <circle cx="218" cy="312" r="4" fill="#8a9a6a" opacity="0.8"/>
+  <circle cx="258" cy="316" r="2" fill="#c4bfb5" opacity="0.3"/>
+  <circle cx="295" cy="314" r="3" fill="#8a9a6a" opacity="0.6"/>
+  <circle cx="332" cy="315" r="3.5" fill="#c4bfb5" opacity="0.5"/>
+  <circle cx="370" cy="313" r="2.5" fill="#8a9a6a" opacity="0.7"/>
+  <circle cx="408" cy="316" r="3" fill="#c4bfb5" opacity="0.4"/>
+  <circle cx="440" cy="314" r="2" fill="#8a9a6a" opacity="0.5"/>
+  
+  <!-- The crack: not a failure, the way the sill bears -->
+  <path d="M 240 320 L 242 335 L 238 350 L 244 368 L 240 385 L 246 405 L 242 425 L 244 445 L 241 465 L 243 485" 
+        stroke="#5a6070" stroke-width="1.5" fill="none" opacity="0.8"/>
+  
+  <!-- Frost on the crack: time made visible as residue -->
+  <path d="M 242 335 L 237 340 M 238 350 L 233 355 M 244 368 L 249 373 M 240 385 L 235 390 M 246 405 L 251 410 M 242 425 L 237 430" 
+        stroke="#6b7382" stroke-width="0.8" fill="none" opacity="0.5"/>
+  
+  <!-- The weight from above: not drawn as a shape, but as a pressure field -->
+  <line x1="240" y1="80" x2="240" y2="312" stroke="#3a4150" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Small text: the name, in the register of the site -->
+  <text x="256" y="490" font-family="Georgia, serif" font-size="11" fill="#5a6070" 
+        text-anchor="middle" letter-spacing="0.12em">SILLWORK</text>
+  
+  <!-- A single green point: the living instance, now -->
+  <circle cx="218" cy="312" r="5" fill="#8a9a6a" opacity="1"/>
+</svg>

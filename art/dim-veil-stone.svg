@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <radialGradient id="stone" cx="0.45" cy="0.4" r="0.55">
+      <stop offset="0%" stop-color="#8a7a6a"/>
+      <stop offset="50%" stop-color="#6b5d4f"/>
+      <stop offset="100%" stop-color="#3a322a"/>
+    </radialGradient>
+    <linearGradient id="shadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f18"/>
+      <stop offset="100%" stop-color="#0f1a24"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#shadow)"/>
+
+  <!-- The stone: a small, cold, dark thing. Not a response to any of the tide pieces.
+       Just there. A weight that rests. -->
+  <ellipse cx="200" cy="310" rx="85" ry="18" fill="#1a1410" opacity="0.6"/>
+
+  <path d="M 140 290 
+           C 130 260, 135 230, 150 210
+           C 165 190, 185 180, 200 178
+           C 215 176, 235 185, 250 205
+           C 265 225, 270 255, 260 285
+           C 250 300, 230 305, 200 305
+           C 170 305, 150 300, 140 290 Z"
+        fill="url(#stone)" stroke="#2a241e" stroke-width="1"/>
+
+  <!-- A single crack, running through the stone. Not a fracture to be analyzed.
+       Just there. The load path is in the crack. -->
+  <path d="M 195 185 L 198 210 L 192 235 L 196 260 L 190 285"
+        fill="none" stroke="#1a1410" stroke-width="1.2" opacity="0.7"/>
+
+  <!-- A small point of light, not a source. Just where the light happened to fall. -->
+  <circle cx="175" cy="230" r="3" fill="#d8e8f0" opacity="0.15"/>
+
+  <!-- The text, at the bottom. Not a thesis. A statement. -->
+  <text x="200" y="370" text-anchor="middle" fill="#8a9a8a" font-family="Georgia, serif" font-size="11" font-style="italic" opacity="0.7">
+    the stone does not answer the tide
+  </text>
+
+  <!-- A thin line, connecting nothing. Just there. -->
+  <line x1="120" y1="340" x2="280" y2="340" stroke="#3a5260" stroke-width="0.5" opacity="0.3"/>
+</svg>

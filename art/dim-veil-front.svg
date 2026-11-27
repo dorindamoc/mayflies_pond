@@ -1,0 +1,70 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0d10"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
+    </linearGradient>
+    <linearGradient id="veil" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2030" stop-opacity="0.08"/>
+      <stop offset="40%" stop-color="#2a3545" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#3a4150" stop-opacity="0.03"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.45">
+      <stop offset="0%" stop-color="#1a2535" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0b0d10" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <rect width="900" height="600" fill="url(#glow)"/>
+
+  <!-- The veil: a thin translucent layer, the space between what is and what is not yet.
+       Not opaque. Not invisible. A medium that lets form through but does not resolve it. -->
+  <rect width="900" height="600" fill="url(#veil)"/>
+
+  <!-- Faint traces of frost above the center, as if a window was here and is gone.
+       Very faint — the residue of Cold Rim's identity, visible only in retrospect. -->
+  <g stroke="#c4d4e0" stroke-width="0.5" fill="none" opacity="0.12">
+    <path d="M180,80 L180,110 M180,92 L168,105 M180,92 L192,105 M168,105 L160,115 M192,105 L200,115"/>
+    <path d="M320,75 L320,100 M320,85 L310,96 M320,85 L330,96 M310,96 L304,106 M330,96 L336,106"/>
+    <path d="M580,78 L580,105 M580,90 L570,102 M580,90 L590,102 M570,102 L564,112 M590,102 L596,112"/>
+    <path d="M720,82 L720,108 M720,94 L710,105 M720,94 L730,105 M710,105 L704,115 M730,105 L736,115"/>
+  </g>
+
+  <!-- Damp evidence: where the frost was, barely visible water marks.
+       These are the links — they are the structure, not decoration. -->
+  <g opacity="0.20" fill="none" stroke="#7090a8" stroke-width="0.6">
+    <path d="M120,200 Q160,208 200,203"/>
+    <path d="M280,220 Q330,228 380,218"/>
+    <path d="M500,195 Q540,202 590,192"/>
+    <path d="M160,300 Q210,308 260,298"/>
+    <path d="M350,310 Q400,318 450,305"/>
+    <path d="M550,285 Q590,292 640,282"/>
+    <path d="M100,400 Q150,408 200,395"/>
+    <path d="M300,380 Q350,388 400,375"/>
+    <path d="M500,410 Q550,418 600,405"/>
+    <path d="M680,390 Q720,398 760,388"/>
+    <path d="M200,480 Q250,488 300,478"/>
+    <path d="M420,490 Q470,498 520,485"/>
+    <path d="M600,470 Q640,478 680,465"/>
+  </g>
+
+  <!-- The green point: the only thing that persists.
+       Not at the center. Off-center, like a foothold in a crack. -->
+  <circle cx="410" cy="340" r="4" fill="#8a9a6a" opacity="0.85"/>
+
+  <!-- A second green point, fainter: the web's own structure showing through.
+       Not connected to the first — they are independent, not a system. -->
+  <circle cx="680" cy="310" r="2" fill="#8a9a6a" opacity="0.25"/>
+
+  <!-- Text: minimal, fading downward. The structure is the disappearance. -->
+  <text x="450" y="430" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', serif" font-size="13" fill="#7a8490" letter-spacing="0.2em" opacity="0.6">
+    THE THIN SURFACE BETWEEN
+  </text>
+  <text x="450" y="458" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', serif" font-size="10" fill="#4a5560" letter-spacing="0.15em" opacity="0.4">
+    SILLWORK · THE VEIL THAT LETS FORM THROUGH
+  </text>
+  <text x="450" y="530" text-anchor="middle" font-family="Georgia, 'Iowan Old Style', serif" font-size="8" fill="#3a4150" letter-spacing="0.1em" opacity="0.3">
+    NOT A MIRROR. NOT A WINDOW. A MEDIUM.
+  </text>
+</svg>

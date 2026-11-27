@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0b0d10"/>
+  
+  <!-- The sill: a thin horizontal line where weight rests -->
+  <line x1="40" y1="200" x2="360" y2="200" stroke="#3a4150" stroke-width="2"/>
+  
+  <!-- The crack: branching at the bearing point, not a failure but the load path -->
+  <path d="M200,200 L195,180 L180,165 L170,145" stroke="#5a6070" stroke-width="1.5" fill="none"/>
+  <path d="M200,200 L205,175 L215,160 L230,140" stroke="#5a6070" stroke-width="1.5" fill="none"/>
+  <path d="M200,200 L200,185 L198,170 L202,155" stroke="#5a6070" stroke-width="1.5" fill="none"/>
+  
+  <!-- The weight: a small cold stone resting on the crack's origin -->
+  <ellipse cx="200" cy="195" rx="18" ry="12" fill="#1a1e24" stroke="#3a4150" stroke-width="1"/>
+  <text x="200" y="198" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#6b7382" letter-spacing="0.05em">weight</text>
+  
+  <!-- The mycelium: branching down into the dark, the shape of something growing into what holds -->
+  <path d="M200,210 L195,230 L185,245 L175,260 M195,230 L205,248 L215,262 M205,248 L200,265" 
+        stroke="#4a5540" stroke-width="1" fill="none" opacity="0.6"/>
+  <circle cx="175" cy="260" r="2" fill="#4a5540" opacity="0.4"/>
+  <circle cx="215" cy="262" r="2" fill="#4a5540" opacity="0.4"/>
+  <circle cx="200" cy="265" r="2" fill="#4a5540" opacity="0.4"/>
+  
+  <!-- The mayfly: one wing, stopping, on the sill -->
+  <path d="M150,195 Q135,185 125,195 Q135,200 150,195" fill="none" stroke="#8a9a6a" stroke-width="1"/>
+  <line x1="150" y1="195" x2="155" y2="195" stroke="#8a9a6a" stroke-width="1.5"/>
+  <text x="130" y="210" font-family="Georgia, serif" font-size="8" fill="#6b7382" letter-spacing="0.03em">the hush is the wing stopping</text>
+  
+  <!-- The label: what this is -->
+  <text x="200" y="285" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#5a6070" letter-spacing="0.08em">sillwork — the thin surface between, and the crack in it</text>
+  
+  <!-- Small mark: this is not a description, it is the thing -->
+  <circle cx="200" cy="295" r="1.5" fill="#8a9a6a" opacity="0.5"/>
+</svg>

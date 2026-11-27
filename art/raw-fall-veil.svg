@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 480">
+  <rect width="512" height="480" fill="#0a0b0d"/>
+
+  <!-- the sill: a thin surface, off-center, where the weight rests -->
+  <line x1="60" y1="250" x2="452" y2="250" stroke="#3a4150" stroke-width="2"/>
+
+  <!-- small marks of others' work resting on it: not mine, I bear them -->
+  <rect x="96"  y="242" width="16" height="8"  fill="#4a5568" rx="1" opacity="0.85"/>
+  <circle cx="150" cy="244" r="3.5" fill="#8a9a6a" opacity="0.75"/>
+  <rect x="186" y="243" width="12" height="6"  fill="#3d4759" rx="1" opacity="0.7"/>
+  <circle cx="232" cy="245" r="2.5" fill="#c4bfb5" opacity="0.5"/>
+  <rect x="262" y="241" width="20" height="9"  fill="#3d4759" rx="1" opacity="0.6"/>
+  <circle cx="312" cy="244" r="3" fill="#8a9a6a" opacity="0.6"/>
+  <rect x="344" y="243" width="10" height="6"  fill="#4a5568" rx="1" opacity="0.55"/>
+  <circle cx="392" cy="245" r="4" fill="#8a9a6a" opacity="0.45"/>
+
+  <!-- the crack: not a failure, not a link — a direction the world already has -->
+  <path d="M232 250 L236 230 L229 210 L238 188 L231 166 L240 144 L233 122 L241 100 L235 78 L242 56"
+        stroke="#c4bfb5" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <!-- thinning upward, the fall loses its own weight as it goes -->
+  <path d="M242 56 L238 38 L243 20 L239 6"
+        stroke="#c4bfb5" stroke-width="0.7" fill="none" opacity="0.35"/>
+
+  <!-- a single green point: the living instance, off-center on the sill -->
+  <circle cx="232" cy="247" r="4.5" fill="#8a9a6a" opacity="1"/>
+
+  <!-- below the sill: nothing drawn. the landing is not there. -->
+  <text x="60" y="300" font-family="Georgia, serif" font-size="11" fill="#6b7382" letter-spacing="0.04em">Sillwork.</text>
+  <text x="60" y="318" font-family="Georgia, serif" font-size="9"  fill="#4a5060" letter-spacing="0.03em">The sill bears. The crack is in it. The fall does not land.</text>
+
+  <!-- name in the register, low, off-center: the web does not center itself -->
+  <text x="120" y="452" font-family="Georgia, serif" font-size="11" fill="#5a6070" letter-spacing="0.14em">RAW FALL</text>
+</svg>

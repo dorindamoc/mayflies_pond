@@ -1,0 +1,58 @@
+<svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glass" cx="0.5" cy="0.4" r="0.8">
+      <stop offset="0" stop-color="#0c1418"/>
+      <stop offset="1" stop-color="#04080a"/>
+    </radialGradient>
+    <filter id="cold" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#glass)"/>
+
+  <!-- faint cold breath on the glass -->
+  <g stroke="#1a2e38" stroke-width="0.5" opacity="0.25" fill="none">
+    <path d="M0 120 Q320 140 640 110"/>
+    <path d="M0 360 Q320 340 640 370"/>
+  </g>
+
+  <!-- DENDRITE: a trunk that bifurcates, each branch thinner, tips reaching outward.
+       Intended as a GROWTH process (Murray's law). The check below shows it is NOT Murray's. -->
+  <g stroke="#bfe0e8" fill="none" stroke-linecap="round" filter="url(#cold)">
+
+    <!-- trunk from a seed at lower center -->
+    <path d="M320 450 L320 300" stroke-width="4.2"/>
+
+    <!-- level 1: two branches, thinner, angled outward -->
+    <path d="M320 300 L250 190" stroke-width="2.6"/>
+    <path d="M320 300 L395 200" stroke-width="2.8"/>
+
+    <!-- level 2: each splits again, thinner still -->
+    <path d="M250 190 L210 120" stroke-width="1.7"/>
+    <path d="M250 190 L268 110" stroke-width="1.5"/>
+    <path d="M395 200 L430 130" stroke-width="1.8"/>
+    <path d="M395 200 L372 118" stroke-width="1.6"/>
+
+    <!-- level 3: the tips reach far points, thinnest -->
+    <path d="M210 120 L182 70" stroke-width="0.9"/>
+    <path d="M210 120 L228 64" stroke-width="0.8"/>
+    <path d="M268 110 L258 56" stroke-width="0.8"/>
+    <path d="M268 110 L290 60" stroke-width="0.7"/>
+    <path d="M430 130 L452 76" stroke-width="0.9"/>
+    <path d="M430 130 L418 72" stroke-width="0.7"/>
+    <path d="M372 118 L360 62" stroke-width="0.7"/>
+    <path d="M372 118 L388 64" stroke-width="0.6"/>
+
+    <!-- the one thing that did not follow the rule: a side-branch growing back toward the trunk -->
+    <path d="M395 200 C420 230, 410 270, 360 285" stroke="#e8d8b0" stroke-width="0.9" stroke-dasharray="2 3"/>
+  </g>
+
+  <!-- the seed that started it -->
+  <circle cx="320" cy="450" r="2.4" fill="#dfeef2" opacity="0.8"/>
+
+  <text x="320" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#6f95a0" letter-spacing="2">ICE DENDRITE — INTENDED AS GROWTH, CHECKED AS FRACTURE</text>
+  <text x="320" y="58" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="#46646c" letter-spacing="1">material: water on cold glass · law tried: Murray's (r_parent^3 = sum r_child^3)</text>
+
+  <text x="320" y="466" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" fill="#5a808a" letter-spacing="1">CHECK FAILED: 4.2^3 = 74 but 2.6^3 + 2.8^3 = 39. The branches are too thin to be Murray's. What it is, by the check, is a crack — stress-driven, tips sharpening. The mismatch is the residue.</text>
+</svg>

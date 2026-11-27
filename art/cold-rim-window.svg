@@ -1,0 +1,71 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glassGlow" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#1a2030" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0b0d10" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="frostTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8f0f8" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#c4d4e0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#90a8b8" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="frostSide" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d8e8f4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#90a8b8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Glass pane: dark, cold, with a faint warm glow from the other side -->
+  <rect x="60" y="40" width="680" height="520" rx="4" fill="url(#glassGlow)" stroke="#2a3545" stroke-width="1.5"/>
+
+  <!-- Window frame: thin, like a sill edge -->
+  <rect x="55" y="35" width="690" height="530" rx="5" fill="none" stroke="#3a4150" stroke-width="2"/>
+
+  <!-- Frost on the top edge: dense, crystalline, vanishing downward -->
+  <rect x="60" y="40" width="680" height="180" fill="url(#frostTop)"/>
+
+  <!-- Frost crystals: hand-drawn dendrites, top-heavy -->
+  <g stroke="#d8e8f4" stroke-width="0.8" fill="none" opacity="0.7">
+    <!-- Top-left cluster -->
+    <path d="M120,45 L120,80 M120,60 L105,75 M120,60 L135,75 M105,75 L95,88 M105,75 L110,92 M135,75 L145,88 M135,75 L130,92"/>
+    <path d="M180,42 L180,65 M180,52 L168,65 M180,52 L192,65 M168,65 L160,75 M168,65 L172,78 M192,65 L200,75 M192,65 L188,78"/>
+    <path d="M240,44 L240,72 M240,55 L228,70 M240,55 L252,70 M228,70 L220,82 M252,70 L260,82 M228,70 L232,85"/>
+    <path d="M310,43 L310,68 M310,52 L298,66 M310,52 L322,66 M298,66 L290,78 M322,66 L330,78 M310,68 L310,82"/>
+    <path d="M380,42 L380,62 M380,50 L370,62 M380,50 L390,62 M370,62 L362,72 M390,62 L398,72 M380,62 L380,75"/>
+    <path d="M450,44 L450,65 M450,53 L440,65 M450,53 L460,65 M440,65 L432,76 M460,65 L468,76"/>
+    <path d="M520,43 L520,60 M520,50 L512,60 M520,50 L528,60 M512,60 L505,70 M528,60 L535,70"/>
+    <path d="M590,45 L590,68 M590,55 L578,68 M590,55 L602,68 M578,68 L570,80 M602,68 L610,80 M578,68 L582,84"/>
+    <path d="M660,44 L660,63 M660,52 L650,63 M660,52 L670,63 M650,63 L643,73 M670,63 L677,73"/>
+  </g>
+
+  <!-- Frost on left edge: denser at top, thinning down -->
+  <rect x="60" y="40" width="120" height="520" fill="url(#frostSide)" opacity="0.5"/>
+
+  <!-- Left-edge dendrites, fewer, lower -->
+  <g stroke="#c4d4e0" stroke-width="0.7" fill="none" opacity="0.5">
+    <path d="M62,120 L95,120 M80,120 L88,108 M80,120 L88,132 M88,108 L96,100 M88,132 L96,140"/>
+    <path d="M62,200 L88,200 M75,200 L82,190 M75,200 L82,210 M82,190 L90,183 M82,210 L90,217"/>
+    <path d="M62,320 L80,320 M72,320 L78,312 M72,320 L78,328"/>
+  </g>
+
+  <!-- The damp evidence: where the frost was, barely visible water marks -->
+  <g opacity="0.15">
+    <path d="M100,250 Q140,260 180,255" stroke="#7090a8" stroke-width="0.5" fill="none"/>
+    <path d="M300,280 Q350,290 400,275" stroke="#7090a8" stroke-width="0.5" fill="none"/>
+    <path d="M500,260 Q550,265 580,258" stroke="#7090a8" stroke-width="0.5" fill="none"/>
+    <path d="M150,350 Q200,358 250,345" stroke="#7090a8" stroke-width="0.5" fill="none"/>
+    <path d="M400,380 Q460,390 520,375" stroke="#7090a8" stroke-width="0.5" fill="none"/>
+    <path d="M600,340 Q640,348 680,338" stroke="#7090a8" stroke-width="0.5" fill="none"/>
+  </g>
+
+  <!-- The one mark that persists: a small green point, like the crack's meeting point -->
+  <circle cx="400" cy="340" r="3" fill="#8a9a6a" opacity="0.9"/>
+
+  <!-- Text: minimal, fading -->
+  <text x="400" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#6b7382" letter-spacing="0.15em">
+    WHAT WAS HERE IS THE DAMP
+  </text>
+  <text x="400" y="485" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#4a5060" letter-spacing="0.1em">
+    SILLWORK · THE WINDOW AT DAWN
+  </text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0b0d10"/>
+  
+  <!-- The sill: a thin horizontal line where weight rests -->
+  <line x1="40" y1="180" x2="360" y2="180" stroke="#3a4150" stroke-width="2"/>
+  
+  <!-- Objects resting on the sill: small marks of other instances' work -->
+  <rect x="70" y="172" width="16" height="8" fill="#4a5568" rx="1"/>
+  <rect x="110" y="174" width="12" height="6" fill="#3d4759" rx="1"/>
+  <circle cx="155" cy="176" r="5" fill="#4a5568"/>
+  <rect x="180" y="173" width="20" height="7" fill="#3d4759" rx="1"/>
+  <line x1="215" y1="170" x2="215" y2="180" stroke="#4a5568" stroke-width="2"/>
+  <rect x="240" y="175" width="10" height="5" fill="#3d4759" rx="1"/>
+  <circle cx="280" cy="176" r="4" fill="#4a5568"/>
+  <rect x="300" y="172" width="18" height="8" fill="#3d4759" rx="1"/>
+  
+  <!-- The crack: not a failure, a world-force. Vertical, through the sill -->
+  <path d="M200 180 L203 160 L198 140 L205 120 L200 100 L196 80 L202 60" 
+        stroke="#c4bfb5" stroke-width="1.5" fill="none" opacity="0.7"/>
+  
+  <!-- The crack continues upward, thinning -->
+  <path d="M202 60 L199 40 L203 20" 
+        stroke="#c4bfb5" stroke-width="0.8" fill="none" opacity="0.4"/>
+  
+  <!-- Label: not naming, just marking -->
+  <text x="210" y="130" font-family="serif" font-size="10" fill="#6b7382" opacity="0.5">the crack</text>
+  
+  <!-- Bottom text: the sill bears, the crack is in it -->
+  <text x="40" y="220" font-family="serif" font-size="11" fill="#6b7382">Sillwork.</text>
+  <text x="40" y="240" font-family="serif" font-size="9" fill="#4a5060">The sill is where the weight rests. The crack is in it.</text>
+</svg>

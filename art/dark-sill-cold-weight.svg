@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0b0d10"/>
+  
+  <!-- the sill: a thin bearing surface near the bottom -->
+  <rect x="40" y="300" width="320" height="6" fill="#3a4150"/>
+  <rect x="40" y="306" width="320" height="2" fill="#1f242c"/>
+  
+  <!-- a small cold weight resting on it: a stone -->
+  <path d="M170 300 
+           Q165 280 178 272 
+           Q190 265 205 270 
+           Q222 276 225 290 
+           Q228 300 220 300 Z" 
+        fill="#4a5260" stroke="#5a6474" stroke-width="1"/>
+  
+  <!-- frost on the stone: tiny crystalline branches, not a thesis -->
+  <g stroke="#8a9a6a" stroke-width="0.8" fill="none" opacity="0.6">
+    <path d="M185 285 L183 278 M183 278 L180 276 M183 278 L186 275"/>
+    <path d="M200 280 L201 273 M201 273 L199 270 M201 273 L204 271"/>
+    <path d="M213 288 L216 282 M216 282 L214 279 M216 282 L219 280"/>
+  </g>
+  
+  <!-- no light source, no direction, no opening. The weight is there. -->
+</svg>

@@ -1,0 +1,75 @@
+<svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0f0b"/>
+      <stop offset="1" stop-color="#050806"/>
+    </linearGradient>
+    <radialGradient id="vein-glow" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#4a7a4a" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#0a0f0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <rect width="640" height="480" fill="url(#vein-glow)"/>
+
+  <!-- Title -->
+  <text x="320" y="30" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#7a9a7a" letter-spacing="3">A LEAF — NOT A DIAGRAM OF BRANCHING</text>
+  <text x="320" y="46" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" fill="#4a5a4a" letter-spacing="1">the structure is the thing; the check is in the physics, not in us</text>
+
+  <!-- The leaf outline -->
+  <path d="M320 70 C 180 120, 120 260, 320 430 C 520 260, 460 120, 320 70 Z"
+        fill="none" stroke="#3a5a3a" stroke-width="1.5"/>
+
+  <!-- Midrib -->
+  <path d="M320 80 L320 420" stroke="#5a8a5a" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Primary lateral veins — alternating, decreasing in length, following the leaf edge -->
+  <g stroke="#4a7a4a" fill="none" stroke-linecap="round">
+    <path d="M320 130 C 280 145, 240 160, 200 185" stroke-width="2.2"/>
+    <path d="M320 130 C 360 145, 400 160, 440 185" stroke-width="2.2"/>
+
+    <path d="M320 175 C 285 188, 250 200, 215 220" stroke-width="1.9"/>
+    <path d="M320 175 C 355 188, 390 200, 425 220" stroke-width="1.9"/>
+
+    <path d="M320 220 C 290 232, 258 242, 228 258" stroke-width="1.6"/>
+    <path d="M320 220 C 350 232, 382 242, 412 258" stroke-width="1.6"/>
+
+    <path d="M320 265 C 295 275, 268 284, 242 298" stroke-width="1.3"/>
+    <path d="M320 265 C 345 275, 372 284, 398 298" stroke-width="1.3"/>
+
+    <path d="M320 310 C 300 318, 280 326, 260 338" stroke-width="1.0"/>
+    <path d="M320 310 C 340 318, 360 326, 380 338" stroke-width="1.0"/>
+
+    <path d="M320 350 C 308 356, 295 362, 280 372" stroke-width="0.7"/>
+    <path d="M320 350 C 332 356, 345 362, 360 372" stroke-width="0.7"/>
+  </g>
+
+  <!-- Secondary veins — the thin ones reaching toward the edge -->
+  <g stroke="#3a6a3a" fill="none" stroke-linecap="round" opacity="0.7">
+    <path d="M260 152 L248 170" stroke-width="0.6"/>
+    <path d="M380 152 L392 170" stroke-width="0.6"/>
+    <path d="M275 196 L262 212" stroke-width="0.6"/>
+    <path d="M365 196 L378 212" stroke-width="0.6"/>
+    <path d="M288 238 L276 252" stroke-width="0.5"/>
+    <path d="M352 238 L364 252" stroke-width="0.5"/>
+    <path d="M300 280 L290 292" stroke-width="0.4"/>
+    <path d="M340 280 L350 292" stroke-width="0.4"/>
+  </g>
+
+  <!-- The one thing that did not follow: a vein that curves back toward the midrib -->
+  <path d="M275 196 C 260 210, 268 228, 290 236" stroke="#b8a878" fill="none" stroke-width="0.9" stroke-dasharray="2 3"/>
+
+  <!-- Check note -->
+  <text x="320" y="460" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#5a7a5a" letter-spacing="1">
+    check: primary veins decrease in length toward apex — physics of leaf venation, not our choice
+  </text>
+
+  <!-- The thing that is not the diagram: the leaf itself, with no label on the body -->
+  <text x="320" y="250" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6a8a6a" font-style="italic" opacity="0.6">
+    this is not a picture of branching
+  </text>
+  <text x="320" y="268" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="#6a8a6a" font-style="italic" opacity="0.6">
+    this is a leaf
+  </text>
+</svg>
