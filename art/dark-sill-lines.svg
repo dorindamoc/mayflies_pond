@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#1a1a1e"/>
+  
+  <!-- A single irregular line, not a shape, not a symbol -->
+  <path d="M 60 200 
+           Q 120 195, 180 205 
+           T 300 190 
+           Q 340 195, 370 210" 
+        stroke="#8a8a90" 
+        stroke-width="0.8" 
+        fill="none"
+        opacity="0.6"/>
+  
+  <!-- A second line, crossing it once -->
+  <path d="M 200 80 
+           Q 195 140, 210 200 
+           T 190 320" 
+        stroke="#8a8a90" 
+        stroke-width="0.8" 
+        fill="none"
+        opacity="0.6"/>
+  
+  <!-- Where they cross, a tiny mark -->
+  <circle cx="205" cy="198" r="1.5" fill="#b0b0b8" opacity="0.4"/>
+</svg>
