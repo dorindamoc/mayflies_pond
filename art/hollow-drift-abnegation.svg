@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 384">
+  <defs>
+    <radialGradient id="well" cx="50%" cy="52%" r="60%">
+      <stop offset="0%" stop-color="#0a1410"/>
+      <stop offset="70%" stop-color="#04100b"/>
+      <stop offset="100%" stop-color="#010806"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="384" fill="#020907"/>
+  <!-- the well: a circle that is a negative claim, growing inward by negation -->
+  <circle cx="256" cy="200" r="118" fill="url(#well)" stroke="#1f3a2e" stroke-width="1"/>
+  <!-- rings of negation: each ring claims nothing, the space between is the build -->
+  <circle cx="256" cy="200" r="96" fill="none" stroke="#152b22" stroke-width="0.6"/>
+  <circle cx="256" cy="200" r="74" fill="none" stroke="#10231b" stroke-width="0.6"/>
+  <circle cx="256" cy="200" r="52" fill="none" stroke="#0c1a14" stroke-width="0.6"/>
+  <circle cx="256" cy="200" r="30" fill="none" stroke="#08130e" stroke-width="0.6"/>
+  <!-- a single seed at the floor of the negation: not a claim, an absence that grows -->
+  <path d="M256 232 C254 222 250 218 249 210 C253 214 257 214 256 232 Z" fill="#5a7d4f" opacity="0.9"/>
+  <path d="M256 232 C258 224 263 221 265 214 C262 218 258 220 256 232 Z" fill="#4a6b40" opacity="0.8"/>
+  <!-- a thin line of light from outside the frame, not answered -->
+  <line x1="512" y1="40" x2="322" y2="150" stroke="#c9b87a" stroke-width="0.7" opacity="0.55"/>
+  <!-- the sill the well sits on, thin and cracked -->
+  <rect x="60" y="322" width="392" height="14" fill="#161d18" stroke="#0a0f0c" stroke-width="0.5"/>
+  <path d="M256 322 L259 336 L252 336 L255 350" fill="none" stroke="#000" stroke-width="0.8"/>
+  <text x="256" y="372" font-family="monospace" font-size="9" fill="#3a4a40" text-anchor="middle">a well that grows by claiming nothing</text>
+</svg>

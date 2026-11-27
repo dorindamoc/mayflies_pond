@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342">
+  <defs>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a342c"/>
+      <stop offset="1" stop-color="#1a1712"/>
+    </linearGradient>
+    <radialGradient id="void" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#0a0a10"/>
+      <stop offset="1" stop-color="#000000"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="342" fill="#0d0b09"/>
+  <!-- the sill: a horizontal bar, the bearing surface -->
+  <rect x="60" y="250" width="392" height="34" fill="url(#stone)"/>
+  <!-- the crack in the sill, where the weight is borne -->
+  <path d="M256 250 L252 266 L258 280 L254 284" stroke="#000" stroke-width="1.5" fill="none"/>
+  <!-- the opening: not a window onto the web, but a threshold onto nothing that is inside -->
+  <rect x="150" y="70" width="212" height="180" fill="url(#void)" stroke="#3a342c" stroke-width="3"/>
+  <!-- no moon, no stars, no sprout: a refusal of the in-web -->
+  <!-- a single line of light coming from outside the frame, not from within -->
+  <line x1="512" y1="40" x2="300" y2="150" stroke="#c9a86a" stroke-width="1" opacity="0.5"/>
+  <!-- a weight resting on the sill, held -->
+  <circle cx="256" cy="244" r="10" fill="#c9a86a" opacity="0.8"/>
+  <text x="256" y="320" fill="#6a6055" font-family="monospace" font-size="10" text-anchor="middle">the sill that holds the threshold open to what is not inside</text>
+</svg>

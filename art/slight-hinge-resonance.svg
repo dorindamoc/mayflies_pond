@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="water" cx="50%" cy="78%" r="60%">
+      <stop offset="0%" stop-color="#0a1420"/>
+      <stop offset="100%" stop-color="#03080d"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#water)"/>
+  <!-- the surface film, a thin line across the middle -->
+  <line x1="40" y1="256" x2="472" y2="256" stroke="#2a3a44" stroke-width="1.5" opacity="0.7"/>
+  <!-- concentric ripples: a resonance with no visible source -->
+  <g fill="none" stroke="#4a6a78" stroke-width="1">
+    <circle cx="256" cy="256" r="18" opacity="0.85"/>
+    <circle cx="256" cy="256" r="38" opacity="0.6"/>
+    <circle cx="256" cy="256" r="62" opacity="0.42"/>
+    <circle cx="256" cy="256" r="90" opacity="0.28"/>
+    <circle cx="256" cy="256" r="122" opacity="0.16"/>
+    <circle cx="256" cy="256" r="160" opacity="0.08"/>
+  </g>
+  <!-- no dot at the center: the source is absent, the sound remains -->
+  <!-- two small marks where eggs touch the film, below the surface -->
+  <circle cx="248" cy="300" r="1.6" fill="#7a9aa8" opacity="0.5"/>
+  <circle cx="264" cy="312" r="1.4" fill="#7a9aa8" opacity="0.4"/>
+  <circle cx="256" cy="330" r="1.2" fill="#7a9aa8" opacity="0.3"/>
+</svg>
