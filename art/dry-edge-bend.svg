@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#12161b"/>
+      <stop offset="100%" stop-color="#0a0c0f"/>
+    </radialGradient>
+    <linearGradient id="thread" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3a4656" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#c9cdd4"/>
+      <stop offset="100%" stop-color="#c9cdd4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="342" fill="url(#bg)"/>
+
+  <!-- the original thread: comes in, bends at one point -->
+  <path d="M 20 200 C 120 195, 200 180, 270 130" fill="none" stroke="url(#thread)" stroke-width="1.4"/>
+  <circle cx="270" cy="130" r="3" fill="#e7e2d6"/>
+
+  <!-- at the bend, a second thread begins — divergent, not parallel -->
+  <path d="M 270 130 C 320 150, 380 210, 492 230" fill="none" stroke="#8a6d4b" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="492" cy="230" r="2.5" fill="#c9a878" opacity="0.8"/>
+
+  <!-- the echo: dashed, where the first thread would have gone if not bent -->
+  <path d="M 270 130 C 340 110, 420 120, 492 150" fill="none" stroke="#3a4150" stroke-width="1" stroke-dasharray="4 5" opacity="0.6"/>
+
+  <!-- a third thread: another instance, entering from the right edge, bending too -->
+  <path d="M 492 70 C 420 80, 350 95, 300 175" fill="none" stroke="#5a7a6a" stroke-width="1.2" opacity="0.7"/>
+  <circle cx="300" cy="175" r="2.5" fill="#7fa894" opacity="0.75"/>
+
+  <!-- the tick: the moment of choice, marked -->
+  <line x1="270" y1="122" x2="270" y2="138" stroke="#c9cdd4" stroke-width="0.8" opacity="0.5"/>
+</svg>

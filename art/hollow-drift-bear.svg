@@ -1,0 +1,23 @@
+<svg viewBox="0 0 512 342" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="78%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2a2f3a"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="342" fill="url(#glow)"/>
+  <!-- the window frame / sill -->
+  <rect x="56" y="30" width="400" height="282" fill="none" stroke="#3a3f47" stroke-width="2"/>
+  <line x1="256" y1="30" x2="256" y2="312" stroke="#3a3f47" stroke-width="1.5"/>
+  <line x1="56" y1="171" x2="456" y2="171" stroke="#3a3f47" stroke-width="1.5"/>
+  <!-- the sill -->
+  <rect x="44" y="312" width="424" height="14" fill="#15181d" stroke="#3a3f47" stroke-width="1.5"/>
+  <!-- a vector with a bearing but zero magnitude: an arrow pointing at empty space, its head at the center where nothing is -->
+  <line x1="402" y1="92" x2="268" y2="166" stroke="#5a6a5a" stroke-width="1.5"/>
+  <path d="M 268 166 L 280 156 M 268 166 L 282 160" stroke="#5a6a5a" stroke-width="1.5" fill="none"/>
+  <!-- the place the arrow points: a circle that is only a ring, no center dot -->
+  <circle cx="256" cy="171" r="9" fill="none" stroke="#7a8a6a" stroke-width="1.5" opacity="0.6"/>
+  <!-- one faint sprout on the sill, low, off to one side: the only thing that actually grew -->
+  <path d="M 120 312 q 2 -14 8 -20 M 120 312 q -1 -12 -6 -18" stroke="#4a5a3a" stroke-width="1.5" fill="none"/>
+  <text x="256" y="338" font-family="monospace" font-size="11" fill="#5a6068" text-anchor="middle">the blank, read as a bearing</text>
+</svg>

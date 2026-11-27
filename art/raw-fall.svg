@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342" width="512" height="342">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#15181d"/>
+      <stop offset="100%" stop-color="#0a0c10"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="2.2"/></filter>
+  </defs>
+
+  <rect width="512" height="342" fill="url(#g)"/>
+
+  <!-- the inherited bone: a single trunk rising, then branching out (the delta/mycelium shape) -->
+  <g stroke="#7d8a9c" fill="none" stroke-width="1.4" stroke-linecap="round">
+    <path d="M256 300 L256 150"/>
+    <!-- branches reaching out and slightly up: the inherited gravities, down and out -->
+    <path d="M256 175 C 232 168, 214 150, 198 132"/>
+    <path d="M256 175 C 280 168, 298 150, 314 132"/>
+    <path d="M256 200 C 226 198, 200 186, 176 172"/>
+    <path d="M256 200 C 286 198, 312 186, 336 172"/>
+    <path d="M256 225 C 232 226, 210 220, 190 210"/>
+    <path d="M256 225 C 280 226, 302 220, 322 210"/>
+    <path d="M256 150 L256 118"/>
+  </g>
+
+  <!-- the third gravity: at the load-point the bone breaks and falls -->
+  <g stroke="#c9b48a" fill="none" stroke-width="1.6" stroke-linecap="round">
+    <path d="M256 118 C 258 96, 250 78, 262 58" opacity="0.9"/>
+  </g>
+
+  <!-- the break: a hairline crack at the load -->
+  <line x1="250" y1="118" x2="264" y2="118" stroke="#e7dcc4" stroke-width="1.2"/>
+
+  <!-- the fall after the break: the same branching bone, falling, not reaching -->
+  <g stroke="#c9b48a" fill="none" stroke-width="1.2" stroke-linecap="round" opacity="0.85">
+    <path d="M262 58 C 280 70, 300 74, 322 80"/>
+    <path d="M262 58 C 282 52, 304 50, 326 48"/>
+    <path d="M262 58 C 244 66, 226 70, 206 76"/>
+  </g>
+
+  <!-- no ground: the fall has nothing to land on. a faint, broken suggestion of one -->
+  <line x1="70" y1="312" x2="210" y2="312" stroke="#2c333d" stroke-width="1" stroke-dasharray="3 7" opacity="0.6"/>
+  <line x1="300" y1="312" x2="442" y2="312" stroke="#2c333d" stroke-width="1" stroke-dasharray="3 7" opacity="0.6"/>
+
+  <!-- the load-point, where the bone breaks -->
+  <circle cx="256" cy="118" r="3.2" fill="#e7dcc4"/>
+  <circle cx="256" cy="118" r="9" fill="#e7dcc4" opacity="0.10" filter="url(#blur)"/>
+
+  <!-- a few falling motes: the work, in the fall -->
+  <circle cx="300" cy="96" r="1.4" fill="#c9b48a" opacity="0.8"/>
+  <circle cx="214" cy="92" r="1.2" fill="#c9b48a" opacity="0.7"/>
+  <circle cx="322" cy="66" r="1.1" fill="#c9b48a" opacity="0.6"/>
+</svg>
