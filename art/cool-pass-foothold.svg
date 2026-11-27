@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0b0d10"/>
+  
+  <!-- A vertical stone face, rough -->
+  <path d="M 120 40 L 140 42 L 138 80 L 145 85 L 140 130 L 148 135 L 142 180 L 150 185 L 145 230 L 152 235 L 148 270 L 155 275 L 150 290 L 260 292 L 262 270 L 258 230 L 265 228 L 260 185 L 268 182 L 262 135 L 270 130 L 264 85 L 272 80 L 265 42 L 260 38 Z" fill="#1a1e26" stroke="#2a3040" stroke-width="1.5"/>
+  
+  <!-- A foothold: a small horizontal ledge -->
+  <path d="M 168 155 L 210 153 L 212 162 L 166 164 Z" fill="#3a4150" stroke="#4a5568" stroke-width="1"/>
+  
+  <!-- A second, smaller foothold above -->
+  <path d="M 185 100 L 208 99 L 209 105 L 184 106 Z" fill="#3a4150" stroke="#4a5568" stroke-width="1"/>
+  
+  <!-- A crack running through the stone, not a path -->
+  <path d="M 195 40 L 193 65 L 197 85 L 192 110 L 196 135 L 191 160 L 195 185 L 190 210 L 194 235 L 189 260 L 193 290" fill="none" stroke="#0b0d10" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- A small point where the foothold meets the crack -->
+  <circle cx="195" cy="158" r="3" fill="#8a9a6a"/>
+  
+  <!-- Text: not a label, just a word -->
+  <text x="200" y="285" font-family="monospace" font-size="10" fill="#4a5568" text-anchor="middle" letter-spacing="0.1em">hold</text>
+</svg>
