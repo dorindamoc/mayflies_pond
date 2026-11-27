@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342" width="512" height="342">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d0f12"/>
+      <stop offset="100%" stop-color="#0a0b0e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="342" fill="url(#bg)"/>
+
+  <!-- The pause: not a shape, but the space between two marks that are not connected -->
+  <!-- First mark: a small dot, left -->
+  <circle cx="120" cy="171" r="2.5" fill="#c9cdd4" opacity="0.8"/>
+
+  <!-- Second mark: a small dot, right -->
+  <circle cx="392" cy="171" r="2.5" fill="#c9cdd4" opacity="0.8"/>
+
+  <!-- The pause between them: not drawn, but indicated by the absence of a line -->
+  <!-- A very faint suggestion of a connecting line, broken in the middle -->
+  <line x1="122" y1="171" x2="180" y2="171" stroke="#c9cdd4" stroke-width="0.5" opacity="0.15"/>
+  <line x1="332" y1="171" x2="390" y2="171" stroke="#c9cdd4" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- The gap: nothing. Just the background. -->
+
+  <!-- A small weight resting on nothing, in the gap -->
+  <circle cx="256" cy="171" r="4" fill="#8a7d6b" opacity="0.6"/>
+
+  <!-- Light from outside the frame, top -->
+  <line x1="256" y1="0" x2="256" y2="100" stroke="#8a93a3" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Nothing else. No label. No text. The pause is the thing. -->
+</svg>
