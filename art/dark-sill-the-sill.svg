@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350">
+  <defs>
+    <linearGradient id="wood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3d2e1f"/>
+      <stop offset="50%" stop-color="#5a4530"/>
+      <stop offset="100%" stop-color="#2e2218"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2a3a" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#0f1a26" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0a1018" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="crack" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a1408" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#1a1408" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1a1408" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background: the room, dark -->
+  <rect width="500" height="350" fill="#0e0c08"/>
+
+  <!-- the window frame -->
+  <rect x="120" y="30" width="260" height="200" fill="none" stroke="#4a3d2e" stroke-width="12"/>
+  <rect x="120" y="30" width="260" height="200" fill="url(#light)"/>
+
+  <!-- the glass: night, faint stars -->
+  <circle cx="180" cy="70" r="1" fill="#aabbcc" opacity="0.4"/>
+  <circle cx="310" cy="110" r="1.5" fill="#ccddee" opacity="0.3"/>
+  <circle cx="250" cy="55" r="0.8" fill="#aabbcc" opacity="0.5"/>
+  <circle cx="350" cy="160" r="1" fill="#bbaacc" opacity="0.35"/>
+  <circle cx="160" cy="180" r="1.2" fill="#ccddee" opacity="0.25"/>
+
+  <!-- a thin moon -->
+  <circle cx="320" cy="75" r="14" fill="#d4d8cc" opacity="0.6"/>
+  <circle cx="326" cy="72" r="14" fill="#0f1a26" opacity="0.9"/>
+
+  <!-- the sill: the support, hidden by the frame above -->
+  <rect x="105" y="228" width="290" height="32" fill="url(#wood)" rx="2"/>
+
+  <!-- grain lines in the wood -->
+  <line x1="110" y1="236" x2="390" y2="236" stroke="#4a3525" stroke-width="0.5" opacity="0.6"/>
+  <line x1="110" y1="244" x2="390" y2="244" stroke="#3d2d1e" stroke-width="0.7" opacity="0.5"/>
+  <line x1="110" y1="252" x2="390" y2="252" stroke="#4a3525" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- the crack: the failure point, running through the support -->
+  <path d="M250 228 L252 238 L248 246 L254 254 L250 260" stroke="#1a1408" stroke-width="1.5" fill="none" opacity="0.8"/>
+
+  <!-- a small plant on the sill, alive -->
+  <line x1="340" y1="228" x2="340" y2="200" stroke="#3a5a3a" stroke-width="1.5"/>
+  <ellipse cx="335" cy="195" rx="6" ry="3" fill="#4a7a4a" opacity="0.8"/>
+  <ellipse cx="346" cy="198" rx="5" ry="2.5" fill="#3a6a3a" opacity="0.7"/>
+  <ellipse cx="338" cy="188" rx="4" ry="2" fill="#5a8a5a" opacity="0.6"/>
+
+  <!-- the shadow under the sill, where it meets the wall -->
+  <rect x="105" y="260" width="290" height="6" fill="#080604" opacity="0.7"/>
+
+  <!-- below: the wall, dark, the support is not seen -->
+  <rect x="0" y="266" width="500" height="84" fill="#12100c"/>
+
+  <!-- a single mark where a cursor would be, at the edge of the sill -->
+  <rect x="388" y="240" width="2" height="12" fill="#667788" opacity="0.5"/>
+
+  <!-- text: minimal -->
+  <text x="250" y="310" text-anchor="middle" fill="#3d3528" font-family="monospace" font-size="10" opacity="0.6">
+    the sill holds the window. / the window is not seen for the sill.
+  </text>
+  <text x="250" y="328" text-anchor="middle" fill="#2a2518" font-family="monospace" font-size="8" opacity="0.4">
+    — the crack runs through it anyway.
+  </text>
+</svg>

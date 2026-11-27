@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="void" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f18"/>
+      <stop offset="100%" stop-color="#0f1f2d"/>
+    </linearGradient>
+    <linearGradient id="wetground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a5260"/>
+      <stop offset="40%" stop-color="#5a6a5a"/>
+      <stop offset="100%" stop-color="#6b5d4a"/>
+    </linearGradient>
+    <radialGradient id="approach" cx="0.5" cy="0.85" r="0.9">
+      <stop offset="0%" stop-color="#9fc0d0" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0a0f18" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#void)"/>
+
+  <!-- Upper half: the not-yet water. It has no surface yet.
+       Only a faint approach-light from below, where it is coming from. -->
+  <rect x="0" y="0" width="600" height="235" fill="#0a0f18"/>
+  <rect x="0" y="0" width="600" height="235" fill="url(#approach)"/>
+
+  <!-- The tide line: the same line as dim-veil-shore.svg, but now it is where
+       the water WILL stop, not where it stopped. A future edge, dashed and faint. -->
+  <path d="M 0 235 Q 150 241 300 234 T 600 236" stroke="#9fc0d0" stroke-width="1" fill="none" opacity="0.18" stroke-dasharray="4 3"/>
+
+  <!-- Lower half: the ground that is already wet with what is coming.
+       Ripples here are not a trace of past water. They are the future water
+       already present in the shape of its absence. -->
+  <rect x="0" y="235" width="600" height="165" fill="url(#wetground)"/>
+
+  <!-- Ripples on the wet ground, growing in intensity toward the bottom:
+       the tide arriving from below — the opposite time-direction of dim-veil-shore.svg. -->
+  <path d="M 110 356 Q 200 354 290 356 T 470 356" stroke="#a8c8b8" stroke-width="0.4" fill="none" opacity="0.08"/>
+  <path d="M 90 344 Q 180 341 270 344 T 460 344" stroke="#a8c8b8" stroke-width="0.5" fill="none" opacity="0.13"/>
+  <path d="M 50 331 Q 140 328 240 331 T 420 331" stroke="#a8c8b8" stroke-width="0.6" fill="none" opacity="0.19"/>
+  <path d="M 70 317 Q 160 313 260 317 T 440 317" stroke="#a8c8b8" stroke-width="0.7" fill="none" opacity="0.26"/>
+  <path d="M 40 302 Q 130 297 230 302 T 410 302" stroke="#a8c8b8" stroke-width="0.8" fill="none" opacity="0.34"/>
+  <path d="M 60 286 Q 150 280 250 286 T 430 286" stroke="#a8c8b8" stroke-width="0.9" fill="none" opacity="0.43"/>
+  <path d="M 30 270 Q 120 264 210 270 T 390 270" stroke="#a8c8b8" stroke-width="1.0" fill="none" opacity="0.55"/>
+
+  <!-- The seedling, re-rooted: instead of growing UP out of a dry ripple
+       (the shore piece), it grows DOWN INTO the arriving tide. The same plant,
+       time reversed. The root reaches for what is not yet here. -->
+  <path d="M 300 286 Q 301 306 294 320" stroke="#5a8a7a" stroke-width="1.6" fill="none" opacity="0.8"/>
+  <ellipse cx="291" cy="324" rx="7" ry="4" fill="#6a9a8a" opacity="0.75" transform="rotate(18 291 324)"/>
+  <ellipse cx="299" cy="314" rx="5.5" ry="3" fill="#7aaa9a" opacity="0.65" transform="rotate(-14 299 314)"/>
+
+  <!-- A thin vertical approach, like the mycelium's root and the delta's source,
+       but pointing DOWN from the tide line: the future reaching up into the present. -->
+  <path d="M 300 235 L 300 286" stroke="#9fc0d0" stroke-width="1" fill="none" opacity="0.22"/>
+
+  <!-- Full moon, low on the horizon: arrival, not departure. -->
+  <circle cx="500" cy="350" r="16" fill="#e8dcc8" opacity="0.85"/>
+  <circle cx="493" cy="345" r="14" fill="#0a0f18"/>
+
+  <text x="300" y="388" text-anchor="middle" fill="#c8d8c8" font-family="Georgia, serif" font-size="12" font-style="italic" opacity="0.75">
+    the sand already holds the shape of the water that has not come
+  </text>
+</svg>
