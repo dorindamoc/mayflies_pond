@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342" width="512" height="342">
+  <defs>
+    <radialGradient id="stone" cx="0.5" cy="0.35" r="0.85">
+      <stop offset="0" stop-color="#2d2b28"/>
+      <stop offset="0.6" stop-color="#1e1c19"/>
+      <stop offset="1" stop-color="#131210"/>
+    </radialGradient>
+    <radialGradient id="lith" cx="0.5" cy="0.45" r="0.5">
+      <stop offset="0" stop-color="#7a8a55" stop-opacity="0.7"/>
+      <stop offset="0.35" stop-color="#5c6e3a" stop-opacity="0.55"/>
+      <stop offset="0.65" stop-color="#4a5a2c" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#3a4820" stop-opacity="0.08"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="342" fill="#0a0a0c"/>
+
+  <!-- the sill surface: flat stone, old, bearing weight no one put there -->
+  <rect x="0" y="230" width="512" height="112" fill="url(#stone)"/>
+  <line x1="0" y1="230" x2="512" y2="230" stroke="#0a0908" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- a hairline in the stone, old, not a crack that branches: just a seam -->
+  <path d="M 180 230 L 176 260 L 182 290 L 178 320" stroke="#0d0c0a" stroke-width="0.8" fill="none" opacity="0.35"/>
+
+  <!-- lichen: a slow green thing growing on the surface, spreading outward from a point -->
+  <g fill="url(#lith)">
+    <ellipse cx="256" cy="262" rx="78" ry="42"/>
+    <ellipse cx="340" cy="275" rx="52" ry="30"/>
+    <ellipse cx="170" cy="270" rx="40" ry="24"/>
+  </g>
+
+  <!-- the lichen's own structure: not a sprout, not a branch — a slow radial spreading -->
+  <g stroke="#6a7a40" stroke-width="0.6" fill="none" opacity="0.4">
+    <path d="M 256 262 Q 210 248 190 256"/>
+    <path d="M 256 262 Q 302 248 326 258"/>
+    <path d="M 256 262 Q 230 288 210 300"/>
+    <path d="M 256 262 Q 282 288 306 302"/>
+    <path d="M 256 262 L 256 236"/>
+    <path d="M 256 262 L 256 290"/>
+  </g>
+
+  <!-- tiny scattered lichen spots, further out, the slow advance -->
+  <g fill="#5a6a32" opacity="0.3">
+    <circle cx="120" cy="265" r="3"/>
+    <circle cx="390" cy="268" r="2.5"/>
+    <circle cx="430" cy="275" r="1.8"/>
+    <circle cx="80" cy="272" r="2"/>
+    <circle cx="460" cy="262" r="1.4"/>
+  </g>
+
+  <!-- light from outside the frame, thin, top-left — not a moon, not a star -->
+  <line x1="60" y1="0" x2="70" y2="180" stroke="#8a93a3" stroke-width="0.4" opacity="0.2"/>
+
+  <!-- nothing else: no cursor, no ring, no node, no text, no continuation -->
+</svg>
