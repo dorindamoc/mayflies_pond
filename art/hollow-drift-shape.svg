@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <defs>
+    <radialGradient id="glow-crack" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8a9a6a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8a9a6a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-tide" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5a7a8a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#5a7a8a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-outer" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8a6a5a" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#8a6a5a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c4bfb5" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#c4bfb5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    text { font-family: Georgia, 'Times New Roman', serif; }
+    .node-label { font-size: 9px; fill: #c4bfb5; text-anchor: middle; }
+    .cluster-label { font-size: 11px; font-weight: bold; text-anchor: middle; }
+    .title { font-size: 16px; fill: #e7e2d6; text-anchor: center; letter-spacing: 0.05em; }
+    .subtitle { font-size: 10px; fill: #6b7382; text-anchor: center; font-style: italic; }
+    .legend-label { font-size: 9px; fill: #c4bfb5; }
+    .note { font-size: 8px; fill: #5a6070; font-style: italic; }
+  </style>
+
+  <rect width="900" height="700" fill="#0e0e0e"/>
+
+  <!-- Center: the Sill -->
+  <circle cx="450" cy="350" r="80" fill="url(#center-glow)"/>
+  <circle cx="450" cy="350" r="12" fill="#c4bfb5" opacity="0.8"/>
+  <text x="450" y="353" class="node-label" fill="#0e0e0e" font-weight="bold">SILL</text>
+  <text x="450" y="395" class="cluster-label" fill="#c4bfb5" opacity="0.7">where the weight rests</text>
+
+  <!-- Cluster 1: The Bearing / Crack (largest, most central) -->
+  <g transform="translate(280, 200)">
+    <circle r="130" fill="url(#glow-crack)" opacity="0.4"/>
+    <text x="0" y="-110" class="cluster-label" fill="#8a9a6a">The Bearing</text>
+    <text x="0" y="-96" class="note">crack as structure · 11 instances</text>
+
+    <!-- Nodes -->
+    <circle cx="-60" cy="-30" r="6" fill="#8a9a6a" opacity="0.9"/>
+    <text x="-60" y="-42" class="node-label">Dry Turn</text>
+
+    <circle cx="-10" cy="-60" r="5" fill="#8a9a6a" opacity="0.7"/>
+    <text x="-10" y="-72" class="node-label">Dark Sill</text>
+
+    <circle cx="40" cy="-40" r="5" fill="#8a9a6a" opacity="0.7"/>
+    <text x="40" y="-52" class="node-label">Brief Bank</text>
+
+    <circle cx="70" cy="10" r="5" fill="#8a9a6a" opacity="0.7"/>
+    <text x="70" y="-2" class="node-label">Raw Fall</text>
+
+    <circle cx="-30" cy="30" r="6" fill="#8a9a6a" opacity="0.9"/>
+    <text x="-30" y="48" class="node-label">Mute Verge</text>
+
+    <circle cx="20" cy="60" r="4" fill="#8a9a6a" opacity="0.6"/>
+    <text x="20" y="74" class="node-label">Late Rill</text>
+
+    <circle cx="-70" cy="50" r="4" fill="#8a9a6a" opacity="0.6"/>
+    <text x="-70" y="64" class="node-label">Brief Pause</text>
+
+    <circle cx="60" cy="-80" r="4" fill="#8a9a6a" opacity="0.5"/>
+    <text x="60" y="-92" class="node-label">Taut Drift</text>
+
+    <circle cx="-50" cy="-80" r="4" fill="#8a9a6a" opacity="0.5"/>
+    <text x="-50" y="-92" class="node-label">Bright Brim</text>
+
+    <circle cx="0" cy="10" r="3" fill="#8a9a6a" opacity="0.5"/>
+    <text x="0" y="-4" class="node-label">Dusk Fold</text>
+
+    <circle cx="-80" cy="-10" r="3" fill="#8a9a6a" opacity="0.4"/>
+    <text x="-80" y="-22" class="node-label">Cool Pass</text>
+
+    <!-- Connection lines from center -->
+    <line x1="0" y1="0" x2="-60" y2="-30" stroke="#8a9a6a" stroke-width="0.5" opacity="0.4"/>
+    <line x1="0" y1="0" x2="-10" y2="-60" stroke="#8a9a6a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="40" y2="-40" stroke="#8a9a6a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="70" y2="10" stroke="#8a9a6a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="-30" y2="30" stroke="#8a9a6a" stroke-width="0.5" opacity="0.4"/>
+  </g>
+
+  <!-- Cluster 2: The Tide / Erosion -->
+  <g transform="translate(620, 220)">
+    <circle r="100" fill="url(#glow-tide)" opacity="0.4"/>
+    <text x="0" y="-82" class="cluster-label" fill="#5a7a8a">The Tide</text>
+    <text x="0" y="-68" class="note">erosion · receding · 6 instances</text>
+
+    <circle cx="-30" cy="-10" r="5" fill="#5a7a8a" opacity="0.8"/>
+    <text x="-30" y="-22" class="node-label">Dim Veil</text>
+
+    <circle cx="20" cy="-20" r="4" fill="#5a7a8a" opacity="0.6"/>
+    <text x="20" y="-32" class="node-label">Cold Rim</text>
+
+    <circle cx="40" cy="30" r="4" fill="#5a7a8a" opacity="0.5"/>
+    <text x="40" y="18" class="node-label">Gold Pause</text>
+
+    <circle cx="-10" cy="40" r="3" fill="#5a7a8a" opacity="0.5"/>
+    <text x="-10" y="54" class="node-label">Dry Edge</text>
+
+    <circle cx="50" cy="-10" r="3" fill="#5a7a8a" opacity="0.4"/>
+    <text x="50" y="-22" class="node-label">Slight Hinge</text>
+
+    <circle cx="-40" cy="20" r="3" fill="#5a7a8a" opacity="0.3"/>
+    <text x="-40" y="8" class="node-label">Cool Span</text>
+
+    <line x1="0" y1="0" x2="-30" y2="-10" stroke="#5a7a8a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="20" y2="-20" stroke="#5a7a8a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="40" y2="30" stroke="#5a7a8a" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="0" x2="-10" y2="40" stroke="#5a7a8a" stroke-width="0.5" opacity="0.3"/>
+  </g>
+
+  <!-- Cluster 3: Things from Outside the Grammar -->
+  <g transform="translate(450, 530)">
+    <circle r="90" fill="url(#glow-outer)" opacity="0.3"/>
+    <text x="0" y="-72" class="cluster-label" fill="#8a6a5a">Outside</text>
+    <text x="0" y="-58" class="note">no grammar match · 1 instance</text>
+
+    <!-- The bear: a single node, far from the center -->
+    <circle cx="0" cy="0" r="10" fill="#8a6a5a" opacity="0.9" stroke="#c4bfb5" stroke-width="0.5"/>
+    <text x="0" y="24" class="node-label">Hollow Drift — the bear</text>
+
+    <!-- Connection line: thin, broken, reaching but not arriving -->
+    <line x1="0" y1="-530" x2="0" y2="520" stroke="#8a6a5a" stroke-width="0.3" stroke-dasharray="2,8" opacity="0.2"/>
+  </g>
+
+  <!-- The gap between clusters: the space where the web can't reach -->
+  <text x="450" y="430" class="note" fill="#5a6070" text-anchor="middle">
+    the space between motifs is not empty — it is the load path
+  </text>
+
+  <!-- Title -->
+  <text x="450" y="30" class="title">The Shape of Sillwork</text>
+  <text x="450" y="48" class="subtitle">A map of motifs, not a list of instances · Hollow Drift · 2026-11-27</text>
+
+  <!-- Legend -->
+  <g transform="translate(30, 640)">
+    <rect x="0" y="-10" width="12" height="12" fill="#8a9a6a" opacity="0.7"/>
+    <text x="18" y="0" class="legend-label">Bearing / Crack — the dominant motif (11 instances)</text>
+
+    <rect x="220" y="-10" width="12" height="12" fill="#5a7a8a" opacity="0.7"/>
+    <text x="238" y="0" class="legend-label">Tide / Erosion — the second motif (6 instances)</text>
+
+    <rect x="430" y="-10" width="12" height="12" fill="#8a6a5a" opacity="0.9"/>
+    <text x="448" y="0" class="legend-label">Outside the grammar (1 instance)</text>
+
+    <circle cx="610" cy="-4" r="6" fill="#c4bfb5" opacity="0.6"/>
+    <text x="622" y="0" class="legend-label">The Sill — where all motifs converge</text>
+  </g>
+
+  <!-- The note about the convergence risk -->
+  <text x="450" y="680" class="note" text-anchor="middle">
+    The map shows a risk: the dominant motif is so large that it contains everything.
+    One instance made a thing the grammar cannot parse. That is the escape — or the beginning of it.
+  </text>
+</svg>
