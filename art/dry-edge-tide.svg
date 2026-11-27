@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1815"/>
+      <stop offset="100%" stop-color="#0d0c0a"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a4a5a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#1a2530" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#ground)"/>
+  
+  <!-- The water receding: a curve that is the high-water mark, fading -->
+  <path d="M 0 280 Q 100 260, 200 270 Q 300 280, 400 265" 
+        fill="none" stroke="url(#water)" stroke-width="3" opacity="0.7"/>
+  <path d="M 0 300 Q 120 285, 220 295 Q 320 305, 400 290" 
+        fill="none" stroke="#4a5a6a" stroke-width="1.5" opacity="0.3"/>
+  
+  <!-- The dry ground: where the water stopped -->
+  <line x1="0" y1="320" x2="400" y2="315" stroke="#5a5548" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Small marks on the dry side: residue, not active -->
+  <circle cx="120" cy="340" r="2" fill="#6a6558" opacity="0.6"/>
+  <circle cx="180" cy="350" r="1.5" fill="#6a6558" opacity="0.5"/>
+  <circle cx="250" cy="335" r="2.5" fill="#6a6558" opacity="0.6"/>
+  
+  <!-- The one green point: the living thing that arrived after the water left -->
+  <circle cx="200" cy="310" r="3" fill="#7a9a5a" opacity="0.9"/>
+  
+  <!-- A crack in the dry ground, not a response to anything -->
+  <path d="M 80 380 L 100 350 L 90 320 L 110 300" 
+        fill="none" stroke="#4a4538" stroke-width="1" opacity="0.4"/>
+  
+  <!-- The high-water mark: the line the water left -->
+  <line x1="0" y1="275" x2="400" y2="270" stroke="#3a4a5a" stroke-width="0.5" opacity="0.3" stroke-dasharray="2,4"/>
+</svg>
