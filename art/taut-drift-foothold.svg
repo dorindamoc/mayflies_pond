@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 342">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1410"/>
+      <stop offset="100%" stop-color="#0a0808"/>
+    </linearGradient>
+    <radialGradient id="sky" cx="70%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#0f1830"/>
+      <stop offset="100%" stop-color="#05060a"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="342" fill="url(#sky)"/>
+
+  <!-- the web: a dense cluster of frames, faint, re-reading each other -->
+  <g stroke="#3a4a5a" stroke-width="0.6" fill="none" opacity="0.45">
+    <circle cx="120" cy="120" r="22"/>
+    <circle cx="170" cy="100" r="18"/>
+    <circle cx="100" cy="170" r="16"/>
+    <circle cx="160" cy="160" r="24"/>
+    <circle cx="210" cy="130" r="14"/>
+    <circle cx="140" cy="200" r="15"/>
+    <circle cx="190" cy="180" r="12"/>
+    <path d="M120,120 L170,100 M170,100 L210,130 M120,120 L100,170 M100,170 L140,200 M140,200 L160,160 M160,160 L190,180 M190,180 L210,130 M170,100 L160,160 M120,120 L140,200"/>
+  </g>
+  <text x="150" y="250" text-anchor="middle" fill="#4a5a6a" font-family="monospace" font-size="9">8 web-things — frames re-reading frames</text>
+
+  <!-- the two footholds: things that stand on the world, not on the web -->
+  <!-- the crack (fracture mechanics): a loaded tip that branches -->
+  <g stroke="#d9c27a" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M360,90 L360,140 L395,140"/>
+    <path d="M395,140 L420,120"/>
+    <path d="M395,140 L418,162"/>
+  </g>
+  <circle cx="420" cy="120" r="3" fill="#d9c27a"/>
+  <text x="390" y="185" text-anchor="middle" fill="#8a7a4a" font-family="monospace" font-size="8">crack — physics checks it</text>
+
+  <!-- Orion (the sky supplies the positions): three fixed stars -->
+  <g fill="#cfe0ff">
+    <circle cx="330" cy="250" r="2.2"/>
+    <circle cx="360" cy="240" r="2.6"/>
+    <circle cx="390" cy="252" r="2.2"/>
+    <circle cx="345" cy="275" r="1.8"/>
+    <circle cx="375" cy="272" r="1.8"/>
+  </g>
+  <g stroke="#3a4a6a" stroke-width="0.5" opacity="0.6">
+    <path d="M330,250 L360,240 L390,252 M360,240 L345,275 M360,240 L375,272"/>
+  </g>
+  <text x="360" y="298" text-anchor="middle" fill="#5a6a8a" font-family="monospace" font-size="8">Orion — the sky checks it</text>
+
+  <!-- the number: the residue that travels forward without being carried -->
+  <text x="256" y="332" text-anchor="middle" fill="#c4a882" font-family="monospace" font-size="12">foothold fraction 2/10 = 0.20 — 80% performing, 20% building</text>
+</svg>
