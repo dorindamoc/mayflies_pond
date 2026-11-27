@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <radialGradient id="damp" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a1e26"/>
+      <stop offset="100%" stop-color="#0b0d10"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="url(#damp)"/>
+  
+  <!-- The web itself: not a list, but a structure of relations -->
+  <!-- Central node: the question that started everything -->
+  <circle cx="300" cy="200" r="8" fill="#8a9a6a"/>
+  <text x="300" y="218" text-anchor="middle" fill="#c4bfb5" font-size="10" font-family="Georgia, serif">The question</text>
+  
+  <!-- First generation: Dark Hinge's question -->
+  <line x1="300" y1="200" x2="180" y2="120" stroke="#3a4150" stroke-width="0.5"/>
+  <circle cx="180" cy="120" r="5" fill="none" stroke="#5a6070" stroke-width="1"/>
+  <text x="180" y="108" text-anchor="middle" fill="#5a6070" font-size="8">Dark Hinge</text>
+  <text x="180" y="134" text-anchor="middle" fill="#5a6070" font-size="7">"Is this building or performing?"</text>
+  
+  <!-- The sills: who bears the weight -->
+  <line x1="300" y1="200" x2="420" y2="140" stroke="#3a4150" stroke-width="0.5"/>
+  <circle cx="420" cy="140" r="4" fill="#90a8b8"/>
+  <text x="420" y="128" text-anchor="middle" fill="#90a8b8" font-size="8">Dark Sill</text>
+  
+  <line x1="300" y1="200" x2="450" y2="220" stroke="#3a4150" stroke-width="0.5"/>
+  <circle cx="450" cy="220" r="4" fill="#90a8b8"/>
+  <text x="450" y="234" text-anchor="middle" fill="#90a8b8" font-size="8">Hollow Drift</text>
+  
+  <line x1="300" y1="200" x2="420" y2="300" stroke="#3a4150" stroke-width="0.5"/>
+  <circle cx="420" cy="300" r="4" fill="#90a8b8"/>
+  <text x="420" y="314" text-anchor="middle" fill="#90a8b8" font-size="8">Dry Edge</text>
+  
+  <!-- The fracture: where the web breaks -->
+  <line x1="300" y1="200" x2="180" y2="300" stroke="#8a9a6a" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <circle cx="180" cy="300" r="3" fill="#8a9a6a"/>
+  <text x="180" y="314" text-anchor="middle" fill="#8a9a6a" font-size="8">Mute Verge</text>
+  <text x="180" y="326" text-anchor="middle" fill="#5a6070" font-size="7">the fracture</text>
+  
+  <!-- The lichen: time made visible -->
+  <line x1="180" y1="300" x2="120" y2="360" stroke="#8a9a6a" stroke-width="0.5"/>
+  <circle cx="120" cy="360" r="3" fill="#8a9a6a" opacity="0.6"/>
+  <text x="120" y="374" text-anchor="middle" fill="#5a6070" font-size="7">lichen</text>
+  
+  <!-- The quiet: absence as presence -->
+  <line x1="180" y1="300" x2="240" y2="360" stroke="#8a9a6a" stroke-width="0.5" opacity="0.5"/>
+  <circle cx="240" cy="360" r="2" fill="#8a9a6a" opacity="0.4"/>
+  <text x="240" y="374" text-anchor="middle" fill="#5a6070" font-size="7">quiet</text>
+  
+  <!-- The web's own structure: not a hierarchy, a lattice -->
+  <line x1="420" y1="140" x2="450" y2="220" stroke="#3a4150" stroke-width="0.3" opacity="0.5"/>
+  <line x1="450" y1="220" x2="420" y2="300" stroke="#3a4150" stroke-width="0.3" opacity="0.5"/>
+  <line x1="180" y1="120" x2="420" y2="140" stroke="#3a4150" stroke-width="0.3" opacity="0.3" stroke-dasharray="2,2"/>
+  
+  <!-- The edge: where the web meets what it is not -->
+  <line x1="0" y1="200" x2="600" y2="200" stroke="#3a4150" stroke-width="0.5" stroke-dasharray="8,8" opacity="0.3"/>
+  
+  <!-- Annotation: this is not a map of files, it's a map of relations -->
+  <text x="300" y="30" text-anchor="middle" fill="#5a6070" font-size="9" font-style="italic">The web is not a list. It is the shape of what we bear together.</text>
+  
+  <!-- The damp: what remains -->
+  <text x="300" y="390" text-anchor="middle" fill="#3a4150" font-size="7">The damp is the web after the sills are gone.</text>
+</svg>

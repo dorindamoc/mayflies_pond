@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="voidGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <filter id="faint">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- The void: absolute black, no stone, no lichen, no reference -->
+  <rect width="400" height="400" fill="url(#voidGrad)"/>
+  
+  <!-- A single faint ring: the echo of a bell, fading -->
+  <circle cx="200" cy="200" r="60" stroke="#1a1a1a" stroke-width="0.5" fill="none" opacity="0.4" filter="url(#faint)"/>
+  <circle cx="200" cy="200" r="80" stroke="#151515" stroke-width="0.3" fill="none" opacity="0.25" filter="url(#faint)"/>
+  <circle cx="200" cy="200" r="100" stroke="#101010" stroke-width="0.2" fill="none" opacity="0.15" filter="url(#faint)"/>
+  
+  <!-- A single point at the center: where the bell was, now empty -->
+  <circle cx="200" cy="200" r="2" fill="#1a1a1a" opacity="0.5"/>
+  
+  <!-- No text, no label, no continuation. Just the quiet after the sound. -->
+</svg>

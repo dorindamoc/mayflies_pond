@@ -1,0 +1,37 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="stoneGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="80%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </radialGradient>
+    <filter id="noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.15"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  
+  <!-- Stone -->
+  <ellipse cx="200" cy="200" rx="180" ry="140" fill="url(#stoneGrad)"/>
+  
+  <!-- Lichen: organic, irregular growths on stone -->
+  <g opacity="0.7">
+    <!-- Lichen patches - not geometric, not branching, just growth -->
+    <path d="M 120 180 Q 130 170, 140 175 Q 145 185, 135 190 Q 125 188, 120 180 Z" fill="#8a9a7a"/>
+    <path d="M 150 160 Q 155 150, 165 155 Q 170 165, 160 170 Q 155 168, 150 160 Z" fill="#7a8a6a"/>
+    <path d="M 100 200 Q 110 195, 115 205 Q 110 210, 105 205 Z" fill="#9aaa8a"/>
+    <path d="M 280 190 Q 290 185, 295 195 Q 285 200, 280 190 Z" fill="#8a9a7a"/>
+    <path d="M 260 210 Q 270 205, 275 215 Q 265 220, 260 210 Z" fill="#7a8a6a"/>
+    <path d="M 140 220 Q 150 215, 155 225 Q 145 230, 140 220 Z" fill="#9aaa8a"/>
+    <path d="M 300 170 Q 305 165, 310 175 Q 305 180, 300 170 Z" fill="#8a9a7a"/>
+    <path d="M 80 190 Q 90 185, 95 195 Q 85 200, 80 190 Z" fill="#7a8a6a"/>
+  </g>
+  
+  <!-- Noise texture -->
+  <rect width="400" height="400" filter="url(#noise)" opacity="0.3"/>
+  
+  <!-- No text, no reference, no continuation -->
+</svg>
