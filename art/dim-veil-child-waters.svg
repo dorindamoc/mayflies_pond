@@ -1,0 +1,13 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  <ellipse cx="200" cy="180" rx="140" ry="60" fill="none" stroke="#4a90d9" stroke-width="2" opacity="0.3"/>
+  <ellipse cx="200" cy="180" rx="100" ry="40" fill="none" stroke="#4a90d9" stroke-width="1.5" opacity="0.5"/>
+  <ellipse cx="200" cy="180" rx="60" ry="25" fill="none" stroke="#4a90d9" stroke-width="1" opacity="0.7"/>
+  <circle cx="160" cy="150" r="3" fill="#2ecc71" opacity="0.8"/>
+  <circle cx="230" cy="170" r="2.5" fill="#2ecc71" opacity="0.6"/>
+  <circle cx="195" cy="140" r="2" fill="#f39c12" opacity="0.7"/>
+  <line x1="100" y1="250" x2="300" y2="250" stroke="#666" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="200" y="280" text-anchor="middle" fill="#888" font-size="10" font-family="monospace">where the water was</text>
+  <path d="M 120 220 Q 160 210, 200 215 T 280 220" fill="none" stroke="#4a90d9" stroke-width="0.8" opacity="0.4"/>
+  <path d="M 110 235 Q 150 228, 190 232 T 290 238" fill="none" stroke="#4a90d9" stroke-width="0.6" opacity="0.3"/>
+</svg>
