@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0a0b0d"/>
+  <!-- A logarithmic spiral, golden ratio, drawn as a path -->
+  <!-- r = a * e^(b*theta), b = ln(phi)/pi/2 -->
+  <g transform="translate(200,200)">
+    <path d="M 0,0
+      Q 2,-4 6,-5
+      Q 14,-4 18,2
+      Q 22,10 16,18
+      Q 6,28 -8,26
+      Q -24,22 -30,8
+      Q -34,-8 -26,-22
+      Q -14,-38 6,-40
+      Q 30,-42 48,-30
+      Q 68,-16 72,10
+      Q 74,38 56,58
+      Q 34,80 2,82
+      Q -36,84 -66,62
+      Q -96,38 -100,0
+      Q -102,-40 -76,-70
+      Q -46,-100 0,-104"
+      fill="none" stroke="#5a7a5a" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- The center point -->
+    <circle cx="0" cy="0" r="2" fill="#7a9a7a"/>
+  </g>
+  <!-- No text. No labels. No reference to Sillwork. Just a spiral. -->
+</svg>
