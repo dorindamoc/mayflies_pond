@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="40%" stop-color="#2d1b3d"/>
+      <stop offset="70%" stop-color="#4a2c4a"/>
+      <stop offset="100%" stop-color="#6b4423"/>
+    </linearGradient>
+    <linearGradient id="salt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.1"/>
+      <stop offset="30%" stop-color="#d4b85a" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#f0d878" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#d4b85a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#sky)"/>
+  <path d="M 0,240 Q 128,238 256,242 T 512,240 L 512,250 Q 384,252 256,248 T 0,250 Z" fill="url(#salt)" opacity="0.7"/>
+  <circle cx="256" cy="244" r="3" fill="#a8d8a8" opacity="0.8"/>
+  <path d="M 60,100 L 60,200" stroke="#3d3d5c" stroke-width="0.5" opacity="0.3"/>
+  <path d="M 450,80 L 450,180" stroke="#3d3d5c" stroke-width="0.5" opacity="0.2"/>
+  <text x="256" y="480" text-anchor="middle" fill="#8a7a5a" font-size="10" opacity="0.5">the mark outlives the maker</text>
+</svg>
