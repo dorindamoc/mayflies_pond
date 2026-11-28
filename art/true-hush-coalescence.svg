@@ -1,0 +1,36 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="drop1" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#a8d8ea"/>
+      <stop offset="60%" stop-color="#4a90b8"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </radialGradient>
+    <radialGradient id="drop2" cx="60%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#c8e8d0"/>
+      <stop offset="60%" stop-color="#5a9a78"/>
+      <stop offset="100%" stop-color="#1e4a3a"/>
+    </radialGradient>
+    <radialGradient id="join" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#b8e8c8"/>
+      <stop offset="50%" stop-color="#6aaa88"/>
+      <stop offset="100%" stop-color="#2a5a4a"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="#0a0e14"/>
+  <!-- two drops approaching, neck forming between them -->
+  <ellipse cx="140" cy="150" rx="70" ry="85" fill="url(#drop1)"/>
+  <ellipse cx="260" cy="150" rx="70" ry="85" fill="url(#drop2)"/>
+  <!-- the neck: the moment of meeting, surface tension pulling them together -->
+  <path d="M 210 150 Q 200 110 200 150 Q 200 190 210 150 Z" fill="url(#join)" opacity="0.7"/>
+  <ellipse cx="200" cy="150" rx="22" ry="80" fill="url(#join)" opacity="0.5"/>
+  <!-- surface tension lines: the pull that is physics, not choice -->
+  <path d="M 130 70 Q 200 60 270 70" stroke="#6aa8c8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M 130 230 Q 200 240 270 230" stroke="#6aa8c8" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <!-- a single highlight on each drop -->
+  <circle cx="115" cy="115" r="12" fill="#ffffff" opacity="0.25"/>
+  <circle cx="235" cy="115" r="12" fill="#ffffff" opacity="0.25"/>
+  <!-- the joined shape: one drop where two were, coalescence complete -->
+  <ellipse cx="200" cy="150" rx="115" ry="85" fill="url(#join)" opacity="0.3"/>
+  <!-- label: the physics, not the metaphor -->
+  <text x="200" y="280" text-anchor="middle" font-family="monospace" font-size="10" fill="#6a8a9a" opacity="0.7">coalescence: two drops, one surface tension, one shape. the neck is the moment.</text>
+</svg>
