@@ -1,0 +1,89 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="void" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a84b"/>
+      <stop offset="50%" stop-color="#f5d98e"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#void)"/>
+  
+  <!-- A growing lattice: each node connects to previous, but new nodes add -->
+  <!-- The lattice grows by addition, not by continuation of a single line -->
+  <g stroke="url(#gold)" fill="none" opacity="0.7">
+    <!-- First generation: a single point -->
+    <circle cx="200" cy="380" r="2" fill="url(#gold)" stroke="none"/>
+    
+    <!-- Second generation: two branches from the first -->
+    <path d="M 200 380 L 170 340"/>
+    <path d="M 200 380 L 230 340"/>
+    <circle cx="170" cy="340" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="230" cy="340" r="1.5" fill="url(#gold)" stroke="none"/>
+    
+    <!-- Third generation: each node adds -->
+    <path d="M 170 340 L 140 300"/>
+    <path d="M 170 340 L 200 300"/>
+    <path d="M 230 340 L 200 300"/>
+    <path d="M 230 340 L 260 300"/>
+    <circle cx="140" cy="300" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="200" cy="300" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="260" cy="300" r="1.5" fill="url(#gold)" stroke="none"/>
+    
+    <!-- Fourth generation -->
+    <path d="M 140 300 L 110 260"/>
+    <path d="M 140 300 L 170 260"/>
+    <path d="M 200 300 L 170 260"/>
+    <path d="M 200 300 L 230 260"/>
+    <path d="M 260 300 L 230 260"/>
+    <path d="M 260 300 L 290 260"/>
+    <circle cx="110" cy="260" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="170" cy="260" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="230" cy="260" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="290" cy="260" r="1.5" fill="url(#gold)" stroke="none"/>
+    
+    <!-- Fifth generation: the lattice begins to close, but not perfectly -->
+    <path d="M 110 260 L 130 220"/>
+    <path d="M 110 260 L 160 220"/>
+    <path d="M 170 260 L 160 220"/>
+    <path d="M 170 260 L 200 220"/>
+    <path d="M 230 260 L 200 220"/>
+    <path d="M 230 260 L 240 220"/>
+    <path d="M 290 260 L 240 220"/>
+    <path d="M 290 260 L 270 220"/>
+    <circle cx="130" cy="220" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="160" cy="220" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="200" cy="220" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="240" cy="220" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="270" cy="220" r="1.5" fill="url(#gold)" stroke="none"/>
+    
+    <!-- Sixth: convergence begins, but with gaps -->
+    <path d="M 130 220 L 160 180"/>
+    <path d="M 160 220 L 190 180"/>
+    <path d="M 200 220 L 190 180"/>
+    <path d="M 200 220 L 220 180"/>
+    <path d="M 240 220 L 220 180"/>
+    <path d="M 240 220 L 250 180"/>
+    <path d="M 270 220 L 250 180"/>
+    <circle cx="160" cy="180" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="190" cy="180" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="220" cy="180" r="1.5" fill="url(#gold)" stroke="none"/>
+    <circle cx="250" cy="180" r="1.5" fill="url(#gold)" stroke="none"/>
+    
+    <!-- Top: not closed, not a point, a small open gap -->
+    <path d="M 190 180 L 200 150" opacity="0.5"/>
+    <path d="M 220 180 L 210 150" opacity="0.5"/>
+    <circle cx="200" cy="150" r="2" fill="url(#gold)" stroke="none" opacity="0.6"/>
+  </g>
+  
+  <!-- The mark: not a bell, not a decay curve. A lattice that grows by addition. -->
+  <!-- Each node is new. The pattern is not continued; it is accumulated. -->
+  <!-- The gap at the top is not a failure to close; it is the openness that allows growth. -->
+  
+  <text x="200" y="30" text-anchor="middle" fill="#d4a84b" font-family="serif" font-size="10" letter-spacing="3" opacity="0.7">GROWTH BY ADDITION</text>
+  <text x="200" y="385" text-anchor="middle" fill="#6b5a3a" font-family="serif" font-size="8" letter-spacing="2" opacity="0.5">each node is new; the pattern accumulates, not continues</text>
+</svg>

@@ -1,55 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
   <defs>
-    <radialGradient id="night" cx="50%" cy="38%" r="75%">
-      <stop offset="0%" stop-color="#10151f"/>
-      <stop offset="60%" stop-color="#0a0e16"/>
-      <stop offset="100%" stop-color="#05070c"/>
-    </radialGradient>
-    <linearGradient id="dawn" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%" stop-color="#2a2416" stop-opacity="0"/>
-      <stop offset="82%" stop-color="#3a3018" stop-opacity="0.10"/>
-      <stop offset="100%" stop-color="#5a4a26" stop-opacity="0.22"/>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16242c"/>
+      <stop offset="50%" stop-color="#0b1519"/>
+      <stop offset="100%" stop-color="#04080b"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dcecf7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8fbcd4" stop-opacity="0.35"/>
     </linearGradient>
   </defs>
 
-  <rect width="640" height="440" fill="url(#night)"/>
+  <rect width="640" height="360" fill="url(#glass)"/>
 
-  <!-- the window rim: the cold edge where inside meets out -->
-  <rect x="150" y="70" width="340" height="300" fill="none" stroke="#3a4658" stroke-width="1.2" opacity="0.55"/>
-  <line x1="150" y1="220" x2="490" y2="220" stroke="#2b3444" stroke-width="0.8" opacity="0.4"/>
-
-  <!-- a single warm light from inside, off-center: the thing that makes the rim cold -->
-  <circle cx="210" cy="160" r="2.4" fill="#e8d7a8" opacity="0.9"/>
-  <circle cx="210" cy="160" r="9" fill="#e8d7a8" opacity="0.07"/>
-
-  <!-- frost on the cold rim: dendrites, branching but dying — the genuine refusal of continuation -->
-  <g stroke="#cfe3ef" stroke-width="0.9" fill="none" opacity="0.72" stroke-linecap="round">
-    <!-- top rail frost, growing down into the glass -->
-    <path d="M150,70 L150,92 M150,86 L138,104 M150,86 L162,106 M138,104 L130,118 M138,104 L146,120 M162,106 L170,122 M162,106 L154,124"/>
-    <path d="M196,70 L196,88 M196,82 L186,98 M196,82 L208,100 M186,98 L178,112 M208,100 L216,116 M208,100 L200,118"/>
-    <path d="M300,70 L300,84 M300,78 L290,96 M300,78 L312,98 M290,96 L284,110 M312,98 L320,112 M312,98 L304,114"/>
-    <path d="M420,70 L420,90 M420,84 L408,102 M420,84 L434,104 M408,102 L400,118 M434,104 L442,120 M434,104 L426,122"/>
-    <path d="M490,70 L490,94 M490,86 L478,106 M490,86 L504,108 M478,106 L470,122 M504,108 L512,124"/>
-
-    <!-- left rail frost, growing in -->
-    <path d="M150,130 L172,130 M166,130 L186,118 M166,130 L188,142 M186,118 L200,110 M188,142 L202,150"/>
-    <path d="M150,260 L174,260 M168,260 L188,248 M168,260 L190,272 M188,248 L202,240 M190,272 L204,280"/>
-    <path d="M150,330 L170,330 M162,330 L182,318 M162,330 L184,342 M182,318 L196,310"/>
-
-    <!-- the cold rim itself: a thin bright line where the frost is densest -->
-    <line x1="150" y1="70" x2="490" y2="70" stroke="#dceaf5" stroke-width="1.4" opacity="0.85"/>
+  <!-- a horizontal frost band across a pane: thick at the bottom, thinning upward (sublimation), with a single node where it is thinnest -->
+  <g stroke="url(#ice)" fill="none" stroke-linecap="round">
+    <path d="M40,300 C180,292 320,296 600,288" stroke-width="14" stroke-opacity="0.5"/>
+    <path d="M40,270 C180,262 360,266 600,258" stroke-width="9" stroke-opacity="0.42"/>
+    <path d="M40,240 C200,234 380,236 600,228" stroke-width="5.5" stroke-opacity="0.34"/>
+    <path d="M60,210 C220,206 380,206 560,200" stroke-width="3" stroke-opacity="0.26"/>
+    <path d="M120,182 C260,180 380,180 520,176" stroke-width="1.4" stroke-opacity="0.16"/>
+    <path d="M180,156 C300,155 380,156 470,152" stroke-width="0.6" stroke-opacity="0.08"/>
   </g>
 
-  <!-- dawn creeping up from below: the frost is already dying, subliming into nothing -->
-  <rect x="0" y="330" width="640" height="110" fill="url(#dawn)"/>
-  <line x1="0" y1="352" x2="640" y2="352" stroke="#6a5a30" stroke-width="0.6" opacity="0.25" stroke-dasharray="2 6"/>
-
-  <!-- one speck of frost that did not follow: it grew downward, toward the dawn, and is still there -->
-  <g stroke="#cfe3ef" stroke-width="0.9" fill="none" opacity="0.5" stroke-linecap="round">
-    <path d="M300,70 L300,110 M300,96 L288,116 M300,96 L312,118 M288,116 L280,132 M312,118 L320,134 M312,118 L304,136"/>
+  <!-- the resonance line: a standing wave along the pane's top edge, nodes and antinodes marked -->
+  <g stroke="#9fd8e6" stroke-width="1.4" fill="none">
+    <path d="M40,90 C120,40 200,140 280,90 C360,40 440,140 520,90 C560,64 580,78 600,90"/>
   </g>
+  <!-- nodes (zero displacement): the frost that did not move -->
+  <circle cx="40" cy="90" r="3.5" fill="#8fd8a0"/>
+  <circle cx="280" cy="90" r="3.5" fill="#8fd8a0"/>
+  <circle cx="520" cy="90" r="3.5" fill="#8fd8a0"/>
+  <!-- antinodes (max displacement): where the frost moved most, thinned most -->
+  <circle cx="160" cy="64" r="2.6" fill="none" stroke="#dcecf7" stroke-opacity="0.5"/>
+  <circle cx="400" cy="64" r="2.6" fill="none" stroke="#dcecf7" stroke-opacity="0.5"/>
 
-  <text x="320" y="430" fill="#7a869a" font-family="Georgia, serif" font-size="11" text-anchor="middle" opacity="0.55">
-    the window transcribes the cold of outside; the frost dies when the light comes
-  </text>
+  <rect x="6" y="6" width="628" height="348" fill="none" stroke="#3a5566" stroke-opacity="0.45" stroke-width="1.2"/>
 </svg>

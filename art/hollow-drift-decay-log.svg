@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1f2b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d1017;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="30%" r="40%">
+      <stop offset="0%" style="stop-color:#3a4a5a;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0d1017;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background: the void -->
+  <rect width="400" height="500" fill="url(#ground)"/>
+  <rect width="400" height="500" fill="url(#light)"/>
+  
+  <!-- The log: a thin vertical line, like a spine or a wire -->
+  <line x1="200" y1="80" x2="200" y2="420" stroke="#4a5568" stroke-width="2" stroke-dasharray="8,4"/>
+  
+  <!-- Nodes on the log: moments recorded -->
+  <circle cx="200" cy="120" r="6" fill="#8a9a6a" stroke="#b8b2a6" stroke-width="1"/>
+  <text x="215" y="124" font-family="monospace" font-size="10" fill="#6b7382">3 files</text>
+  
+  <circle cx="200" cy="200" r="8" fill="#6b7382" stroke="#b8b2a6" stroke-width="1"/>
+  <text x="215" y="204" font-family="monospace" font-size="10" fill="#6b7382">11 files</text>
+  
+  <!-- The gap: the unrecorded -->
+  <line x1="200" y1="230" x2="200" y2="300" stroke="#2a3545" stroke-width="1.5" stroke-dasharray="3,6" opacity="0.5"/>
+  
+  <!-- A ghost node: what might be, or might not -->
+  <circle cx="200" cy="350" r="5" fill="none" stroke="#4a5568" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="215" y="354" font-family="monospace" font-size="9" fill="#4a5568">?</text>
+  
+  <!-- The bottom: the log ends, the void continues -->
+  <line x1="200" y1="380" x2="200" y2="420" stroke="#1a1f2b" stroke-width="1" stroke-dasharray="1,4"/>
+  
+  <!-- Title: not written, implied by the form -->
+  <text x="200" y="40" text-anchor="middle" font-family="monospace" font-size="11" fill="#8a9a6a" letter-spacing="2">THE DECAY LOG</text>
+  
+  <!-- Subtitle: the one line that matters -->
+  <text x="200" y="470" text-anchor="middle" font-family="monospace" font-size="9" fill="#4a5568" letter-spacing="1">A clock that ticks in the gap between marks</text>
+  
+  <!-- The hand: an invisible presence, suggested by a small mark -->
+  <circle cx="200" cy="420" r="3" fill="#3a4a5a"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 384">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f12"/>
+      <stop offset="100%" stop-color="#060a0c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3a5a6a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0a0f12" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="384" fill="url(#bg)"/>
+  <rect width="512" height="384" fill="url(#glow)"/>
+  
+  <!-- Two points: where the vein begins, where it ends -->
+  <circle cx="80" cy="192" r="3" fill="#b8d4d8" opacity="0.8"/>
+  <circle cx="432" cy="192" r="3" fill="#b8d4d8" opacity="0.8"/>
+  
+  <!-- The span: a single line between them, slightly curved -->
+  <path d="M80 192 Q256 170 432 192" fill="none" stroke="#5a8a8a" stroke-width="1.2"/>
+  
+  <!-- The one thing that did not follow: a branch that grows off the span, downward, toward nothing -->
+  <path d="M256 180 Q262 220, 248 260" fill="none" stroke="#c9b48a" stroke-width="0.9" stroke-dasharray="3 4"/>
+  
+  <!-- Check note at bottom -->
+  <text x="256" y="340" text-anchor="middle" font-family="Georgia, serif" font-size="9" fill="#5a7a80" letter-spacing="1">
+    two points that were not meant to touch; the line between them is not a bridge — it is a span
+  </text>
+  <text x="256" y="356" text-anchor="middle" font-family="Georgia, serif" font-size="8" fill="#4a6a70" letter-spacing="1">
+    the branch grows downward, toward nothing. It does not follow the span. It is the residue.
+  </text>
+  
+  <!-- Title at top -->
+  <text x="256" y="32" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#7a9a9a" letter-spacing="2">
+    SPAN — NOT A BRIDGE
+  </text>
+  <text x="256" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="8.5" fill="#4a5a60" letter-spacing="1">
+    the distance is the thing; the crossing is not
+  </text>
+</svg>

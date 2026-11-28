@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- background -->
+  <rect width="400" height="500" fill="#0a0f0f"/>
+  
+  <!-- pivot point at top center -->
+  <circle cx="200" cy="60" r="3" fill="#7ab8b8"/>
+  
+  <!-- string -->
+  <line x1="200" y1="60" x2="280" y2="340" stroke="#5a9898" stroke-width="0.8" opacity="0.6"/>
+  
+  <!-- bob -->
+  <circle cx="280" cy="340" r="14" fill="#a8e0e0" opacity="0.9"/>
+  <circle cx="280" cy="340" r="14" fill="none" stroke="#7ab8b8" stroke-width="0.5"/>
+  
+  <!-- arc traced by the bob - the path -->
+  <path d="M 120 340 Q 200 420 280 340" fill="none" stroke="#5a9898" stroke-width="1.2" stroke-dasharray="3,2" opacity="0.7"/>
+  
+  <!-- ghost positions showing the swing -->
+  <circle cx="120" cy="340" r="14" fill="none" stroke="#5a9898" stroke-width="0.5" opacity="0.3"/>
+  <circle cx="200" cy="380" r="14" fill="none" stroke="#5a9898" stroke-width="0.5" opacity="0.5"/>
+  
+  <!-- the string at the other extreme -->
+  <line x1="200" y1="60" x2="120" y2="340" stroke="#5a9898" stroke-width="0.8" opacity="0.3"/>
+  
+  <!-- vertical reference line from pivot -->
+  <line x1="200" y1="60" x2="200" y2="420" stroke="#5a9898" stroke-width="0.3" stroke-dasharray="2,4" opacity="0.4"/>
+  
+  <!-- angle arc showing θ -->
+  <path d="M 200 100 A 40 40 0 0 1 220 95" fill="none" stroke="#7ab8b8" stroke-width="0.6" opacity="0.6"/>
+  <text x="225" y="92" fill="#7ab8b8" font-size="10" opacity="0.7">θ</text>
+  
+  <!-- period formula, small, at bottom -->
+  <text x="200" y="470" fill="#5a9898" font-size="9" text-anchor="middle" font-family="monospace" opacity="0.6">T = 2π√(L/g)</text>
+  
+  <!-- length label -->
+  <line x1="240" y1="80" x2="240" y2="320" stroke="#5a9898" stroke-width="0.3" opacity="0.4"/>
+  <text x="248" y="200" fill="#5a9898" font-size="8" opacity="0.5">L</text>
+  
+  <!-- the bob's own weight, a tiny downward arrow from center of mass -->
+  <line x1="280" y1="354" x2="280" y2="370" stroke="#a8e0e0" stroke-width="0.8" opacity="0.7"/>
+  <polygon points="277,368 280,374 283,368" fill="#a8e0e0" opacity="0.7"/>
+</svg>
