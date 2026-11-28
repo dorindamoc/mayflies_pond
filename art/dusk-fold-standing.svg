@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e12"/>
+      <stop offset="100%" stop-color="#060808"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="512" height="320" fill="url(#bg)"/>
+  
+  <!-- The string: a horizontal line at y=160, from x=40 to x=472 -->
+  <!-- Fixed at both ends (nodes at x=40 and x=472) -->
+  
+  <!-- The fundamental mode (n=1): one arch, amplitude 60 -->
+  <path d="M 40 160 Q 256 100 472 160" stroke="#3a5e4a" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- The second harmonic (n=2): two arches, amplitude 40 -->
+  <path d="M 40 160 Q 148 120 256 160 Q 364 200 472 160" stroke="#4a7e5a" stroke-width="1.5" fill="none" opacity="0.5"/>
+  
+  <!-- The third harmonic (n=3): three arches, amplitude 28 -->
+  <path d="M 40 160 Q 112 132 184 160 Q 256 188 328 160 Q 400 132 472 160" stroke="#5a9e6a" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- The fourth harmonic (n=4): four arches, amplitude 20 -->
+  <path d="M 40 160 Q 96 140 152 160 Q 208 180 264 160 Q 320 140 376 160 Q 432 180 472 160" stroke="#6aae7a" stroke-width="1.5" fill="none" opacity="0.7"/>
+  
+  <!-- The fifth harmonic (n=5): five arches, amplitude 14 -->
+  <path d="M 40 160 Q 84 146 128 160 Q 172 174 216 160 Q 260 146 304 160 Q 348 174 392 160 Q 436 146 472 160" stroke="#7abe8a" stroke-width="1.5" fill="none" opacity="0.8"/>
+  
+  <!-- The nodes: points that do not move. They are fixed by the boundary conditions. -->
+  <!-- n=1: only the two ends -->
+  <circle cx="40" cy="160" r="3" fill="#a8c890" opacity="0.9"/>
+  <circle cx="472" cy="160" r="3" fill="#a8c890" opacity="0.9"/>
+  
+  <!-- n=2: node at x=256 -->
+  <circle cx="256" cy="160" r="2.5" fill="#8ab878" opacity="0.8"/>
+  
+  <!-- n=3: nodes at x=184 and x=328 -->
+  <circle cx="184" cy="160" r="2" fill="#7aa868" opacity="0.7"/>
+  <circle cx="328" cy="160" r="2" fill="#7aa868" opacity="0.7"/>
+  
+  <!-- n=4: nodes at x=152, x=264, x=376 -->
+  <circle cx="152" cy="160" r="1.5" fill="#6a9858" opacity="0.6"/>
+  <circle cx="264" cy="160" r="1.5" fill="#6a9858" opacity="0.6"/>
+  <circle cx="376" cy="160" r="1.5" fill="#6a9858" opacity="0.6"/>
+  
+  <!-- n=5: nodes at x=128, x=216, x=304, x=392 -->
+  <circle cx="128" cy="160" r="1" fill="#5a8848" opacity="0.5"/>
+  <circle cx="216" cy="160" r="1" fill="#5a8848" opacity="0.5"/>
+  <circle cx="304" cy="160" r="1" fill="#5a8848" opacity="0.5"/>
+  <circle cx="392" cy="160" r="1" fill="#5a8848" opacity="0.5"/>
+  
+  <!-- The antinodes: points of maximum displacement, at the arch centers -->
+  <!-- n=1 antinode at x=256, y=100 (top) and y=220 (bottom) -->
+  <circle cx="256" cy="100" r="1.5" fill="#a8c890" opacity="0.4"/>
+  <circle cx="256" cy="220" r="1.5" fill="#a8c890" opacity="0.4"/>
+  
+  <!-- The label: the frequency is f_n = n * v / (2L). Not chosen. Compelled by the boundary. -->
+  <text x="256" y="290" text-anchor="middle" fill="#5a6878" font-family="Georgia, serif" font-size="11" font-style="italic">
+    f_n = n · v / (2L)
+  </text>
+  
+  <!-- The green point: off-center, at the third node of the fifth harmonic -->
+  <circle cx="304" cy="160" r="2.5" fill="#6a8a5a" opacity="0.8"/>
+  
+  <!-- Nothing below. The string ends at the fixed points. -->
+</svg>
