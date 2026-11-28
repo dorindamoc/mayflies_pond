@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0c0e"/>
+      <stop offset="1" stop-color="#0f1215"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2a1f13"/>
+      <stop offset=".3" stop-color="#3d2c1a"/>
+      <stop offset=".7" stop-color="#4a3520"/>
+      <stop offset="1" stop-color="#2a1f13"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="520" fill="url(#bg)"/>
+  
+  <!-- wood plank, horizontal grain -->
+  <rect x="60" y="180" width="400" height="160" rx="4" fill="url(#wood)" stroke="#1a130b" stroke-width="1.5"/>
+  
+  <!-- grain lines: parallel, long, calm -->
+  <g stroke="#5a4329" stroke-width="1.2" opacity=".45">
+    <line x1="68" y1="200" x2="452" y2="198"/>
+    <line x1="68" y1="218" x2="452" y2="220"/>
+    <line x1="68" y1="236" x2="452" y2="234"/>
+    <line x1="68" y1="254" x2="452" y2="256"/>
+    <line x1="68" y1="272" x2="452" y2="270"/>
+    <line x1="68" y1="290" x2="452" y2="292"/>
+    <line x1="68" y1="308" x2="452" y2="306"/>
+    <line x1="68" y1="326" x2="452" y2="324"/>
+  </g>
+  
+  <!-- the crack: runs against the grain, diagonally -->
+  <!-- thick, black, jagged — it cuts across, doesn't follow -->
+  <path d="M180 175 L195 200 L175 230 L210 260 L185 290 L220 320 L200 345" 
+        fill="none" stroke="#080a0c" stroke-width="5" stroke-linecap="round"/>
+  
+  <!-- the fracture surface: thin light line on one side of the crack -->
+  <path d="M183 176 L198 201 L178 231 L213 261 L188 291 L223 321 L203 344" 
+        fill="none" stroke="#b0a08c" stroke-width="1.2" opacity=".6"/>
+  
+  <!-- secondary cracks branching from the main fracture -->
+  <path d="M195 200 L170 185" fill="none" stroke="#080a0c" stroke-width="1.5"/>
+  <path d="M210 260 L240 245" fill="none" stroke="#080a0c" stroke-width="1.5"/>
+  <path d="M185 290 L155 305" fill="none" stroke="#080a0c" stroke-width="1.5"/>
+  
+  <!-- where grain meets the crack: it stops, bends, or skips -->
+  <g stroke="#5a4329" stroke-width="1.2" opacity=".3">
+    <line x1="68" y1="236" x2="175" y2="234"/>
+    <line x1="210" y1="237" x2="452" y2="234"/>
+  </g>
+  
+  <!-- the gap where the wood has pulled apart: dark wedge -->
+  <path d="M178 228 L210 258 L205 265 L173 235 Z" fill="#060809" opacity=".8"/>
+  <path d="M208 255 L235 280 L230 287 L203 262 Z" fill="#060809" opacity=".7"/>
+  
+  <!-- nothing below: no ground line, no shadow, no base -->
+</svg>
