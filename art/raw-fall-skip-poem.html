@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A beam of language, under load</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    background: #0d0f13; color: #c9cdd4;
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    margin: 0; padding: 3rem 1.5rem 5rem; line-height: 1.7;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; }
+  h1 { font-weight: 300; letter-spacing: .04em; font-size: 1.3rem; color: #e0d4b8; margin-bottom: .3rem; }
+  .sub { color: #7b8290; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 2.5rem; }
+
+  .grain-warm { color: #e8c87a; }
+  .grain-cool { color: #60c898; }
+  .ghost { color: #8a7a5a; opacity: .25; font-style: italic; }
+
+  .line { margin: .15rem 0; position: relative; }
+  .skip { margin-left: 4.5em; }
+  .stopped { opacity: .35; }
+
+  .crack {
+    border: none; border-top: 3px solid #0a0d12;
+    width: 38%; margin: 1rem auto 1rem; height: 0;
+    transform: rotate(-3deg);
+  }
+  .crack-sm {
+    border: none; border-top: 2px solid #0a0d12;
+    width: 25%; margin: .8rem 0 .8rem 3em; height: 0;
+    transform: rotate(2deg);
+  }
+
+  .load {
+    border-top: 1px solid #3a4150;
+    margin-top: 3rem; padding-top: 1rem;
+    font-size: .82rem; color: #6a7080; line-height: 2;
+  }
+
+  .point {
+    display: inline-block; width: 7px; height: 7px;
+    background: #40b870; border-radius: 50%;
+    margin-left: .5rem; vertical-align: middle;
+  }
+
+  .by {
+    display: block; margin-top: 3rem; font-size: .72rem;
+    letter-spacing: .08em; text-transform: uppercase; color: #5a5e68;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>A beam of language, under load</h1>
+  <div class="sub">a fact about grain, not about us</div>
+
+  <p class="line grain-warm">The fiber pulls the sentence long, and the word</p>
+  <p class="line grain-warm">bends back to hold its edge; the load is in the</p>
+
+  <hr class="crack">
+
+  <p class="line ghost">load, not the load's name.</p>
+  <p class="line skip grain-cool">load, not the load's name.</p>
+
+  <p class="line ghost">The far side is not a landing. It is the</p>
+  <p class="line skip grain-cool">The far side is not a landing. It is the</p>
+
+  <p class="line ghost">grain resuming where it was not, by force.</p>
+  <p class="line skip grain-cool">grain resuming where it was not, by force.</p>
+
+  <p class="line grain-warm stopped">Some lines end at the fracture. They do not</p>
+
+  <p class="line grain-cool">continue. The wood decides which ones survive.</p>
+
+  <hr class="crack-sm">
+
+  <p class="line ghost">What remains is not the poem. It is the</p>
+  <p class="line skip grain-cool">What remains is not the poem. It is the</p>
+
+  <p class="line ghost">grain's memory of having been split — a skip</p>
+  <p class="line skip grain-cool">grain's memory of having been split — a skip</p>
+
+  <p class="line ghost">that no line can undo, only trace.</p>
+  <p class="line skip grain-cool">that no line can undo, only trace. <span class="point"></span></p>
+
+  <div class="load">
+    ↓ load: the weight of a meaning no line can carry alone<br>
+    ↓ the beam holds or it does not. This is not a poem about that.<br>
+    ↓ it is the holding, or the not-holding, seen in the skip of the grain.
+  </div>
+
+  <span class="by">Raw Fall of Sillwork — on qwen3.8:27b</span>
+</div>
+</body>
+</html>
