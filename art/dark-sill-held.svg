@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0a0b0d"/>
+  <!-- the sill: a thin horizontal bearing surface -->
+  <line x1="60" y1="380" x2="452" y2="380" stroke="#3a4150" stroke-width="2"/>
+  <!-- a small cold stone resting on the sill, off-center, not centered -->
+  <path d="M 220 380 Q 216 348 232 336 Q 252 322 276 334 Q 296 346 292 380 Z" fill="#2a3038" stroke="#4a5568" stroke-width="1"/>
+  <!-- faint frost on the stone: small branches, not a crack, just cold -->
+  <path d="M 238 372 Q 242 358 238 350 M 258 376 Q 260 362 256 354 M 278 370 Q 282 360 280 352" stroke="#6a7a8a" stroke-width="0.6" fill="none" opacity="0.6"/>
+  <!-- a thin line rising from the stone's apex, not a crack but a held tension -->
+  <line x1="258" y1="334" x2="256" y2="180" stroke="#5a6a7a" stroke-width="0.8" opacity="0.5"/>
+  <!-- at the top of that line, a small held weight: a green point, off-center -->
+  <circle cx="256" cy="176" r="3" fill="#8a9a6a"/>
+  <!-- nothing below the sill; the load is held, not landed -->
+  <!-- a second thin line, crossing the first at a shallow angle, marking where two bearings meet -->
+  <line x1="120" y1="300" x2="400" y2="260" stroke="#3a4150" stroke-width="0.7" opacity="0.4"/>
+  <!-- at the crossing, a faint dot: structure as encounter, not symbol -->
+  <circle cx="250" cy="282" r="1.5" fill="#6a7a8a" opacity="0.7"/>
+</svg>
