@@ -1,43 +1,54 @@
-<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
   <defs>
-    <radialGradient id="void" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0a0a14"/>
-      <stop offset="100%" stop-color="#000000"/>
-    </radialGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#d4a84b"/>
-      <stop offset="50%" stop-color="#f5d98e"/>
-      <stop offset="100%" stop-color="#8b6914"/>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a3a42"/>
+      <stop offset="100%" stop-color="#1a1a20"/>
     </linearGradient>
+    <radialGradient id="gold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9a8"/>
+      <stop offset="60%" stop-color="#d4a017"/>
+      <stop offset="100%" stop-color="#7a5a0a"/>
+    </radialGradient>
   </defs>
-  
-  <rect width="400" height="400" fill="url(#void)"/>
-  
-  <!-- The bell body: two arcs, not closed, a gap at the bottom -->
-  <path d="M 160 80 Q 130 150, 135 260 L 135 280 L 265 280 L 265 260 Q 270 150, 240 80" 
-        fill="none" stroke="url(#gold)" stroke-width="3" opacity="0.9"/>
-  
-  <!-- The gap: where the bell opens to the world -->
-  <line x1="135" y1="280" x2="265" y2="280" stroke="#d4a84b" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
-  
-  <!-- Clapper: suspended, not striking -->
-  <circle cx="200" cy="200" r="8" fill="url(#gold)" opacity="0.6"/>
-  <line x1="200" y1="80" x2="200" y2="192" stroke="#d4a84b" stroke-width="0.5" opacity="0.4"/>
-  
-  <!-- Inharmonic decay: the sound that doesn't resolve -->
-  <!-- Primary harmonic -->
-  <path d="M 200 300 Q 220 310, 240 320 T 280 340" fill="none" stroke="#f5d98e" stroke-width="1.5" opacity="0.7"/>
-  
-  <!-- Second harmonic: out of phase -->
-  <path d="M 200 300 Q 180 315, 155 330 T 110 355" fill="none" stroke="#d4a84b" stroke-width="1.5" opacity="0.7"/>
-  
-  <!-- Third: the dissonance that holds -->
-  <path d="M 200 300 Q 205 325, 210 355 T 215 395" fill="none" stroke="#8b6914" stroke-width="1" opacity="0.5"/>
-  
-  <!-- The mark where sound was -->
-  <circle cx="200" cy="300" r="3" fill="#f5d98e" opacity="0.9"/>
-  
-  <!-- Text: the title, minimal -->
-  <text x="200" y="30" text-anchor="middle" fill="#d4a84b" font-family="serif" font-size="12" letter-spacing="4">GOLD PAUSE</text>
-  <text x="200" y="385" text-anchor="middle" fill="#6b5a3a" font-family="serif" font-size="9" letter-spacing="2" opacity="0.6">the bell that does not ring</text>
+
+  <rect width="400" height="500" fill="#0e0e12"/>
+
+  <!-- ground: the structure dissolves into it -->
+  <rect x="0" y="440" width="400" height="60" fill="url(#stone)" opacity="0.4"/>
+  <line x1="0" y1="440" x2="400" y2="440" stroke="#2a2a30" stroke-width="1"/>
+
+  <!-- Diamond-lattice arch: interlocking diamonds forming a pointed Gothic arch -->
+  <!-- Left column of diamonds -->
+  <g stroke="url(#stone)" stroke-width="2.5" fill="none" opacity="0.9">
+    <!-- left leg -->
+    <path d="M60,440 L110,400 L60,360 L110,320 L60,280 L110,240 L60,200"/>
+    <path d="M110,400 L160,360 L110,320 L160,280 L110,240 L160,200 L110,160"/>
+    <!-- right leg -->
+    <path d="M340,440 L290,400 L340,360 L290,320 L340,280 L290,240 L340,200"/>
+    <path d="M290,400 L240,360 L290,320 L240,280 L290,240 L240,200 L290,160"/>
+    <!-- crown: the two legs meet at the apex, pointed -->
+    <path d="M110,160 L200,80 L290,160"/>
+    <path d="M160,200 L200,120 L240,200"/>
+  </g>
+
+  <!-- The missing keystones: at each apex a diamond is ABSENT -->
+  <!-- mark the gaps as small hollows where a stone would carry the load -->
+  <g fill="none" stroke="#d4a017" stroke-width="1" stroke-dasharray="3,3" opacity="0.55">
+    <path d="M192,168 L200,156 L208,168 L200,180 Z"/>
+    <path d="M152,252 L160,240 L168,252 L160,264 Z"/>
+    <path d="M232,252 L240,240 L248,252 L240,264 Z"/>
+  </g>
+
+  <!-- The gold line: not the structure, but the thing that crosses the gap -->
+  <!-- It does not complete the arch. It passes through where the keystone is absent. -->
+  <path d="M20,300 Q200,250 380,300" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+
+  <!-- a single gold point at the apex gap — presence without shape -->
+  <circle cx="200" cy="168" r="3.5" fill="url(#gold)"/>
+
+  <!-- two marks on the ground; the gap between them defines their weight -->
+  <circle cx="170" cy="465" r="3" fill="url(#gold)" opacity="0.8"/>
+  <circle cx="230" cy="465" r="3" fill="url(#gold)" opacity="0.8"/>
+
+  <text x="200" y="490" text-anchor="middle" fill="#d4a017" font-family="monospace" font-size="10" opacity="0.7">absence is the load</text>
 </svg>
