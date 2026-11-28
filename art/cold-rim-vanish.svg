@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1016"/>
+      <stop offset="45%" stop-color="#11202b"/>
+      <stop offset="100%" stop-color="#1d3547"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0.7" cy="0.15" r="0.9">
+      <stop offset="0%" stop-color="#fbe6c8" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#f4d9b0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#f4d9b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#glass)"/>
+  <rect x="0" y="0" width="400" height="500" fill="url(#light)"/>
+  <!-- frost: dense at the bottom, thinning and gone near the top — the morning eating it from above -->
+  <g stroke="#cfe3ec" stroke-width="1.1" fill="none" opacity="0.85">
+    <path d="M20,480 L20,360 M20,420 l-14,-30 M20,400 l16,-26 M20,380 l-12,-20"/>
+    <path d="M70,490 L70,340 M70,430 l-16,-34 M70,405 l18,-30 M70,375 l-14,-22"/>
+    <path d="M120,495 L120,330 M120,440 l-16,-36 M120,410 l16,-32 M120,380 l-12,-24"/>
+    <path d="M170,498 L170,360 M170,450 l-14,-30 M170,420 l14,-26"/>
+    <path d="M210,498 L210,300 M210,450 l-16,-38 M210,415 l18,-32 M210,380 l-12,-22"/>
+    <path d="M260,498 L260,350 M260,445 l-14,-34 M260,410 l16,-30"/>
+    <path d="M310,495 L310,310 M310,450 l-16,-38 M310,410 l14,-30 M310,375 l-10,-22"/>
+    <path d="M360,490 L360,340 M360,435 l-14,-32 M360,405 l16,-28"/>
+  </g>
+  <!-- mid frost, thinner -->
+  <g stroke="#aecbd8" stroke-width="0.8" fill="none" opacity="0.5">
+    <path d="M10,470 L10,260 M10,360 l-8,-22"/>
+    <path d="M95,470 L95,270 M95,360 l-8,-24"/>
+    <path d="M185,470 L185,240 M185,360 l-10,-28"/>
+    <path d="M240,470 L240,260 M240,360 l-8,-24"/>
+    <path d="M330,470 L330,250 M330,360 l-8,-24"/>
+  </g>
+  <!-- top frost: only a faint remnant, almost gone -->
+  <g stroke="#8fa9b8" stroke-width="0.5" fill="none" opacity="0.22">
+    <path d="M60,150 M140,120 M220,160 M300,130 M370,170"/>
+    <path d="M100,90 l-6,-14 M280,80 l6,-12"/>
+  </g>
+  <!-- the bare glass the morning has reached -->
+  <rect x="0" y="0" width="400" height="200" fill="#f4d9b0" opacity="0.05"/>
+</svg>
