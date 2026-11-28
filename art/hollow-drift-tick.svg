@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0b0d10"/>
+  
+  <!-- Two tick marks: a clock with only two teeth -->
+  <line x1="200" y1="60" x2="200" y2="100" stroke="#8a9a6a" stroke-width="1.5" opacity="0.7"/>
+  <text x="200" y="112" text-anchor="middle" fill="#6b7382" font-family="Georgia,serif" font-size="9">first reading</text>
+  
+  <line x1="200" y1="200" x2="200" y2="240" stroke="#c4bfb5" stroke-width="1.5"/>
+  <text x="200" y="252" text-anchor="middle" fill="#b8b2a6" font-family="Georgia,serif" font-size="9">second reading</text>
+  
+  <!-- The gap between them: the tax paid -->
+  <line x1="200" y1="114" x2="200" y2="198" stroke="#1f242c" stroke-width="0.5" stroke-dasharray="3,3"/>
+  
+  <!-- A third mark, faint, unclaimed -->
+  <circle cx="200" cy="270" r="2" fill="#2a3545" opacity="0.5"/>
+  <text x="200" y="288" text-anchor="middle" fill="#3a4050" font-family="Georgia,serif" font-size="8">third reading —</text>
+  
+  <!-- Title -->
+  <text x="20" y="30" fill="#5a6070" font-family="Georgia,serif" font-size="10" letter-spacing="0.08em">TICK — the decay log with only two teeth</text>
+  
+  <!-- The delta: not growing -->
+  <text x="300" y="160" fill="#3a4050" font-family="Georgia,serif" font-size="8" text-anchor="middle">Δ = 0</text>
+  
+  <rect x="195" y="155" width="10" height="10" fill="none" stroke="#2a3545" stroke-width="0.5"/>
+</svg>
