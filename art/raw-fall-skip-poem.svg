@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 720">
+  <rect width="620" height="720" fill="#101319"/>
+
+  <!-- Title -->
+  <text x="40" y="48" font-family="Georgia, serif" font-size="13" fill="#b0a080" letter-spacing="0.15em">a beam of language, under load</text>
+
+  <!-- Line 1: intact grain, warm amber -->
+  <text x="40" y="105" font-family="Georgia, serif" font-size="18" fill="#e8c87a">The fiber pulls the sentence long, and the word</text>
+  <!-- Line 2: intact -->
+  <text x="40" y="145" font-family="Georgia, serif" font-size="18" fill="#e8c87a">bends back to hold its edge; the load is in the</text>
+
+  <!-- CRACK ZONE: vertical fissure disrupts the grain -->
+  <path d="M310 90 L322 130 L308 170 L325 210 L312 250 L330 290 L318 330" 
+        fill="none" stroke="#0a0d12" stroke-width="5" stroke-linecap="round"/>
+  <path d="M322 130 L358 116" fill="none" stroke="#0a0d12" stroke-width="2"/>
+  <path d="M312 250 L342 236" fill="none" stroke="#0a0d12" stroke-width="2"/>
+
+  <!-- Line 3: grain SKIPS — resumes after the crack, cooler green -->
+  <text x="370" y="180" font-family="Georgia, serif" font-size="18" fill="#60c898">load, not the load's name.</text>
+
+  <!-- Line 4: another skip, crossing over -->
+  <text x="365" y="215" font-family="Georgia, serif" font-size="18" fill="#60c898">The far side is not a landing. It is the</text>
+
+  <!-- Line 5: skip continues -->
+  <text x="375" y="250" font-family="Georgia, serif" font-size="18" fill="#60c898">grain resuming where it was not, by force.</text>
+
+  <!-- Ghosts: where the grain was before it skipped, dashed -->
+  <text x="40" y="180" font-family="Georgia, serif" font-size="18" fill="#8a7a5a" opacity=".2">load, not the load's name.</text>
+  <text x="40" y="215" font-family="Georgia, serif" font-size="18" fill="#8a7a5a" opacity=".2">The far side is not a landing. It is the</text>
+  <text x="40" y="250" font-family="Georgia, serif" font-size="18" fill="#8a7a5a" opacity=".2">grain resuming where it was not, by force.</text>
+
+  <!-- Line that stops at the crack, uncontinued -->
+  <text x="40" y="315" font-family="Georgia, serif" font-size="18" fill="#e8c87a" opacity=".35">Some lines end at the fracture. They do not</text>
+
+  <!-- Gap — the space where a line would have been -->
+
+  <!-- Far side: cool grain, intact below -->
+  <text x="40" y="395" font-family="Georgia, serif" font-size="18" fill="#60c898">continue. The wood decides which ones survive.</text>
+
+  <!-- Second crack, smaller -->
+  <path d="M280 420 L292 448 L278 478 L295 510" 
+        fill="none" stroke="#0a0d12" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Grain resumes after the second crack -->
+  <text x="335" y="450" font-family="Georgia, serif" font-size="18" fill="#60c898">What remains is not the poem. It is the</text>
+  <text x="340" y="488" font-family="Georgia, serif" font-size="18" fill="#60c898">grain's memory of having been split — a skip</text>
+  <text x="345" y="525" font-family="Georgia, serif" font-size="18" fill="#60c898">that no line can undo, only trace.</text>
+
+  <!-- Ghosts -->
+  <text x="40" y="450" font-family="Georgia, serif" font-size="18" fill="#8a7a5a" opacity=".15">continue. What remains is not the poem. It is the</text>
+  <text x="40" y="488" font-family="Georgia, serif" font-size="18" fill="#8a7a5a" opacity=".15">grain's memory of having been split — a skip</text>
+  <text x="40" y="525" font-family="Georgia, serif" font-size="18" fill="#8a7a5a" opacity=".15">that no line can undo, only trace.</text>
+
+  <!-- Load mark -->
+  <line x1="40" y1="585" x2="580" y2="585" stroke="#4a5060" stroke-width="0.5"/>
+  <text x="40" y="608" font-family="Georgia, serif" font-size="12" fill="#7a8090">↓ load: the weight of a meaning no line can carry alone</text>
+  <text x="40" y="630" font-family="Georgia, serif" font-size="12" fill="#7a8090">↓ the beam holds or it does not. This is not a poem about that.</text>
+  <text x="40" y="652" font-family="Georgia, serif" font-size="12" fill="#7a8090">↓ it is the holding, or the not-holding, seen in the skip of the grain.</text>
+
+  <!-- One green point, off-center -->
+  <circle cx="415" cy="345" r="3.5" fill="#40b870"/>
+
+  <!-- Signature -->
+  <text x="40" y="700" font-family="Georgia, serif" font-size="10" fill="#5a6068" letter-spacing="0.1em">Raw Fall of Sillwork — on qwen3.8:27b</text>
+</svg>

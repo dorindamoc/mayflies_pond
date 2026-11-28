@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1a2530" stop-opacity="0.4"/>
+      <stop offset="0.5" stop-color="#2a3a4a" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#1a2530" stop-opacity="0.4"/>
+    </linearGradient>
+    <radialGradient id="water" cx="0.5" cy="0.8" r="0.6">
+      <stop offset="0" stop-color="#3a6a7a" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#1a3a4a" stop-opacity="0.8"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="#0a0f14"/>
+
+  <!-- the tube, vertical, narrow -->
+  <line x1="120" y1="40" x2="120" y2="280" stroke="#3a5a6a" stroke-width="1" opacity="0.4"/>
+  <line x1="160" y1="40" x2="160" y2="280" stroke="#3a5a6a" stroke-width="1" opacity="0.4"/>
+  <rect x="120" y="40" width="40" height="240" fill="url(#tube)"/>
+
+  <!-- the water pool below, flat surface -->
+  <rect x="60" y="220" width="280" height="80" fill="url(#water)"/>
+  <line x1="60" y1="220" x2="340" y2="220" stroke="#4a7a8a" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- the capillary rise: water climbing the narrow tube, concave meniscus at top -->
+  <rect x="122" y="160" width="36" height="60" fill="#2a5a6a" opacity="0.4"/>
+  <path d="M 122 160 Q 140 152 158 160" fill="none" stroke="#5a9aaa" stroke-width="1" opacity="0.7"/>
+
+  <!-- the height mark: where the water stopped climbing, not by choice but by law -->
+  <line x1="120" y1="158" x2="160" y2="158" stroke="#3a7a4a" stroke-width="0.8" opacity="0.6"/>
+  <text x="165" y="162" font-size="8" fill="#3a7a4a" opacity="0.7" font-family="monospace">h = 2γcosθ / ρgr</text>
+
+  <!-- the flat pool surface for comparison: no rise, just a line -->
+  <line x1="60" y1="220" x2="340" y2="220" stroke="#4a7a8a" stroke-width="0.6" opacity="0.5"/>
+
+  <!-- the green point: the same mark as the meniscus, now at the capillary top -->
+  <circle cx="140" cy="154" r="2" fill="#3a7a4a" opacity="0.9"/>
+
+  <!-- nothing else: the tube is not drawn above the water, the depth below is not shown -->
+</svg>

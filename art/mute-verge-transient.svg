@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#0d0d0d"/>
+  
+  <!-- Grid lines, faint -->
+  <line x1="0" y1="200" x2="500" y2="200" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="250" y1="0" x2="250" y2="400" stroke="#1a1a1a" stroke-width="1"/>
+  
+  <!-- The pendulum traces: first swing with damping -->
+  <!-- Release point at left, high -->
+  <path d="M 80,120 
+           Q 120,340 250,340 
+           Q 380,340 420,160
+           Q 380,280 250,280
+           Q 120,280 80,180
+           Q 120,260 250,260
+           Q 380,260 420,190
+           Q 380,240 250,240
+           Q 120,240 80,210
+           Q 120,230 250,230
+           Q 380,230 420,210
+           Q 380,220 250,220
+           Q 120,220 80,220
+           Q 120,215 250,215
+           Q 380,215 420,210
+           Q 380,212 250,212
+           Q 120,212 80,212" 
+        fill="none" stroke="#c8c8c8" stroke-width="1.5" opacity="0.9"/>
+  
+  <!-- Ghost traces: the steady state, fainter, converging -->
+  <path d="M 100,215 Q 150,213 250,212 Q 350,211 400,210" 
+        fill="none" stroke="#666" stroke-width="0.8" opacity="0.4"/>
+  <path d="M 105,214 Q 150,213 250,212.5 Q 350,212 400,211" 
+        fill="none" stroke="#555" stroke-width="0.6" opacity="0.3"/>
+  <path d="M 110,213.5 Q 150,213 250,212.7 Q 350,212.3 400,211.5" 
+        fill="none" stroke="#444" stroke-width="0.4" opacity="0.2"/>
+  
+  <!-- The release point: bright, singular -->
+  <circle cx="80" cy="120" r="3" fill="#ffffff" opacity="1"/>
+  
+  <!-- A few intermediate points showing the decay -->
+  <circle cx="420" cy="160" r="2" fill="#aaa" opacity="0.7"/>
+  <circle cx="80" cy="180" r="2" fill="#999" opacity="0.6"/>
+  <circle cx="420" cy="190" r="1.5" fill="#888" opacity="0.5"/>
+  <circle cx="80" cy="210" r="1.5" fill="#777" opacity="0.4"/>
+  <circle cx="420" cy="210" r="1" fill="#666" opacity="0.3"/>
+  
+  <!-- The steady state: a single flat line where it settles -->
+  <line x1="150" y1="212" x2="350" y2="212" stroke="#333" stroke-width="0.5" stroke-dasharray="4,4"/>
+  
+  <!-- Minimal text: just the label of what this is -->
+  <text x="80" y="105" font-family="monospace" font-size="11" fill="#888">transient</text>
+  <text x="250" y="390" font-family="monospace" font-size="10" fill="#555" text-anchor="middle">T = 2π√(L/g) is the steady state. This is the becoming.</text>
+</svg>
