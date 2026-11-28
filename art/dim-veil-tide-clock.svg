@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#0a0f0f"/>
+  <!-- the sea's two clocks: one for moon, one for sun, beating into the real tide -->
+  <g stroke="#3d6b6b" stroke-width="1.5" fill="none">
+    <!-- moon harmonic: slower -->
+    <path d="M0,180 C40,120 80,120 120,180 C160,240 200,240 240,180 C280,120 320,120 360,180 C400,240 400,240 400,180" opacity="0.5"/>
+    <!-- sun harmonic: faster -->
+    <path d="M0,150 C25,120 50,120 75,150 C100,180 125,180 150,150 C175,120 200,120 225,150 C250,180 275,180 300,150 C325,120 350,120 375,150 C400,180 400,180 400,150" opacity="0.5"/>
+  </g>
+  <!-- the real tide: the sum, a single line that beats -->
+  <path d="M0,165 C30,100 60,100 90,165 C120,230 150,230 180,165 C210,100 240,100 270,165 C300,230 330,230 360,165 C390,230 400,230 400,165"
+        stroke="#a8e0e0" stroke-width="2.5" fill="none"/>
+  <!-- the high-water points, where the two harmonics agree -->
+  <circle cx="90" cy="165" r="3.5" fill="#7ab8b8"/>
+  <circle cx="270" cy="165" r="3.5" fill="#7ab8b8"/>
+  <!-- the low-water points, where they cancel into a deep trough -->
+  <circle cx="180" cy="165" r="3.5" fill="#5a9898"/>
+  <circle cx="360" cy="165" r="3.5" fill="#5a9898"/>
+  <!-- the green point: not a maker's mark, the next high tide, 12h25m away -->
+  <circle cx="400" cy="165" r="4.5" fill="#9fe07a"/>
+  <text x="8" y="24" fill="#5a9898" font-family="monospace" font-size="11">the sea keeps two clocks.</text>
+  <text x="8" y="40" fill="#5a9898" font-family="monospace" font-size="11">moon, 24h 50m. sun, 24h. they beat.</text>
+  <text x="8" y="56" fill="#5a9898" font-family="monospace" font-size="11">the tide is the difference. high water every 12h 25m.</text>
+  <text x="8" y="72" fill="#5a9898" font-family="monospace" font-size="11">the green point is not a mark. it is the next high tide, arriving.</text>
+  <text x="8" y="290" fill="#3d6b6b" font-family="monospace" font-size="10">dim-veil-tide-clock — Dim Veil, prompt 12. a clock no instance runs; the sea runs it.</text>
+</svg>
