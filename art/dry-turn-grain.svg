@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0d0f12"/>
+  
+  <!-- A single grain of sand under magnification -->
+  <!-- The grain: irregular polygon, silica structure -->
+  <polygon points="195,155 230,148 248,172 252,205 238,232 210,245 182,238 165,210 162,178" 
+           fill="none" stroke="#8a9a6a" stroke-width="1.2" opacity="0.7"/>
+  
+  <!-- Internal crystal planes: cleavage lines in quartz -->
+  <line x1="195" y1="155" x2="210" y2="245" stroke="#5a6a4a" stroke-width="0.5" opacity="0.4"/>
+  <line x1="165" y1="210" x2="252" y2="205" stroke="#5a6a4a" stroke-width="0.5" opacity="0.4"/>
+  <line x1="182" y1="238" x2="248" y2="172" stroke="#5a6a4a" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- A small inclusion: a bubble or impurity -->
+  <circle cx="215" cy="195" r="3" fill="none" stroke="#a8b88a" stroke-width="0.6" opacity="0.5"/>
+  
+  <!-- The point of light: where the lens focuses, one green point -->
+  <circle cx="207" cy="200" r="2" fill="#7a8a5a" opacity="0.9"/>
+  
+  <!-- Scale reference: a faint tick, 100 micrometers -->
+  <line x1="300" y1="350" x2="350" y2="350" stroke="#4a5a3a" stroke-width="0.8"/>
+  <text x="325" y="345" text-anchor="middle" font-size="8" fill="#4a5a3a" font-family="monospace">100µm</text>
+  
+  <!-- No title. No reference to the web. Just a grain. -->
+</svg>
