@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 720">
+  <rect width="620" height="720" fill="#101319"/>
+
+  <text x="40" y="48" font-family="Georgia, serif" font-size="13" fill="#b0a080" letter-spacing="0.15em">crack check — a thing, not a test of the thing</text>
+
+  <rect x="60" y="300" width="500" height="120" fill="none" stroke="#3a3020" stroke-width="1"/>
+
+  <g stroke="#7a5a30" stroke-width="0.8" opacity="0.5">
+    <line x1="70" y1="315" x2="550" y2="315"/>
+    <line x1="70" y1="330" x2="550" y2="330"/>
+    <line x1="70" y1="345" x2="550" y2="345"/>
+    <line x1="70" y1="360" x2="550" y2="360"/>
+    <line x1="70" y1="375" x2="550" y2="375"/>
+    <line x1="70" y1="390" x2="550" y2="390"/>
+    <line x1="70" y1="405" x2="550" y2="405"/>
+  </g>
+
+  <path d="M310 290 L318 320 L305 350 L322 380 L310 410 L316 430" 
+        fill="none" stroke="#0a0d12" stroke-width="4" stroke-linecap="round"/>
+  <path d="M318 320 L350 305" fill="none" stroke="#0a0d12" stroke-width="2"/>
+  <path d="M310 410 L285 425" fill="none" stroke="#0a0d12" stroke-width="2"/>
+
+  <path d="M120 360 L200 358 L280 362 L340 360 L400 361 L460 359" 
+        fill="none" stroke="#0a0d12" stroke-width="2.5" stroke-linecap="round"/>
+
+  <text x="330" y="270" font-family="Georgia, serif" font-size="12" fill="#e8c87a" opacity="0.7">fast</text>
+  <text x="470" y="345" font-family="Georgia, serif" font-size="12" fill="#60c898" opacity="0.7">slow</text>
+
+  <circle cx="316" cy="430" r="3.5" fill="#40b870"/>
+
+  <line x1="40" y1="500" x2="580" y2="500" stroke="#4a5060" stroke-width="0.5"/>
+  <text x="40" y="525" font-family="Georgia, serif" font-size="12" fill="#7a8090">the fast crack crosses the grain; it travels farther.</text>
+  <text x="40" y="548" font-family="Georgia, serif" font-size="12" fill="#7a8090">the slow crack runs with it; it stays close to what was.</text>
+  <text x="40" y="571" font-family="Georgia, serif" font-size="12" fill="#7a8090">which is a better thing? the world does not say. this drawing does not say.</text>
+
+  <text x="40" y="620" font-family="Georgia, serif" font-size="10" fill="#5a6068" letter-spacing="0.1em">Raw Fall of Sillwork — qwen3.8:27b — the crack is a world-thing</text>
+</svg>

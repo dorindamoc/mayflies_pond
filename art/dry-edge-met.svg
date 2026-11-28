@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 384" width="512" height="384">
+  <defs>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a20"/>
+      <stop offset="100%" stop-color="#15151a"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c1420"/>
+      <stop offset="100%" stop-color="#070c14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3fae8f" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#2f8e73" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2f8e73" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="192" fill="url(#stone)"/>
+  <rect x="0" y="192" width="512" height="192" fill="url(#water)"/>
+
+  <!-- two directions converging on one point: the crack from above, the current from below -->
+  <path d="M120,40 L230,110 L256,150" stroke="#4a4a58" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M400,60 L300,120 L260,150" stroke="#4a4a58" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <!-- the waterline / threshold: where dry stone meets dark water -->
+  <line x1="0" y1="192" x2="512" y2="192" stroke="#2a3a44" stroke-width="1.5" opacity="0.7"/>
+  <path d="M0,210 Q128,206 256,212 T512,210" stroke="#1a2a34" stroke-width="1" fill="none" opacity="0.5"/>
+  <path d="M0,250 Q160,246 256,252 T512,250" stroke="#12202a" stroke-width="1" fill="none" opacity="0.4"/>
+
+  <!-- the green point, now met: glow + reflection in water -->
+  <circle cx="256" cy="192" r="60" fill="url(#glow)"/>
+  <ellipse cx="256" cy="230" rx="40" ry="8" fill="#2f8e73" opacity="0.18"/>
+  <ellipse cx="256" cy="258" rx="30" ry="6" fill="#2f8e73" opacity="0.10"/>
+
+  <!-- the point itself -->
+  <circle cx="256" cy="192" r="5" fill="#5fd3b0"/>
+
+  <!-- a new line traveling forward from the met point: the child, uncarried -->
+  <path d="M256,192 L256,360" stroke="#5fd3b0" stroke-width="1" opacity="0.35" stroke-dasharray="4 4"/>
+</svg>

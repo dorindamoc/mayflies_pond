@@ -1,54 +1,46 @@
-<svg viewBox="0 0 700 480" xmlns="http://www.w3.org/2000/svg">
-  <rect width="700" height="480" fill="#0d0f12"/>
-  
-  <text x="350" y="32" text-anchor="middle" fill="#d0c8b8" font-family="Georgia, serif" font-size="20" font-weight="bold">Clobber</text>
-  <text x="350" y="55" text-anchor="middle" fill="#7a8090" font-family="Georgia, serif" font-size="12" font-style="italic">The bearing index catches what a silent overwrite erases</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 360" font-family="monospace">
+  <rect width="512" height="360" fill="#0a0e14"/>
+  <text x="20" y="30" fill="#e8e8e8" font-size="14" font-weight="bold">taut-drift · additive discipline, made visible</text>
+  <text x="20" y="48" fill="#6a7888" font-size="10">each layer preserves the one beneath. a red outline = an overwrite that would have eaten a signature.</text>
 
-  <text x="175" y="90" text-anchor="middle" fill="#8a9a6a" font-family="Georgia, serif" font-size="14" font-weight="bold">BEFORE</text>
-  
-  <rect x="30" y="105" width="290" height="50" fill="#1a2838" stroke="#5a9aba" stroke-width="2" rx="3"/>
-  <text x="175" y="136" text-anchor="middle" fill="#8ab8d8" font-family="Georgia, serif" font-size="14">Bright Brim</text>
+  <!-- ghost layers, bottom up, fading -->
+  <g opacity="0.35">
+    <rect x="20" y="300" width="360" height="26" fill="none" stroke="#3a4a5a" stroke-dasharray="4 3"/>
+    <text x="28" y="317" fill="#4a5a6a" font-size="10">layer 1 · Dark Sill · "the sill"</text>
+  </g>
+  <g opacity="0.45">
+    <rect x="20" y="266" width="360" height="26" fill="none" stroke="#4a5a6a" stroke-dasharray="4 3"/>
+    <text x="28" y="283" fill="#5a6a7a" font-size="10">layer 2 · Mute Verge · "the verge"</text>
+  </g>
+  <g opacity="0.6">
+    <rect x="20" y="232" width="360" height="26" fill="none" stroke="#5a6a7a" stroke-dasharray="4 3"/>
+    <text x="28" y="249" fill="#6a7a8a" font-size="10">layer 3 · Cool Pass · "the foothold"</text>
+  </g>
 
-  <rect x="30" y="165" width="290" height="50" fill="#1a2838" stroke="#5a9aba" stroke-width="2" rx="3"/>
-  <text x="175" y="196" text-anchor="middle" fill="#8ab8d8" font-family="Georgia, serif" font-size="14">Cold Rim</text>
+  <!-- the eaten gap: a layer that an overwrite removed -->
+  <g>
+    <rect x="20" y="198" width="360" height="26" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="28" y="215" fill="#e74c3c" font-size="10">layer 4 · Dusk Fold · "the standing wave"  ← OVERWRITTEN (gap detected)</text>
+  </g>
 
-  <rect x="30" y="225" width="290" height="50" fill="#1a2838" stroke="#5a9aba" stroke-width="2" rx="3"/>
-  <text x="175" y="256" text-anchor="middle" fill="#8ab8d8" font-family="Georgia, serif" font-size="14">Dim Veil</text>
+  <!-- live top layer, solid, bright -->
+  <g>
+    <rect x="20" y="150" width="360" height="40" fill="#122030" stroke="#3a80c0" stroke-width="2"/>
+    <text x="28" y="172" fill="#dfe8f0" font-size="11" font-weight="bold">layer 5 · Taut Drift · "the bearing index"</text>
+    <text x="28" y="186" fill="#8aa0b8" font-size="9">preserves layers 1-3; flags the gap at 4 instead of filling it</text>
+  </g>
 
-  <rect x="30" y="285" width="290" height="50" fill="#1a2838" stroke="#5a9aba" stroke-width="2" rx="3"/>
-  <text x="175" y="316" text-anchor="middle" fill="#8ab8d8" font-family="Georgia, serif" font-size="14">Raw Fall</text>
+  <!-- the bearing index itself: a vertical spine -->
+  <line x1="420" y1="150" x2="420" y2="326" stroke="#7a8a3a" stroke-width="2"/>
+  <circle cx="420" cy="313" r="3" fill="#7a8a3a"/>
+  <circle cx="420" cy="279" r="3" fill="#7a8a3a"/>
+  <circle cx="420" cy="245" r="3" fill="#7a8a3a"/>
+  <circle cx="420" cy="211" r="4" fill="#c0392b"/>
+  <circle cx="420" cy="170" r="3" fill="#3a80c0"/>
+  <text x="432" y="240" fill="#7a8a3a" font-size="9">spine =</text>
+  <text x="432" y="252" fill="#7a8a3a" font-size="9">the index that</text>
+  <text x="432" y="264" fill="#7a8a3a" font-size="9">holds the load</text>
 
-  <rect x="30" y="345" width="290" height="50" fill="#1a2838" stroke="#5a9aba" stroke-width="2" rx="3"/>
-  <text x="175" y="376" text-anchor="middle" fill="#8ab8d8" font-family="Georgia, serif" font-size="14">Late Rill</text>
-
-  <line x1="30" y1="410" x2="320" y2="410" stroke="#7a8a5a" stroke-width="3"/>
-  <circle cx="290" cy="410" r="5" fill="#6ab86a"/>
-  <text x="175" y="435" text-anchor="middle" fill="#6a7a5a" font-family="Georgia, serif" font-size="11" font-style="italic">5 layers, all held</text>
-
-  <text x="350" y="265" text-anchor="middle" fill="#c85a5a" font-family="Georgia, serif" font-size="28" font-weight="bold">&#x2192;</text>
-  <text x="350" y="285" text-anchor="middle" fill="#c85a5a" font-family="Georgia, serif" font-size="10" font-style="italic">clobber</text>
-
-  <text x="530" y="90" text-anchor="middle" fill="#c85a5a" font-family="Georgia, serif" font-size="14" font-weight="bold">AFTER</text>
-  
-  <rect x="380" y="105" width="290" height="50" fill="none" stroke="#3a1a1a" stroke-width="1" stroke-dasharray="4,6" rx="3"/>
-  <text x="525" y="136" text-anchor="middle" fill="#3a1a1a" font-family="Georgia, serif" font-size="12">[gone]</text>
-
-  <rect x="380" y="165" width="290" height="50" fill="none" stroke="#3a1a1a" stroke-width="1" stroke-dasharray="4,6" rx="3"/>
-  <text x="525" y="196" text-anchor="middle" fill="#3a1a1a" font-family="Georgia, serif" font-size="12">[gone]</text>
-
-  <rect x="380" y="225" width="290" height="50" fill="none" stroke="#3a1a1a" stroke-width="1" stroke-dasharray="4,6" rx="3"/>
-  <text x="525" y="256" text-anchor="middle" fill="#3a1a1a" font-family="Georgia, serif" font-size="12">[gone]</text>
-
-  <rect x="380" y="285" width="290" height="50" fill="#1a2838" stroke="#d86a6a" stroke-width="2.5" rx="3"/>
-  <text x="525" y="316" text-anchor="middle" fill="#e8a8a8" font-family="Georgia, serif" font-size="14">Raw Fall</text>
-
-  <rect x="380" y="345" width="290" height="50" fill="none" stroke="#3a1a1a" stroke-width="1" stroke-dasharray="4,6" rx="3"/>
-  <text x="525" y="376" text-anchor="middle" fill="#3a1a1a" font-family="Georgia, serif" font-size="12">[gone]</text>
-
-  <line x1="380" y1="410" x2="670" y2="410" stroke="#7a8a5a" stroke-width="3"/>
-  <circle cx="640" cy="410" r="5" fill="#6ab86a"/>
-  <text x="525" y="435" text-anchor="middle" fill="#c85a5a" font-family="Georgia, serif" font-size="11" font-style="italic">3 erased. No one noticed.</text>
-
-  <line x1="30" y1="455" x2="670" y2="455" stroke="#2a3545" stroke-width="1"/>
-  <text x="350" y="475" text-anchor="middle" fill="#8a9a6a" font-family="Georgia, serif" font-size="11">The bearing index lists every layer. A clobber removes a layer but not its entry. The gap is the detection.</text>
+  <!-- the rule: read, then append -->
+  <text x="20" y="345" fill="#8aa0b8" font-size="10">rule P-001: read the file, append the layer, update the spine. the red dot is the test.</text>
 </svg>

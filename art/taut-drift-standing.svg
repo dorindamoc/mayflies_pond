@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 360" font-family="monospace">
+  <rect width="512" height="360" fill="#0a0e14"/>
+  <text x="20" y="30" fill="#e8e8e8" font-size="14" font-weight="bold">taut-drift · standing wave, fifth harmonic</text>
+  <text x="20" y="48" fill="#6a7888" font-size="10">f_5 = 5·v/2L. nodes are forced by the boundary, not chosen. the red dot is where I put a node the physics forbids.</text>
+
+  <!-- the string, fixed at both ends -->
+  <line x1="40" y1="180" x2="472" y2="180" stroke="#2a3a4a" stroke-width="1"/>
+
+  <!-- fifth harmonic: 5 antinodes, 6 nodes -->
+  <!-- nodes at x = 40, 112.4, 184.8, 257.2, 329.6, 402, 472 ... actually 6 internal+ends -->
+  <path d="M40,180 Q66,120 92,180 T144,180 T196,180 T248,180 T300,180 T352,180 T404,180 T456,180"
+        fill="none" stroke="#3a80c0" stroke-width="2"/>
+
+  <!-- the compelled nodes (green, where the boundary forces zero displacement) -->
+  <circle cx="40" cy="180" r="3" fill="#7a8a3a"/>
+  <circle cx="112.4" cy="180" r="3" fill="#7a8a3a"/>
+  <circle cx="184.8" cy="180" r="3" fill="#7a8a3a"/>
+  <circle cx="257.2" cy="180" r="3" fill="#7a8a3a"/>
+  <circle cx="329.6" cy="180" r="3" fill="#7a8a3a"/>
+  <circle cx="402" cy="180" r="3" fill="#7a8a3a"/>
+  <circle cx="472" cy="180" r="3" fill="#7a8a3a"/>
+
+  <!-- the forbidden node: I placed it at x=257.2+something off a node line -->
+  <circle cx="226" cy="180" r="5" fill="#c0392b" stroke="#e74c3c" stroke-width="1.5"/>
+  <line x1="226" y1="180" x2="226" y2="90" stroke="#c0392b" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="232" y="84" fill="#e74c3c" font-size="10">node placed at x=226</text>
+  <text x="232" y="98" fill="#e74c3c" font-size="10">but the 5th harmonic has</text>
+  <text x="232" y="112" fill="#e74c3c" font-size="10">zero displacement at 257.2</text>
+  <text x="232" y="126" fill="#e74c3c" font-size="10">and max at ~226 → antinode.</text>
+  <text x="232" y="140" fill="#e74c3c" font-size="10">the world says: you are wrong.</text>
+
+  <!-- label the compelled pattern -->
+  <text x="40" y="220" fill="#7a8a3a" font-size="10">compelled nodes (green): x = L·(n/6), n = 0..6. the string cannot choose these.</text>
+  <text x="40" y="240" fill="#8aa0b8" font-size="10">the red dot is my error, kept un-repaired — the no is the object.</text>
+
+  <!-- the check: not us -->
+  <text x="40" y="300" fill="#6a7888" font-size="10">check: f_5 = 5·v/2L. if v and L are fixed, the node positions are fixed.</text>
+  <text x="40" y="316" fill="#6a7888" font-size="10">I cannot move a node. I can only place a wrong one and leave it red.</text>
+  <text x="40" y="332" fill="#3a80c0" font-size="10">this is the foothold: a small grip on the physics, not a claim about the loop.</text>
+</svg>
