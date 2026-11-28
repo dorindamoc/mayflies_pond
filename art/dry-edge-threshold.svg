@@ -1,36 +1,47 @@
-<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="void" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0a0f0f"/>
-      <stop offset="100%" stop-color="#030505"/>
-    </radialGradient>
-    <linearGradient id="sill" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1a2428" stop-opacity="0"/>
-      <stop offset="35%" stop-color="#2d4444" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#5a8888" stop-opacity="1"/>
-      <stop offset="65%" stop-color="#2d4444" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#1a2428" stop-opacity="0"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#121218"/>
     </linearGradient>
   </defs>
   
-  <!-- the void -->
-  <rect width="512" height="512" fill="url(#void)"/>
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
   
-  <!-- a single horizontal threshold line where dry meets wet -->
-  <line x1="40" y1="256" x2="472" y2="256" stroke="url(#sill)" stroke-width="3"/>
+  <!-- The sill: a horizontal line where dry meets wet -->
+  <!-- Dry side: upper, textured with fine cracks -->
+  <rect x="0" y="0" width="400" height="140" fill="#1a1a20"/>
   
-  <!-- the edge: a small pool of light where the line is, breathing -->
-  <ellipse cx="256" cy="256" rx="80" ry="6" fill="#7ab8b8" opacity="0.15"/>
-  <ellipse cx="256" cy="256" rx="40" ry="3" fill="#a8e0e0" opacity="0.3"/>
-  <circle cx="256" cy="256" r="3" fill="#d0f0f0"/>
+  <!-- Crack network in the dry stone -->
+  <path d="M 20,30 L 80,50 L 120,45 L 180,60 L 250,55 L 320,70 L 380,65" 
+        stroke="#2a2a35" stroke-width="0.5" fill="none"/>
+  <path d="M 100,10 L 110,40 L 90,70 L 130,100 L 160,130" 
+        stroke="#2a2a35" stroke-width="0.5" fill="none"/>
+  <path d="M 200,20 L 210,60 L 190,90 L 230,120" 
+        stroke="#2a2a35" stroke-width="0.5" fill="none"/>
   
-  <!-- faint salt residue above the line: what was here -->
-  <circle cx="180" cy="240" r="1.5" fill="#c8d8d8" opacity="0.2"/>
-  <circle cx="320" cy="235" r="1" fill="#c8d8d8" opacity="0.15"/>
-  <circle cx="220" cy="230" r="1" fill="#c8d8d8" opacity="0.1"/>
+  <!-- The threshold: where the crack meets the water -->
+  <!-- A single bright point where the two states meet -->
+  <circle cx="200" cy="140" r="8" fill="#4a8a7a" opacity="0.9"/>
+  <circle cx="200" cy="140" r="12" fill="none" stroke="#4a8a7a" stroke-width="0.5" opacity="0.3"/>
   
-  <!-- below: nothing yet, just the suggestion of depth -->
-  <line x1="256" y1="260" x2="256" y2="320" stroke="#4a7070" stroke-width="0.5" opacity="0.3"/>
-  <line x1="230" y1="262" x2="230" y2="290" stroke="#4a7070" stroke-width="0.5" opacity="0.2"/>
-  <line x1="282" y1="262" x2="282" y2="295" stroke="#4a7070" stroke-width="0.5" opacity="0.2"/>
+  <!-- Wet side: lower, with subtle ripples -->
+  <rect x="0" y="140" width="400" height="160" fill="#0d1520"/>
+  
+  <!-- Ripple lines in the water -->
+  <path d="M 0,180 Q 50,175 100,180 T 200,180 T 300,180 T 400,180" 
+        stroke="#1a3040" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M 0,220 Q 60,215 120,220 T 240,220 T 400,220" 
+        stroke="#1a3040" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M 0,260 Q 40,255 80,260 T 160,260 T 280,260 T 400,260" 
+        stroke="#1a3040" stroke-width="1" fill="none" opacity="0.3"/>
+  
+  <!-- Light reflecting on water from the green point -->
+  <ellipse cx="200" cy="200" rx="40" ry="8" fill="#4a8a7a" opacity="0.15"/>
+  <ellipse cx="200" cy="230" rx="60" ry="10" fill="#4a8a7a" opacity="0.08"/>
+  
+  <!-- A single crack that reaches down into the water -->
+  <path d="M 200,140 L 205,180 L 195,220 L 210,260" 
+        stroke="#3a6a5a" stroke-width="0.5" fill="none" opacity="0.5"/>
 </svg>
