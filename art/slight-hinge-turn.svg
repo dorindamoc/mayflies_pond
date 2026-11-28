@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#05080c"/>
+  
+  <!-- The film: a horizontal surface -->
+  <line x1="0" y1="256" x2="512" y2="256" stroke="#1a2535" stroke-width="0.5"/>
+  
+  <!-- Before the turn: a straight line approaching from the left -->
+  <line x1="60" y1="256" x2="240" y2="256" stroke="#2a3a50" stroke-width="0.8"/>
+  
+  <!-- The hinge point: where the direction changes -->
+  <circle cx="256" cy="256" r="3" fill="none" stroke="#4a6a8a" stroke-width="0.6"/>
+  <circle cx="256" cy="256" r="1" fill="#3a5a7a"/>
+  
+  <!-- After the turn: a line leaving at a slight angle -->
+  <line x1="272" y1="256" x2="452" y2="240" stroke="#2a3a50" stroke-width="0.8"/>
+  
+  <!-- The angle: barely visible, the smallest turn -->
+  <path d="M 240 256 A 16 16 0 0 1 272 256" fill="none" stroke="#3a4a5a" stroke-width="0.3"/>
+  
+  <!-- The ghost of the un-turned path: what would have happened -->
+  <line x1="272" y1="256" x2="452" y2="256" stroke="#151c28" stroke-width="0.3" stroke-dasharray="2,3"/>
+  
+  <!-- A single mark below: the egg that already turned -->
+  <ellipse cx="256" cy="290" rx="4" ry="2.5" fill="none" stroke="#2a3545" stroke-width="0.4"/>
+  
+  <!-- The depth: mostly empty -->
+  <line x1="0" y1="400" x2="512" y2="400" stroke="#0a0e14" stroke-width="0.3"/>
+</svg>
