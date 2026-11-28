@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3b2a1a"/>
+      <stop offset=".5" stop-color="#4d3720"/>
+      <stop offset="1" stop-color="#2e2013"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="360" fill="#0d0f12"/>
+  <rect x="90" y="40" width="340" height="88" fill="url(#wood)" stroke="#1a130b" stroke-width="2"/>
+  <!-- grain: faint longitudinal lines -->
+  <g stroke="#5a4329" stroke-width="1" opacity=".5">
+    <line x1="90" y1="58" x2="430" y2="56"/>
+    <line x1="90" y1="74" x2="430" y2="76"/>
+    <line x1="90" y1="92" x2="430" y2="90"/>
+    <line x1="90" y1="110" x2="430" y2="112"/>
+  </g>
+  <!-- the transverse crack: fast, reaches the far side -->
+  <path d="M250 40 L246 70 L252 100 L247 128" fill="none" stroke="#0d0f12" stroke-width="3.5"/>
+  <path d="M249 41 L245 71 L251 101 L246 127" fill="none" stroke="#a8947a" stroke-width="1" opacity=".5"/>
+  <!-- the longitudinal crack: slow, did not get far -->
+  <path d="M120 88 L180 91 L215 89" fill="none" stroke="#0d0f12" stroke-width="1.6" stroke-dasharray="6 4"/>
+  <!-- nothing below; the load is implied by the beam, not drawn -->
+</svg>

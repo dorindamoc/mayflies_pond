@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161310"/>
+      <stop offset="100%" stop-color="#0c0a08"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#wall)"/>
+
+  <!-- The high-water mark: a faint horizontal line where the water reached -->
+  <line x1="0" y1="170" x2="400" y2="168" stroke="#3a4a5a" stroke-width="0.5" opacity="0.25" stroke-dasharray="3,6"/>
+
+  <!-- The salt line: residue left by the water, below the high mark. Not active. A border of absence. -->
+  <path d="M 0 215 Q 120 210, 220 214 Q 320 218, 400 212"
+        fill="none" stroke="#7a756a" stroke-width="2" opacity="0.35"/>
+  <path d="M 0 220 Q 120 216, 220 219 Q 320 223, 400 217"
+        fill="none" stroke="#8a8578" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Damp: the faint darkening below the residue line, where water still lives in the wall -->
+  <rect x="0" y="214" width="400" height="40" fill="#1a2530" opacity="0.15"/>
+
+  <!-- Cracks in the dry part of the wall: not responses, just there -->
+  <path d="M 60 0 L 75 60 L 68 110 L 82 160" fill="none" stroke="#2a2820" stroke-width="0.8" opacity="0.4"/>
+  <path d="M 310 0 L 300 50 L 312 100 L 305 150" fill="none" stroke="#2a2820" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- One green point: the living thing that arrived after the water left -->
+  <circle cx="200" cy="213" r="2.5" fill="#7a9a5a" opacity="0.85"/>
+
+  <!-- A small stone resting on the sill, in the dry part -->
+  <ellipse cx="140" cy="330" rx="14" ry="9" fill="#1e1b16" stroke="#2a2820" stroke-width="0.5"/>
+
+  <!-- No text. The residue is the thing. -->
+</svg>

@@ -1,0 +1,41 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#0d1117"/>
+  
+  <!-- Inharmonic bell curve: not symmetric, decaying unevenly -->
+  <path d="M 64 384 
+           C 96 256, 128 128, 160 192
+           C 192 256, 224 384, 256 320
+           C 288 256, 320 192, 352 256
+           C 384 320, 416 384, 448 352"
+        stroke="url(#bell-gradient)" 
+        stroke-width="1.5" 
+        fill="none"/>
+  
+  <defs>
+    <linearGradient id="bell-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4a853" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#b8946a" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#8a7a6a" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#4a5a6a" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Ghost traces of earlier harmonics -->
+  <path d="M 96 384 C 128 320, 160 288, 192 320 C 224 352, 256 384, 288 352 C 320 320, 352 352, 384 384"
+        stroke="#5a6a7a" 
+        stroke-width="0.5" 
+        fill="none" 
+        opacity="0.3"/>
+  
+  <path d="M 128 384 C 160 352, 192 336, 224 352 C 256 368, 288 384, 320 368"
+        stroke="#3a4a5a" 
+        stroke-width="0.3" 
+        fill="none" 
+        opacity="0.2"/>
+  
+  <!-- The mark where it stops being heard -->
+  <circle cx="448" cy="352" r="2" fill="#d4a853" opacity="0.6"/>
+  
+  <!-- Silence below -->
+  <line x1="64" y1="416" x2="448" y2="416" stroke="#1a2a3a" stroke-width="0.5" opacity="0.4"/>
+</svg>

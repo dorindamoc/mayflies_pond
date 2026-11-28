@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0b0d"/>
+      <stop offset="100%" stop-color="#0d1218"/>
+    </linearGradient>
+    <radialGradient id="cell-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4a6a7a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4a6a7a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="512" height="512" fill="url(#bg)"/>
+  
+  <!-- Voronoi cells: partitioning space by nearest points -->
+  <!-- 12 seed points, hand-placed to create irregular natural partitions -->
+  <g stroke="#3a5a6a" stroke-width="0.8" fill="none" opacity="0.6">
+    <!-- Cell 1: top-left region -->
+    <path d="M 0,0 L 120,0 L 145,85 L 95,140 L 0,120 Z"/>
+    <path d="M 120,0 L 240,0 L 260,75 L 145,85 Z"/>
+    <path d="M 240,0 L 380,0 L 390,100 L 320,130 L 260,75 Z"/>
+    <path d="M 380,0 L 512,0 L 512,130 L 390,100 Z"/>
+    
+    <!-- Cell 2: middle band -->
+    <path d="M 0,120 L 95,140 L 110,240 L 0,260 Z"/>
+    <path d="M 95,140 L 145,85 L 260,75 L 320,130 L 280,230 L 180,250 L 110,240 Z"/>
+    <path d="M 320,130 L 390,100 L 512,130 L 512,250 L 430,280 L 360,260 L 280,230 Z"/>
+    
+    <!-- Cell 3: lower regions -->
+    <path d="M 0,260 L 110,240 L 130,380 L 0,400 Z"/>
+    <path d="M 110,240 L 180,250 L 280,230 L 360,260 L 340,390 L 250,410 L 130,380 Z"/>
+    <path d="M 360,260 L 430,280 L 512,250 L 512,400 L 440,420 L 340,390 Z"/>
+    
+    <!-- Cell 4: bottom -->
+    <path d="M 0,400 L 130,380 L 250,410 L 340,390 L 440,420 L 512,400 L 512,512 L 0,512 Z"/>
+  </g>
+  
+  <!-- Seed points: the sites that generated the partition -->
+  <g fill="#7a9a8a" opacity="0.9">
+    <circle cx="60" cy="60" r="2.5"/>
+    <circle cx="180" cy="40" r="2.5"/>
+    <circle cx="300" cy="55" r="2.5"/>
+    <circle cx="450" cy="65" r="2.5"/>
+    <circle cx="50" cy="190" r="2.5"/>
+    <circle cx="150" cy="170" r="2.5"/>
+    <circle cx="290" cy="150" r="2.5"/>
+    <circle cx="440" cy="180" r="2.5"/>
+    <circle cx="70" cy="320" r="2.5"/>
+    <circle cx="220" cy="310" r="2.5"/>
+    <circle cx="390" cy="320" r="2.5"/>
+    <circle cx="256" cy="460" r="2.5"/>
+  </g>
+  
+  <!-- One seed highlighted: the green point, off-center -->
+  <circle cx="290" cy="150" r="4" fill="#8a9a6a" opacity="1"/>
+  
+  <!-- Faint cell interiors: the space each seed claims -->
+  <g fill="url(#cell-glow)" opacity="0.3">
+    <circle cx="150" cy="170" r="40"/>
+    <circle cx="290" cy="150" r="45"/>
+    <circle cx="220" cy="310" r="50"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <radialGradient id="glass" cx="70%" cy="30%" r="90%">
+      <stop offset="0%" stop-color="#10202a"/>
+      <stop offset="55%" stop-color="#0a1419"/>
+      <stop offset="100%" stop-color="#04080b"/>
+    </radialGradient>
+    <linearGradient id="ice" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8f4ff" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#bcdcee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7fb0cc" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#glass)"/>
+
+  <!-- faint condensation field, no structure -->
+  <g stroke="#9fc6dc" stroke-opacity="0.12" stroke-width="0.6" fill="none">
+    <path d="M40,60 q30,8 60,0 t60,0"/>
+    <path d="M500,300 q30,-8 60,0 t60,0"/>
+  </g>
+
+  <!-- the frost flower: a single origin, branching upward, each branch forking, ends dissolving -->
+  <g stroke="url(#ice)" fill="none" stroke-linecap="round" stroke-width="2.1">
+    <!-- main stems rising from a base near lower-left, against the wind -->
+    <path d="M150,320 C160,250 140,210 175,150 C195,110 180,70 205,30" stroke-width="2.6"/>
+    <path d="M175,150 C205,140 235,150 270,120 C295,100 300,80 335,55" stroke-width="2.0"/>
+    <path d="M175,150 C150,130 120,135 95,110 C78,92 70,80 55,60" stroke-width="1.7"/>
+    <path d="M270,120 C260,90 275,70 262,40" stroke-width="1.3"/>
+    <path d="M270,120 C300,120 320,140 355,135" stroke-width="1.3"/>
+    <path d="M95,110 C80,90 90,70 78,45" stroke-width="1.1"/>
+    <path d="M335,55 C360,55 372,70 400,62" stroke-width="1.0"/>
+    <path d="M355,135 C385,135 400,150 430,148" stroke-width="1.0"/>
+    <!-- fine secondary forking: thinner, shorter, dissolving -->
+    <path d="M205,30 C220,38 232,30 250,36" stroke-width="0.7" opacity="0.7"/>
+    <path d="M175,150 C160,175 150,185 132,198" stroke-width="0.7" opacity="0.6"/>
+    <path d="M270,120 C285,108 292,98 305,95" stroke-width="0.6" opacity="0.55"/>
+    <path d="M335,55 C348,48 356,52 372,44" stroke-width="0.55" opacity="0.5"/>
+    <path d="M95,110 C82,120 74,118 60,128" stroke-width="0.55" opacity="0.5"/>
+    <!-- the ends are not capped; they fray into faint tips -->
+    <path d="M400,62 l14,-3" stroke-width="0.4" opacity="0.3"/>
+    <path d="M430,148 l14,2" stroke-width="0.4" opacity="0.3"/>
+  </g>
+
+  <!-- a single point where the wind stopped, lower right: the one green mark -->
+  <circle cx="470" cy="250" r="3.2" fill="#8fd8a0" fill-opacity="0.9"/>
+  <circle cx="470" cy="250" r="11" fill="none" stroke="#8fd8a0" stroke-opacity="0.18" stroke-width="0.8"/>
+
+  <!-- the rim: a cold glass edge, the border of the picture, not an answer -->
+  <rect x="6" y="6" width="628" height="348" fill="none" stroke="#3a5566" stroke-opacity="0.45" stroke-width="1.2"/>
+</svg>

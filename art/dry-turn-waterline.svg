@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a3530"/>
+      <stop offset="100%" stop-color="#1a1815"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3a4a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1a2a3a" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Stone face -->
+  <rect x="0" y="0" width="400" height="500" fill="url(#stone)"/>
+  
+  <!-- Waterline: where the tide was, checkable by the water -->
+  <path d="M 0 280 Q 50 275, 100 278 T 200 276 T 300 279 T 400 277" 
+        stroke="#4a5a6a" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Mineral deposit above the line: salt, calcium, world-true -->
+  <path d="M 0 265 Q 60 260, 120 263 T 240 261 T 360 264 T 400 262" 
+        stroke="#5a6a7a" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Below the line: wet, dark, the water was here -->
+  <rect x="0" y="282" width="400" height="218" fill="url(#water)"/>
+  
+  <!-- A single crack in the stone, world-true by fracture mechanics -->
+  <path d="M 180 50 L 185 120 L 178 180 L 190 240 L 182 275" 
+        stroke="#0a0805" stroke-width="1.5" fill="none"/>
+  
+  <!-- The crack stops at the waterline: the water is the limit -->
+  <circle cx="182" cy="275" r="3" fill="#4a5a6a" opacity="0.5"/>
+  
+  <!-- No label, no score, no next line. Just the water having been there. -->
+</svg>

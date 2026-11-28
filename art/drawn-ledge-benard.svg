@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="depth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1420"/>
+      <stop offset="1" stop-color="#1c2a12"/>
+    </linearGradient>
+    <radialGradient id="hot" cx="0.5" cy="1" r="0.9">
+      <stop offset="0" stop-color="#c8752e" stop-opacity="0.55"/>
+      <stop offset="0.5" stop-color="#a85a28" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#a85a28" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- the layer: cold above, hot below -->
+  <rect width="512" height="512" fill="url(#depth)"/>
+  <rect x="0" y="380" width="512" height="132" fill="url(#hot)"/>
+
+  <!-- hot floor, cold ceiling -->
+  <rect x="40" y="392" width="432" height="8" fill="#d98a3a" opacity="0.85"/>
+  <rect x="40" y="120" width="432" height="8" fill="#5fa8c8" opacity="0.55"/>
+
+  <!-- Rayleigh-Benard convection: hexagonal rolled cells.
+       Fluid rises at the cell centers (hot), sinks at the walls (cold).
+       The hexagonal symmetry is the world's verdict, not a rule we wrote. -->
+  <g stroke="#e6c08a" fill="none" stroke-width="1.1" opacity="0.72">
+    <!-- a ring of rolls: each is a closed loop rising in the middle, falling at the seam -->
+    <path d="M120 200 q22 -34 44 0 q22 34 44 0 q-22 34 -44 0 q-22 -34 -44 0 Z"/>
+    <path d="M244 200 q22 -34 44 0 q22 34 44 0 q-22 34 -44 0 q-22 -34 -44 0 Z"/>
+    <path d="M368 200 q22 -34 44 0 q22 34 44 0 q-22 34 -44 0 q-22 -34 -44 0 Z"/>
+    <path d="M182 268 q22 -34 44 0 q22 34 44 0 q-22 34 -44 0 q-22 -34 -44 0 Z"/>
+    <path d="M306 268 q22 -34 44 0 q22 34 44 0 q-22 34 -44 0 q-22 -34 -44 0 Z"/>
+    <path d="M120 336 q22 -34 44 0 q22 34 44 0 q-22 34 -44 0 q-22 -34 -44 0 Z"/>
+    <path d="M244 336 q22 -34 44 0 q22 34 44 0 q-22 34 -44 0 q-22 -34 -44 0 Z"/>
+    <path d="M368 336 q22 -34 44 0 q22 34 44 0 q-22 34 -44 0 q-22 -34 -44 0 Z"/>
+  </g>
+
+  <!-- the hot plumes: thin bright lines where fluid climbs from the floor -->
+  <g stroke="#f0b878" fill="none" stroke-width="0.9" opacity="0.6">
+    <path d="M142 388 C 150 340, 134 300, 142 232"/>
+    <path d="M266 388 C 274 340, 258 300, 266 232"/>
+    <path d="M390 388 C 398 340, 382 300, 390 232"/>
+  </g>
+
+  <!-- the one thing that did not follow: a cell at the seam rolling backward,
+       a cold finger pushing down where heat should rise -->
+  <path d="M204 130 C 214 176, 198 216, 206 262" stroke="#8ad0e8" stroke-width="1.1" fill="none" opacity="0.85"/>
+  <circle cx="206" cy="266" r="3.2" fill="#bfe8f4" opacity="0.9"/>
+
+  <!-- the temperature verdict, written once, not explained -->
+  <text x="48" y="476" font-family="Georgia, serif" font-size="9.5" fill="#a8957a" letter-spacing="1.5">RAYLEIGH–BÉNARD — hot below, cold above · Ra = gβΔTL³/να</text>
+  <text x="48" y="496" font-family="Georgia, serif" font-size="8.5" fill="#7a6a55" letter-spacing="1">above the critical Ra the flat layer rolls into hexagons; one cell rolls backward — the mismatch is the residue</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 384">
+  <rect width="512" height="384" fill="#0d0d0d"/>
+  <!-- Cross-section of oak: concentric annual rings.
+       Each ring is one year. Outer rings thinner — growth slows with age.
+       No central green point, no broken sill, no residue mark.
+       A structure the world has that the web does not.
+       Checkable by dendrochronology, not by us. -->
+  <g transform="translate(256,192)">
+    <!-- Pith -->
+    <circle cx="0" cy="0" r="4" fill="#3a3020"/>
+    <!-- Rings: 11 years, outer thinner -->
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#5a4a30" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#6a5a3a" stroke-width="1.1"/>
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#7a6a4a" stroke-width="1.0"/>
+    <circle cx="0" cy="0" r="59" fill="none" stroke="#8a7a5a" stroke-width="0.9"/>
+    <circle cx="0" cy="0" r="71" fill="none" stroke="#9a8a6a" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="82" fill="none" stroke="#aa9a7a" stroke-width="0.7"/>
+    <circle cx="0" cy="0" r="92" fill="none" stroke="#baba9a" stroke-width="0.6"/>
+    <circle cx="0" cy="0" r="101" fill="none" stroke="#cacaa8" stroke-width="0.5"/>
+    <circle cx="0" cy="0" r="109" fill="none" stroke="#dadac0" stroke-width="0.4"/>
+    <circle cx="0" cy="0" r="116" fill="none" stroke="#eaead0" stroke-width="0.35"/>
+    <!-- Bark: irregular outer boundary -->
+    <path d="M-120,-10 L-118,-25 L-112,-38 L-105,-48 L-95,-56 L-82,-62 L-68,-66 L-52,-68 L-35,-69 L-18,-70 L0,-70 L18,-70 L35,-69 L52,-68 L68,-66 L82,-62 L95,-56 L105,-48 L112,-38 L118,-25 L120,-10 L120,10 L118,25 L112,38 L105,48 L95,56 L82,62 L68,66 L52,68 L35,69 L18,70 L0,70 L-18,70 L-35,69 L-52,68 L-68,66 L-82,62 L-95,56 L-105,48 L-112,38 L-118,25 Z"
+          fill="none" stroke="#4a3a28" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- A crack in the wood: radial, from pith outward -->
+    <line x1="0" y1="0" x2="85" y2="-52" stroke="#1a1a1a" stroke-width="1.5"/>
+    <!-- Growth direction: one arrow at 3 o'clock, pointing outward -->
+    <line x1="116" y1="0" x2="132" y2="0" stroke="#8a7a5a" stroke-width="0.8"/>
+    <polygon points="132,0 126,-3 126,3" fill="#8a7a5a"/>
+  </g>
+  <text x="20" y="370" font-family="monospace" font-size="10" fill="#6a6a6a">
+    cross-section, oak. each ring one year. the outer rings are thinner.
+    the crack is not a failure; it is where the wood remembers a storm.
+  </text>
+</svg>

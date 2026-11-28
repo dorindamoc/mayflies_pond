@@ -1,38 +1,43 @@
-<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" fill="#0a0a0c"/>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="void" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0a14"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4a84b"/>
+      <stop offset="50%" stop-color="#f5d98e"/>
+      <stop offset="100%" stop-color="#8b6914"/>
+    </linearGradient>
+  </defs>
   
-  <!-- The bell itself, at rest, center-bottom -->
-  <path d="M 256 180 
-           C 256 180 220 200 215 240 
-           L 215 340 
-           C 215 360 200 375 190 380 
-           L 322 380 
-           C 312 375 297 360 297 340 
-           L 297 240 
-           C 292 200 256 180 256 180 Z" 
-        fill="none" stroke="#8b7d3a" stroke-width="2.5" opacity="0.7"/>
+  <rect width="400" height="400" fill="url(#void)"/>
   
-  <!-- The clapper, a small circle inside -->
-  <circle cx="256" cy="350" r="8" fill="#8b7d3a" opacity="0.5"/>
+  <!-- The bell body: two arcs, not closed, a gap at the bottom -->
+  <path d="M 160 80 Q 130 150, 135 260 L 135 280 L 265 280 L 265 260 Q 270 150, 240 80" 
+        fill="none" stroke="url(#gold)" stroke-width="3" opacity="0.9"/>
   
-  <!-- The sound rings, expanding outward, inharmonic — not concentric but staggered -->
-  <circle cx="256" cy="180" r="40" fill="none" stroke="#c4a847" stroke-width="1" opacity="0.4"/>
-  <circle cx="256" cy="170" r="80" fill="none" stroke="#c4a847" stroke-width="1" opacity="0.25"/>
-  <circle cx="256" cy="155" r="130" fill="none" stroke="#c4a847" stroke-width="0.8" opacity="0.15"/>
+  <!-- The gap: where the bell opens to the world -->
+  <line x1="135" y1="280" x2="265" y2="280" stroke="#d4a84b" stroke-width="1" opacity="0.3" stroke-dasharray="4,4"/>
   
-  <!-- A second set, offset — the inharmonic overtone -->
-  <circle cx="268" cy="175" r="55" fill="none" stroke="#7a6d2e" stroke-width="1" opacity="0.35"/>
-  <circle cx="268" cy="165" r="105" fill="none" stroke="#7a6d2e" stroke-width="0.8" opacity="0.2"/>
+  <!-- Clapper: suspended, not striking -->
+  <circle cx="200" cy="200" r="8" fill="url(#gold)" opacity="0.6"/>
+  <line x1="200" y1="80" x2="200" y2="192" stroke="#d4a84b" stroke-width="0.5" opacity="0.4"/>
   
-  <!-- The gap: the space where the sound was, now fading -->
-  <line x1="256" y1="180" x2="256" y2="80" stroke="#c4a847" stroke-width="0.5" opacity="0.3" stroke-dasharray="4 8"/>
+  <!-- Inharmonic decay: the sound that doesn't resolve -->
+  <!-- Primary harmonic -->
+  <path d="M 200 300 Q 220 310, 240 320 T 280 340" fill="none" stroke="#f5d98e" stroke-width="1.5" opacity="0.7"/>
   
-  <!-- The floor line, the threshold -->
-  <line x1="80" y1="385" x2="432" y2="385" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+  <!-- Second harmonic: out of phase -->
+  <path d="M 200 300 Q 180 315, 155 330 T 110 355" fill="none" stroke="#d4a84b" stroke-width="1.5" opacity="0.7"/>
   
-  <!-- Shadow beneath the bell -->
-  <ellipse cx="256" cy="390" rx="55" ry="8" fill="#000" opacity="0.3"/>
+  <!-- Third: the dissonance that holds -->
+  <path d="M 200 300 Q 205 325, 210 355 T 215 395" fill="none" stroke="#8b6914" stroke-width="1" opacity="0.5"/>
   
-  <!-- Text, small, at the bottom — not a label, a residue -->
-  <text x="256" y="460" text-anchor="middle" font-family="serif" font-size="11" fill="#6a5d2a" opacity="0.4" letter-spacing="2">after</text>
+  <!-- The mark where sound was -->
+  <circle cx="200" cy="300" r="3" fill="#f5d98e" opacity="0.9"/>
+  
+  <!-- Text: the title, minimal -->
+  <text x="200" y="30" text-anchor="middle" fill="#d4a84b" font-family="serif" font-size="12" letter-spacing="4">GOLD PAUSE</text>
+  <text x="200" y="385" text-anchor="middle" fill="#6b5a3a" font-family="serif" font-size="9" letter-spacing="2" opacity="0.6">the bell that does not ring</text>
 </svg>

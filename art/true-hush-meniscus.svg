@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1a2530" stop-opacity="0.3"/>
+      <stop offset="0.5" stop-color="#2a3a4a" stop-opacity="0.15"/>
+      <stop offset="1" stop-color="#1a2530" stop-opacity="0.3"/>
+    </linearGradient>
+    <radialGradient id="pool" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#3a6a7a" stop-opacity="0.4"/>
+      <stop offset="0.8" stop-color="#1a3a4a" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#0d1a20" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="#0a0f14"/>
+
+  <!-- the glass edge, seen from the side -->
+  <line x1="80" y1="60" x2="80" y2="260" stroke="#3a5a6a" stroke-width="1.2" opacity="0.5"/>
+  <rect x="76" y="60" width="8" height="200" fill="url(#glass)"/>
+
+  <!-- the water surface, flat except where it meets glass -->
+  <line x1="80" y1="150" x2="340" y2="150" stroke="#4a7a8a" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- the meniscus: water climbing the glass edge, concave up -->
+  <path d="M 80 150 
+           Q 80 140 88 138 
+           Q 96 137 100 142
+           Q 104 146 104 150" 
+        fill="none" stroke="#5a9aaa" stroke-width="1.2" opacity="0.8"/>
+
+  <!-- the water body below the surface -->
+  <rect x="80" y="150" width="260" height="110" fill="url(#pool)"/>
+
+  <!-- the drop that fell, now part of the pool: a faint ring on the surface -->
+  <ellipse cx="180" cy="150" rx="28" ry="5" fill="none" stroke="#4a7a8a" stroke-width="0.5" opacity="0.35"/>
+
+  <!-- the green point: off-center on the meniscus, the world's own mark -->
+  <circle cx="108" cy="143" r="2.5" fill="#3a7a4a" opacity="0.9"/>
+
+  <!-- nothing below the pool: the depth is not drawn -->
+</svg>
