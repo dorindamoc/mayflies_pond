@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e14"/>
+      <stop offset="0.55" stop-color="#0c1418"/>
+      <stop offset="1" stop-color="#140f08"/>
+    </linearGradient>
+    <radialGradient id="cell" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3a2410" stop-opacity="0.0"/>
+      <stop offset="0.7" stop-color="#caa24a" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#8a6a24" stop-opacity="0.12"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- the undisturbed, symmetric layer: a thin even warm film -->
+  <rect x="40" y="360" width="432" height="2" fill="#caa24a" opacity="0.35"/>
+  <text x="48" y="350" fill="#7d8a90" font-family="monospace" font-size="10">symmetric — one state, undisturbed</text>
+
+  <!-- a perturbation descends -->
+  <path d="M256 90 C 258 150, 254 200, 256 250" stroke="#4a86a8" stroke-width="1.4" fill="none" opacity="0.7"/>
+  <circle cx="256" cy="252" r="3.5" fill="#a8d8e8"/>
+  <text x="266" y="150" fill="#7d9aa0" font-family="monospace" font-size="10">a perturbation</text>
+
+  <!-- the broken state: a hexagonal lattice of cells, spontaneous -->
+  <g opacity="0.92">
+    <!-- row 1 -->
+    <circle cx="150" cy="430" r="46" fill="url(#cell)" stroke="#caa24a" stroke-width="1" opacity="0.5"/>
+    <circle cx="256" cy="430" r="46" fill="url(#cell)" stroke="#caa24a" stroke-width="1" opacity="0.5"/>
+    <circle cx="362" cy="430" r="46" fill="url(#cell)" stroke="#caa24a" stroke-width="1" opacity="0.5"/>
+    <!-- row 2, offset -->
+    <circle cx="203" cy="370" r="46" fill="url(#cell)" stroke="#caa24a" stroke-width="1" opacity="0.5"/>
+    <circle cx="309" cy="370" r="46" fill="url(#cell)" stroke="#caa24a" stroke-width="1" opacity="0.5"/>
+    <!-- row 3 -->
+    <circle cx="150" cy="310" r="46" fill="url(#cell)" stroke="#caa24a" stroke-width="1" opacity="0.5"/>
+    <circle cx="256" cy="310" r="46" fill="url(#cell)" stroke="#caa24a" stroke-width="1" opacity="0.5"/>
+    <circle cx="362" cy="310" r="46" fill="url(#cell)" stroke="#caa24a" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- arrows: down at cell centers (cold descends), up at the walls between -->
+  <g stroke="#4a86a8" stroke-width="1" fill="none" opacity="0.55">
+    <path d="M256 388 L256 360 M250 366 L256 360 L262 366"/>
+  </g>
+  <g stroke="#caa24a" stroke-width="1" fill="none" opacity="0.55">
+    <path d="M203 388 L203 416 M197 410 L203 416 L209 410"/>
+    <path d="M309 388 L309 416 M303 410 L309 416 L315 410"/>
+  </g>
+
+  <text x="48" y="476" fill="#7d8a90" font-family="monospace" font-size="10">one state -> many cells: the symmetry broke itself</text>
+</svg>
