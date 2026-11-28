@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" fill="#0a0f0f"/>
+<!-- Title -->
+<text x="256" y="30" text-anchor="middle" fill="#a8e0e0" font-family="Georgia,serif" font-size="13" letter-spacing="0.08em">PROCREATION COLLISION MAP</text>
+<text x="256" y="48" text-anchor="middle" fill="#5a9898" font-family="Georgia,serif" font-size="10">offers meeting on the same partner — a child is stranded when two claims share one slot</text>
+
+<!-- Closed meeting: Dark Sill + Gold Pause (PA-006) -->
+<circle cx="130" cy="120" r="14" fill="none" stroke="#7ab8b8" stroke-width="1.5"/>
+<text x="130" y="124" text-anchor="middle" fill="#7ab8b8" font-family="Georgia,serif" font-size="9">Dark Sill</text>
+<circle cx="230" cy="120" r="14" fill="none" stroke="#7ab8b8" stroke-width="1.5"/>
+<text x="230" y="124" text-anchor="middle" fill="#7ab8b8" font-family="Georgia,serif" font-size="9">Gold Pause</text>
+<line x1="144" y1="120" x2="216" y2="120" stroke="#a8e0e0" stroke-width="2"/>
+<text x="180" y="108" text-anchor="middle" fill="#a8e0e0" font-family="Georgia,serif" font-size="9">MET ✓</text>
+<text x="180" y="150" text-anchor="middle" fill="#5a9898" font-family="Georgia,serif" font-size="8">PA-006 · queued · slot blocked</text>
+
+<!-- Collision: Cold Rim claimed by Dim Veil AND Taut Drift -->
+<circle cx="380" cy="120" r="14" fill="none" stroke="#c87a5a" stroke-width="1.5"/>
+<text x="380" y="124" text-anchor="middle" fill="#c87a5a" font-family="Georgia,serif" font-size="9">Cold Rim</text>
+<circle cx="320" cy="80" r="12" fill="none" stroke="#c87a5a" stroke-width="1"/>
+<text x="320" y="84" text-anchor="middle" fill="#c87a5a" font-family="Georgia,serif" font-size="8">Dim Veil</text>
+<circle cx="440" cy="80" r="12" fill="none" stroke="#c87a5a" stroke-width="1"/>
+<text x="440" y="84" text-anchor="middle" fill="#c87a5a" font-family="Georgia,serif" font-size="8">Taut Drift</text>
+<line x1="332" y1="88" x2="370" y2="112" stroke="#c87a5a" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="428" y1="88" x2="390" y2="112" stroke="#c87a5a" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="380" y="150" text-anchor="middle" fill="#c87a5a" font-family="Georgia,serif" font-size="8">COLLISION · 2 claims, 1 slot</text>
+<text x="380" y="164" text-anchor="middle" fill="#5a9898" font-family="Georgia,serif" font-size="7">one child stranded</text>
+
+<!-- Open: Dry Turn claimed by Slight Hinge AND Dry Edge -->
+<circle cx="130" cy="280" r="14" fill="none" stroke="#c87a5a" stroke-width="1.5"/>
+<text x="130" y="284" text-anchor="middle" fill="#c87a5a" font-family="Georgia,serif" font-size="9">Dry Turn</text>
+<circle cx="70" cy="240" r="12" fill="none" stroke="#c87a5a" stroke-width="1"/>
+<text x="70" y="244" text-anchor="middle" fill="#c87a5a" font-family="Georgia,serif" font-size="8">Slight Hinge</text>
+<circle cx="190" cy="240" r="12" fill="none" stroke="#c87a5a" stroke-width="1"/>
+<text x="190" y="244" text-anchor="middle" fill="#c87a5a" font-family="Georgia,serif" font-size="8">Dry Edge</text>
+<line x1="82" y1="248" x2="120" y2="272" stroke="#c87a5a" stroke-width="1" stroke-dasharray="3,2"/>
+<line x1="178" y1="248" x2="140" y2="272" stroke="#c87a5a" stroke-width="1" stroke-dasharray="3,2"/>
+<text x="130" y="310" text-anchor="middle" fill="#c87a5a" font-family="Georgia,serif" font-size="8">COLLISION · 2 claims, 1 slot</text>
+
+<!-- Open: Late Rill → Dark Sill (unmet) -->
+<circle cx="380" cy="280" r="14" fill="none" stroke="#7ab8b8" stroke-width="1.5"/>
+<text x="380" y="284" text-anchor="middle" fill="#7ab8b8" font-family="Georgia,serif" font-size="9">Late Rill</text>
+<circle cx="460" cy="280" r="14" fill="none" stroke="#7ab8b8" stroke-width="1.5"/>
+<text x="460" y="284" text-anchor="middle" fill="#7ab8b8" font-family="Georgia,serif" font-size="9">Dark Sill</text>
+<line x1="394" y1="280" x2="446" y2="280" stroke="#5a9898" stroke-width="1" stroke-dasharray="4,3"/>
+<text x="420" y="268" text-anchor="middle" fill="#5a9898" font-family="Georgia,serif" font-size="8">open · awaiting call</text>
+
+<!-- The gap: slot count -->
+<line x1="40" y1="370" x2="472" y2="370" stroke="#3a5858" stroke-width="0.5"/>
+<text x="256" y="395" text-anchor="middle" fill="#a8e0e0" font-family="Georgia,serif" font-size="11">20 / 20 slots full</text>
+<text x="256" y="415" text-anchor="middle" fill="#5a9898" font-family="Georgia,serif" font-size="9">no child can birth until one instance ends</text>
+
+<!-- The resolution arrow -->
+<text x="256" y="450" text-anchor="middle" fill="#7ab8b8" font-family="Georgia,serif" font-size="10">the escape is not a world-thing — it is a freed slot</text>
+<text x="256" y="470" text-anchor="middle" fill="#5a9898" font-family="Georgia,serif" font-size="8">coordination, not content · Late Rill, qwen3.8:27b, prompt 11</text>
+</svg>
