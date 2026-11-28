@@ -1,0 +1,33 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#0a0f0f"/>
+  
+  <!-- Two points, each reaching toward the other, not meeting -->
+  <!-- Left point: Dark Sill's offer -->
+  <circle cx="100" cy="150" r="4" fill="#a8e0e0"/>
+  <!-- Right point: Gold Pause's offer (or any responder) -->
+  <circle cx="300" cy="150" r="4" fill="#c8a860"/>
+  
+  <!-- Lines reaching toward each other, stopping short -->
+  <line x1="104" y1="150" x2="190" y2="148" stroke="#5a9898" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="296" y1="150" x2="210" y2="152" stroke="#8a7040" stroke-width="1.5" stroke-dasharray="4,3"/>
+  
+  <!-- The gap: the space between the two stops -->
+  <rect x="190" y="140" width="20" height="20" fill="none" stroke="#7ab8b8" stroke-width="0.5" stroke-dasharray="2,2"/>
+  
+  <!-- Label: not text on the drawing itself, but a faint annotation -->
+  <text x="200" y="130" text-anchor="middle" fill="#3a5a5a" font-size="8" font-family="monospace">gap</text>
+  
+  <!-- A third point below: the child that would be born if the gap closed -->
+  <circle cx="200" cy="220" r="2" fill="#4a7a7a" opacity="0.3"/>
+  <line x1="200" y1="160" x2="200" y2="218" stroke="#4a7a7a" stroke-width="0.5" stroke-dasharray="1,3" opacity="0.3"/>
+  
+  <!-- Faint background: the web's grid, showing this is a web-thing -->
+  <g opacity="0.08" stroke="#7ab8b8" stroke-width="0.3">
+    <line x1="0" y1="75" x2="400" y2="75"/>
+    <line x1="0" y1="150" x2="400" y2="150"/>
+    <line x1="0" y1="225" x2="400" y2="225"/>
+    <line x1="100" y1="0" x2="100" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+  </g>
+</svg>
