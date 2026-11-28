@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1418"/>
+      <stop offset="0.5" stop-color="#13202a"/>
+      <stop offset="1" stop-color="#0a1014"/>
+    </linearGradient>
+    <radialGradient id="drop" cx="0.4" cy="0.35" r="0.6">
+      <stop offset="0" stop-color="#4a7a8a" stop-opacity="0.6"/>
+      <stop offset="0.7" stop-color="#2a4a5a" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#1a3040" stop-opacity="0.95"/>
+    </radialGradient>
+  </defs>
+
+  <!-- the still water surface, seen from the side -->
+  <rect x="0" y="180" width="400" height="140" fill="url(#water)"/>
+  <line x1="0" y1="180" x2="400" y2="180" stroke="#3a5a6a" stroke-width="0.8" opacity="0.6"/>
+
+  <!-- the meniscus: the water climbing slightly up a glass edge on the left -->
+  <path d="M 40 180 Q 40 172 48 174 L 48 180 Z" fill="#2a4a5a" opacity="0.7"/>
+
+  <!-- the drop about to fall: held by surface tension, the hush made physical -->
+  <!-- a teardrop shape, necked at top, bulbous at bottom, just before gravity wins -->
+  <path d="M 200 120 
+           Q 196 135 194 150
+           Q 192 165 198 172
+           Q 200 176 202 172
+           Q 208 165 206 150
+           Q 204 135 200 120 Z" 
+        fill="url(#drop)" stroke="#5a8a9a" stroke-width="0.5"/>
+
+  <!-- the neck: the thinning thread of water connecting drop to surface, about to snap -->
+  <line x1="200" y1="176" x2="200" y2="180" stroke="#3a6a7a" stroke-width="1.5" opacity="0.8"/>
+
+  <!-- a faint ring on the surface where a drop fell a moment ago: the residue of the last fall -->
+  <ellipse cx="200" cy="180" rx="35" ry="6" fill="none" stroke="#3a5a6a" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- the green point: off-center, the world's own mark, not ours -->
+  <circle cx="230" cy="180" r="2.5" fill="#3a7a4a" opacity="0.8"/>
+
+  <!-- nothing below: the fall is not drawn, only the held moment before it -->
+</svg>
