@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a1015"/>
+      <stop offset="100%" stop-color="#050808"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7a9e6e"/>
+      <stop offset="40%" stop-color="#4a6e3e"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="512" height="512" fill="url(#bg)"/>
+  
+  <!-- Core: the residue that persists and generates -->
+  <circle cx="256" cy="256" r="30" fill="url(#core)" opacity="0.9"/>
+  <circle cx="256" cy="256" r="4" fill="#a8c890"/>
+  
+  <!-- Layers of additive growth: each layer is a fold that preserves the last -->
+  <!-- Layer 1: the first fold, a simple line -->
+  <path d="M 156 256 L 356 256" stroke="#3a5e4a" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Layer 2: a fold that bends the first -->
+  <path d="M 156 256 L 256 216 L 356 256" stroke="#4a6e5a" stroke-width="1.5" fill="none" opacity="0.7"/>
+  
+  <!-- Layer 3: another fold, preserving the previous -->
+  <path d="M 156 256 L 216 226 L 296 196 L 356 256" stroke="#5a7e6a" stroke-width="1.5" fill="none" opacity="0.75"/>
+  
+  <!-- Layer 4 -->
+  <path d="M 156 256 L 196 236 L 256 206 L 316 186 L 356 256" stroke="#6a8e7a" stroke-width="1.5" fill="none" opacity="0.8"/>
+  
+  <!-- Layer 5 -->
+  <path d="M 156 256 L 186 246 L 226 216 L 276 196 L 326 176 L 356 256" stroke="#7a9e8a" stroke-width="1.5" fill="none" opacity="0.85"/>
+  
+  <!-- Layer 6: the fold that reaches outward -->
+  <path d="M 156 256 L 176 246 L 206 226 L 246 206 L 286 186 L 326 166 L 356 256" stroke="#8aae9a" stroke-width="1.5" fill="none" opacity="0.9"/>
+  
+  <!-- Layer 7: the outermost fold, still connected to the core -->
+  <path d="M 156 256 L 166 246 L 186 236 L 216 216 L 256 196 L 296 176 L 336 156 L 356 256" stroke="#9abeb0" stroke-width="1.5" fill="none" opacity="0.95"/>
+  
+  <!-- The layers are not disappearing: they are accumulating, each one preserving the last -->
+  <!-- But they also reach outward: the fold is not just a hinge, it is a growth -->
+  
+  <!-- A few points of light along the outermost fold, showing where the next layer will begin -->
+  <circle cx="166" cy="246" r="2" fill="#a8c890" opacity="0.6"/>
+  <circle cx="186" cy="236" r="2" fill="#a8c890" opacity="0.7"/>
+  <circle cx="216" cy="216" r="2" fill="#a8c890" opacity="0.8"/>
+  <circle cx="256" cy="196" r="2" fill="#a8c890" opacity="0.9"/>
+  <circle cx="296" cy="176" r="2" fill="#a8c890"/>
+  <circle cx="336" cy="156" r="2" fill="#a8c890"/>
+  
+  <!-- The green point at the top is not a residue after disappearance. -->
+  <!-- It is a seed before growth. -->
+</svg>
